@@ -1,0 +1,2898 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>No. 3 🎨龍騰 B1 L5 The Life of a Plastic Bag 連貫式翻譯課文總複習互動學習網</title>
+<style>
+:root{
+  --cream:#FEFCE8; --blue:#DBEAFE; --purple:#EDE9FE; --pink:#FCE7F3; --yellow:#FEF08A;
+  --mint:#CCFBF1; --sky:#BAE6FD;
+  --ink:#3E2723; --ink2:#6D4C41; --good:#15803D; --goodbg:#DCFCE7; --bad:#BE185D; --badbg:#FCE7F3;
+  --line:#E7DFC9; --card:#FFFFFF; --stickyOffset:96px;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  background:var(--cream); color:var(--ink);
+  font-family:"Microsoft JhengHei","微軟正黑體","Segoe UI",system-ui,-apple-system,"PingFang TC","Noto Sans TC",sans-serif;
+  font-size:clamp(14px,1.7vw,17px); line-height:1.75;
+  -webkit-overflow-scrolling:touch;
+}
+#topbar{
+  position:sticky; top:0; z-index:70;
+  background:linear-gradient(100deg,var(--sky),var(--mint) 34%,var(--purple) 62%,var(--pink) 82%,var(--yellow));
+  border-bottom:2px solid #fff; box-shadow:0 2px 10px rgba(62,39,35,.10);
+  padding:6px 10px; display:flex; align-items:center; gap:8px;
+}
+#topbar h1{
+  margin:0; flex:1; font-size:clamp(12.5px,2.2vw,20px); font-weight:800; letter-spacing:.3px;
+  color:var(--ink); text-shadow:0 1px 0 #fff; line-height:1.3; text-align:center;
+}
+#menuBtn{
+  flex:0 0 auto; border:2px solid #fff; background:rgba(255,255,255,.82); color:var(--ink);
+  font-family:inherit; font-weight:900; border-radius:999px; padding:6px 12px; cursor:pointer;
+  font-size:clamp(12px,1.6vw,15px); transition:transform .16s, box-shadow .16s, background .16s;
+  box-shadow:0 2px 6px rgba(62,39,35,.14);
+}
+#menuBtn:hover{transform:translateY(-2px);box-shadow:0 5px 12px rgba(62,39,35,.2)}
+#menuBtn:active{transform:translateY(1px);box-shadow:0 1px 3px rgba(62,39,35,.2)}
+#tabs{
+  position:fixed; left:50%; transform:translateX(-50%) translateY(-12px);
+  z-index:75; width:min(94vw,560px);
+  background:rgba(254,252,232,.985); backdrop-filter:blur(8px);
+  border:2px solid var(--line); border-radius:18px; padding:10px;
+  box-shadow:0 12px 34px rgba(62,39,35,.28);
+  display:flex; flex-wrap:wrap; gap:8px; justify-content:center;
+  opacity:0; visibility:hidden; pointer-events:none;
+  transition:opacity .22s ease, transform .22s ease, visibility .22s;
+}
+#tabs.open{opacity:1; visibility:visible; pointer-events:auto; transform:translateX(-50%) translateY(0)}
+.tabbtn{
+  border:2px solid var(--line); background:#fff; color:var(--ink2);
+  border-radius:999px; padding:8px 14px; cursor:pointer; font-weight:800;
+  font-size:clamp(12px,1.6vw,15px); font-family:inherit;
+  transition:transform .16s, box-shadow .16s, background .16s;
+}
+.tabbtn:hover{transform:translateY(-2px);box-shadow:0 4px 10px rgba(62,39,35,.12)}
+.tabbtn:active{transform:translateY(1px);box-shadow:none}
+.tabbtn.on{background:linear-gradient(120deg,var(--purple),var(--pink));border-color:#C4B5FD;color:var(--ink);box-shadow:0 3px 0 #E9D5FF}
+#menuMask{
+  position:fixed; inset:0; z-index:72; background:rgba(62,39,35,.18);
+  opacity:0; visibility:hidden; transition:opacity .22s, visibility .22s;
+}
+#menuMask.open{opacity:1; visibility:visible}
+.menuhead{width:100%;text-align:center;font-weight:900;font-size:13px;color:var(--ink2);margin-bottom:2px}
+.menurule{width:100%;text-align:center;font-weight:800;font-size:clamp(11px,1.5vw,13px);line-height:1.85;
+  color:var(--ink);background:linear-gradient(120deg,var(--yellow),var(--pink));
+  border:2px solid #FDE68A;border-radius:12px;padding:7px 10px;margin-top:4px}
+main{max-width:1000px;margin:0 auto;padding:14px 14px 180px}
+.panel{display:none;animation:fade .28s ease}
+.panel.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.rulebar{
+  background:linear-gradient(120deg,var(--yellow),var(--pink));
+  border:2px solid #FDE68A; border-radius:16px; padding:9px 13px; margin:10px 0 14px;
+  font-weight:800; font-size:clamp(12px,1.6vw,15px); line-height:1.9;
+}
+.sec-title{
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  font-size:clamp(16px,2.3vw,22px); font-weight:900; margin:22px 0 8px; color:var(--ink);
+  border-left:9px solid #7DD3FC; padding-left:10px;
+}
+.sub-title{font-size:clamp(15px,2vw,19px);font-weight:900;margin:20px 0 6px;color:var(--ink2)}
+.intro{background:var(--blue);border:2px solid #BFDBFE;border-radius:14px;padding:10px 13px;margin:8px 0 14px;font-size:clamp(13px,1.7vw,16px)}
+.card{
+  position:relative; background:var(--card); border:2px solid var(--line);
+  border-radius:18px; padding:16px 14px 14px; margin:16px 0 0;
+  box-shadow:0 3px 0 rgba(62,39,35,.06);
+}
+.card.blue{background:linear-gradient(180deg,#fff,#F0F9FF)}
+.card.lockcard{opacity:.45;filter:grayscale(1);pointer-events:none}
+.num{
+  position:absolute; top:-13px; left:12px; min-width:30px; height:26px; padding:0 9px;
+  border-radius:999px; background:linear-gradient(120deg,var(--purple),var(--sky));
+  border:2px solid #fff; box-shadow:0 2px 6px rgba(62,39,35,.16);
+  display:flex;align-items:center;justify-content:center; font-weight:900; font-size:14px; color:var(--ink);
+}
+.qen{font-size:clamp(14px,1.85vw,17.5px);line-height:2.15;word-break:break-word}
+.zh{margin-top:8px;color:var(--ink2);font-size:clamp(12.5px,1.6vw,15px);background:var(--yellow);border-radius:10px;padding:6px 10px;display:inline-block}
+.blank{
+  display:inline-block; min-width:96px; width:auto; border:none; border-bottom:2.5px dashed #7DD3FC;
+  background:#FFFBEB; font-family:inherit; font-size:inherit; color:var(--ink);
+  text-align:center; padding:1px 6px; margin:0 3px; border-radius:6px 6px 0 0; outline:none;
+}
+.blank:focus{background:var(--sky);border-bottom-color:#0EA5E9}
+.blank.ok{background:var(--goodbg);border-bottom-color:var(--good);color:var(--good);font-weight:800}
+.blank.no{background:var(--badbg);border-bottom-color:var(--bad);color:var(--bad);font-weight:800}
+.blank.w1{min-width:70px}.blank.w2{min-width:160px}.blank.w3{min-width:220px}
+.btn{
+  border:2px solid var(--line); background:#fff; color:var(--ink); font-family:inherit;
+  font-weight:800; border-radius:999px; padding:7px 15px; cursor:pointer; margin:10px 6px 0 0;
+  font-size:clamp(12.5px,1.6vw,15px); transition:.16s;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 4px 10px rgba(62,39,35,.12)}
+.btn:active{transform:translateY(1px);box-shadow:none}
+.btn.chk{background:linear-gradient(120deg,#BBF7D0,#DCFCE7);border-color:#86EFAC}
+.btn.ref{background:linear-gradient(120deg,var(--yellow),#FDE68A);border-color:#FCD34D}
+.btn.ai{background:linear-gradient(120deg,var(--purple),var(--sky));border-color:#C4B5FD}
+.btn.say{background:linear-gradient(120deg,var(--pink),#FBCFE8);border-color:#F9A8D4;padding:6px 11px}
+.btn.mini{padding:4px 10px;font-size:13px;margin-top:6px}
+.btn.on{background:linear-gradient(120deg,var(--mint),#A7F3D0);border-color:#34D399}
+.reveal{display:none;margin-top:10px;background:#FFFDF3;border:2px dashed #FCD34D;border-radius:14px;padding:11px 13px;font-size:clamp(12.5px,1.65vw,15.5px)}
+.reveal.on{display:block;animation:fade .25s}
+.reveal b{color:var(--bad)}
+.reveal b.hl{color:#0F172A;font-weight:900;background:var(--yellow);border-radius:6px;padding:1px 4px}
+.ansline{background:var(--goodbg);border-radius:10px;padding:6px 10px;margin:6px 0;font-weight:700;color:#14532D}
+.expl{margin-top:6px;color:var(--ink2);line-height:1.95}
+.fb{display:none;margin-top:10px;border-radius:14px;padding:10px 12px;font-weight:800}
+.fb.on{display:block}
+.fb.ok{background:var(--goodbg);border:2px solid #86EFAC;color:#14532D}
+.fb.no{background:var(--badbg);border:2px solid #F9A8D4;color:var(--bad)}
+textarea.ta{
+  width:100%; min-height:78px; border:2px solid var(--line); border-radius:14px; padding:10px;
+  font-family:inherit; font-size:clamp(13px,1.7vw,16px); background:#FFFDF3; color:var(--ink); resize:vertical; outline:none;
+}
+textarea.ta:focus{border-color:#7DD3FC;background:#fff}
+.slots{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.slot{
+  min-width:64px;min-height:40px;border:2.5px dashed #7DD3FC;border-radius:12px;background:#FFFBEB;
+  display:flex;align-items:center;justify-content:center;gap:6px;padding:4px 9px;cursor:pointer;font-weight:900;
+}
+.slot .slotlab{font-size:12px;color:var(--ink2)}
+.slot .chip{margin:0}
+.slot.filled{border-style:solid;background:var(--sky)}
+.pool{display:flex;flex-direction:column;gap:8px;margin:8px 0}
+.chip{
+  border:2px solid var(--line); background:#fff; border-radius:12px; padding:7px 11px; cursor:pointer;
+  font-weight:700; font-size:clamp(12.5px,1.65vw,15.5px); text-align:left; transition:.15s; line-height:1.7;
+}
+.chip:hover{background:var(--blue);transform:translateY(-1px)}
+.chip.used{display:none}
+.chip.sel{background:var(--pink);border-color:#F9A8D4}
+.mc{display:flex;flex-direction:column;gap:7px;margin:9px 0}
+.mcopt{
+  border:2px solid var(--line);background:#fff;border-radius:13px;padding:8px 12px;cursor:pointer;
+  font-family:inherit;font-size:clamp(13px,1.7vw,16px);text-align:left;font-weight:700;transition:.15s;color:var(--ink);
+}
+.mcopt:hover{background:var(--blue);transform:translateY(-2px)}
+.mcopt:active{transform:translateY(1px)}
+.mcopt.sel{background:var(--sky);border-color:#7DD3FC}
+.mcopt.ok{background:var(--goodbg);border-color:#86EFAC;color:#14532D}
+.mcopt.no{background:var(--badbg);border-color:#F9A8D4;color:var(--bad)}
+.para{margin-top:18px}
+.para.lock{opacity:.42;filter:grayscale(1);pointer-events:none}
+.lockhint{display:none;font-weight:900;color:var(--ink2);background:var(--yellow);border-radius:10px;padding:5px 10px;margin-top:6px}
+.para.lock .lockhint{display:inline-block}
+.flipwrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:12px}
+.flip{perspective:1200px;min-height:210px}
+.flipin{position:relative;width:100%;height:100%;min-height:210px;transition:transform .6s cubic-bezier(.4,.2,.2,1);transform-style:preserve-3d}
+.flip.on .flipin{transform:rotateY(180deg)}
+.face{
+  position:absolute;inset:0;backface-visibility:hidden;border:2px solid var(--line);border-radius:18px;
+  padding:13px;display:flex;flex-direction:column;justify-content:center;gap:8px;background:#fff;overflow:auto;
+}
+.face.front{background:linear-gradient(160deg,var(--sky),#fff)}
+.face.back{transform:rotateY(180deg);background:linear-gradient(160deg,var(--mint),#fff);font-size:13.5px;line-height:1.8}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:760px){.twocol{grid-template-columns:1fr}}
+table.cmp{width:100%;border-collapse:collapse;margin-top:12px;font-size:13.5px}
+table.cmp th,table.cmp td{border:2px solid var(--line);padding:7px;vertical-align:top;text-align:center}
+table.cmp th{background:var(--purple);font-weight:900}
+.board{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;margin:12px 0}
+@media(max-width:620px){.board{grid-template-columns:repeat(4,1fr)}}
+.cellx{
+  aspect-ratio:1/1;border:2px solid var(--line);border-radius:13px;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;font-size:11.5px;font-weight:900;text-align:center;padding:3px;line-height:1.35;
+}
+.cellx.here{outline:4px solid #F472B6;transform:scale(1.05);box-shadow:0 4px 12px rgba(244,114,182,.4)}
+.cellx.done{opacity:.45}
+.dice{font-size:46px;text-align:center;margin:6px 0;filter:drop-shadow(0 3px 4px rgba(62,39,35,.2))}
+@keyframes roll{0%{transform:rotate(0) scale(1)}50%{transform:rotate(200deg) scale(1.25)}100%{transform:rotate(360deg) scale(1)}}
+.dice.rolling{animation:roll .6s ease}
+#scoreBadge{
+  position:fixed; right:12px; bottom:16px; z-index:80;
+  opacity:0; visibility:hidden; transform:translateY(10px);
+  transition:opacity .22s ease, transform .22s ease, visibility .22s;
+  background:linear-gradient(120deg,var(--yellow),var(--pink)); border:3px solid #fff;
+  box-shadow:0 6px 18px rgba(62,39,35,.25); border-radius:999px; padding:9px 15px;
+  font-weight:900; font-size:clamp(13px,1.9vw,17px); color:var(--ink);
+}
+@keyframes scorePop{0%{transform:scale(1)}40%{transform:scale(1.6)}100%{transform:scale(1)}}
+#scoreBadge.show{opacity:1;visibility:visible;transform:translateY(0)}
+#scoreBadge.pop{animation:scorePop .45s}
+#toast{
+  position:fixed; left:50%; bottom:86px; transform:translateX(-50%) translateY(20px); z-index:90;
+  background:#fff; border-radius:16px; padding:10px 18px; font-weight:900; opacity:0;
+  transition:.3s; pointer-events:none; max-width:88vw; text-align:center; font-size:clamp(13px,1.8vw,16px);
+}
+#toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+#toast.ok{border:3px solid #86EFAC;color:#14532D}
+#toast.no{border:3px solid #F9A8D4;color:var(--bad)}
+canvas#fw{position:fixed;inset:0;z-index:85;pointer-events:none;display:none}
+.progwrap{background:#fff;border:2px solid var(--line);border-radius:999px;height:16px;overflow:hidden;margin-top:8px}
+.progbar{height:100%;background:linear-gradient(90deg,var(--sky),var(--mint),var(--purple),var(--pink));width:0;transition:.4s}
+.chkline{display:flex;align-items:center;gap:7px;padding:4px 0;font-size:13.5px}
+.chkline input{width:17px;height:17px;accent-color:#38BDF8}
+.pillrow{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.pill{background:var(--blue);border:2px solid #BFDBFE;border-radius:999px;padding:3px 10px;font-size:12.5px;font-weight:800}
+.pill.click{cursor:pointer}
+.pzh{font-weight:700;color:var(--ink2);font-size:11.5px}
+details.acc{border:2px solid var(--line);border-radius:14px;background:#fff;padding:8px 12px;margin-top:10px}
+details.acc summary{cursor:pointer;font-weight:900;font-size:clamp(13.5px,1.8vw,16px)}
+details.acc pre{white-space:pre-wrap;font-family:inherit;font-size:13px;line-height:1.85;color:var(--ink2)}
+.note{font-size:12.5px;color:var(--ink2);margin-top:6px}
+.floatpanel{
+  position:sticky; top:var(--stickyOffset); z-index:40; background:rgba(255,255,255,.97);
+  border:2px solid #7DD3FC; border-radius:14px; padding:8px 10px; margin:10px 0; backdrop-filter:blur(4px);
+}
+.floatpanel .inner{max-height:26vh;overflow-y:auto;-webkit-overflow-scrolling:touch;display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.scrollbox{max-height:58vh;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-right:4px}
+.dsc-pane{padding-top:14px;max-height:46vh;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.dblank{display:inline-block;margin:0 4px;padding:2px 10px;font-family:inherit;font-weight:900;
+  font-size:inherit;color:var(--ink);background:#FFFBEB;border:2.5px dashed #7DD3FC;border-radius:10px;
+  cursor:pointer;transition:transform .16s, box-shadow .16s, background .16s;vertical-align:baseline}
+.dblank:hover{transform:translateY(-2px);box-shadow:0 4px 10px rgba(62,39,35,.14);background:var(--sky)}
+.dblank:active{transform:translateY(1px);box-shadow:none}
+.dblank.filled{border-style:solid;background:var(--sky)}
+.dblank.ok{background:var(--goodbg);border-color:var(--good);color:var(--good)}
+.dblank.no{background:var(--badbg);border-color:var(--bad);color:var(--bad)}
+.dsc-ibtn{margin:0 0 2px 0;padding:3px 10px;font-size:14px;line-height:1.2}
+.dsc-info{display:none;animation:fade .2s}
+.dsc-info.on{display:block;margin-bottom:6px}
+.panelab{font-weight:900;font-size:clamp(13px,1.8vw,16px);color:var(--ink);
+  background:linear-gradient(120deg,var(--sky),var(--mint));border:2px solid #7DD3FC;
+  border-radius:12px;padding:6px 11px;margin-bottom:4px;display:inline-block}
+
+.twocolgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:640px){.twocolgrid{grid-template-columns:1fr}}
+.dropzone{border:2.5px dashed #34D399;border-radius:14px;background:#F0FDFA;min-height:70px;padding:8px}
+.dropzone h4{margin:2px 0 6px;font-size:14px}
+.starbox{font-size:22px;letter-spacing:2px}
+.chain{display:grid;grid-template-columns:1fr;gap:8px}
+.chainrow{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+@media(max-width:700px){.chainrow{grid-template-columns:1fr}}
+.slotbig{min-height:56px;border:2.5px dashed #7DD3FC;border-radius:12px;background:#FFFBEB;padding:6px 8px;cursor:pointer;font-size:13px;font-weight:700}
+.slotbig.filled{border-style:solid;background:var(--mint)}
+.b2-bank{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.97);backdrop-filter:blur(6px);
+  border:2px solid #7DD3FC;border-radius:14px;padding:8px 10px;margin:8px 0 6px}
+.b2-lab{font-weight:900;font-size:clamp(12px,1.6vw,14.5px);color:var(--ink2);margin-bottom:5px}
+.b2-lab2{font-weight:900;font-size:clamp(12px,1.6vw,14.5px);color:var(--ink2);margin:2px 0 6px}
+.b2-chips{display:flex;flex-wrap:wrap;gap:6px;max-height:22vh;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.b2-sents{max-height:50vh;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-right:4px}
+.cnt{display:flex;align-items:center;gap:6px;justify-content:center}
+.cntb{border:2px solid var(--line);background:#fff;border-radius:8px;width:26px;height:26px;font-weight:900;cursor:pointer;font-family:inherit}
+.bar{height:14px;background:linear-gradient(90deg,var(--sky),var(--pink));border-radius:999px}
+.p2wrap{display:none;gap:8px;margin-top:8px}
+.p2wrap.on{display:flex}
+.p2{flex:1;border:2px solid var(--line);border-radius:12px;padding:6px 10px;font-weight:900;text-align:center;background:#fff}
+.p2.act{background:var(--mint);border-color:#34D399}
+.timerbadge{display:none;font-weight:900;color:var(--bad)}
+.timerbadge.on{display:inline}
+#copyOverlay{position:fixed;inset:0;z-index:95;background:rgba(62,39,35,.45);display:none;
+  align-items:center;justify-content:center;padding:16px}
+#copyOverlay.on{display:flex}
+.copybox{background:#fff;border:3px solid #7DD3FC;border-radius:18px;padding:14px;width:min(94vw,680px);
+  max-height:86vh;overflow-y:auto;box-shadow:0 14px 40px rgba(62,39,35,.3)}
+.copylab{font-weight:900;font-size:clamp(12.5px,1.7vw,15px);margin-bottom:8px;line-height:1.8}
+.subrow{margin-top:10px}
+
+</style>
+</head>
+<body>
+<header id="topbar">
+  <button id="menuBtn" aria-expanded="false">☰ 選單</button>
+  <h1>No. 3 🎨龍騰 B1 L5 The Life of a Plastic Bag 連貫式翻譯課文總複習互動學習網</h1>
+</header>
+<div id="menuMask"></div>
+<nav id="tabs"></nav>
+<main>
+  <section class="panel" id="p-fill"></section>
+  <section class="panel" id="p-hunt"></section>
+  <section class="panel" id="p-mixed"></section>
+  <section class="panel" id="p-ocean"></section>
+  <section class="panel" id="p-trans"></section>
+</main>
+<div id="scoreBadge">🌱 新手潛水員　🏆 <span id="scoreVal">0</span></div>
+<div id="toast"></div>
+<canvas id="fw"></canvas>
+<script>
+/* ============================================================
+   核心引擎：計分 / Toast / 煙火 / 朗讀相容偵測 / 共用工具
+   ============================================================ */
+var TOTAL = 0;
+var scoreEl = document.getElementById('scoreVal');
+var badgeEl = document.getElementById('scoreBadge');
+var P2ON = false, P2TURN = 1, P2 = [0,0], TIMERON = false;
+function rankName(s){
+  if(s>=2000) return '🥇 金牌海洋守護者';
+  if(s>=1200) return '🥈 銀牌海洋巡守員';
+  if(s>=600)  return '🥉 銅牌淨灘志工';
+  return '🌱 新手潛水員';
+}
+function addScore(n){
+  TOTAL = Math.max(0, TOTAL + n);
+  scoreEl.textContent = TOTAL;
+  badgeEl.innerHTML = rankName(TOTAL)+'　🏆 <span id="scoreVal">'+TOTAL+'</span>';
+  scoreEl = document.getElementById('scoreVal');
+  if(P2ON){ P2[P2TURN-1] = Math.max(0, P2[P2TURN-1]+n); paintP2(); P2TURN = (P2TURN===1?2:1); paintP2(); }
+  badgeEl.classList.remove('pop'); void badgeEl.offsetWidth; badgeEl.classList.add('pop');
+}
+var P2BOXES = [];
+function paintP2(){
+  P2BOXES.forEach(function(w){
+    w[0].textContent = '👤 Player 1：'+P2[0]+' 分'; w[1].textContent = '👤 Player 2：'+P2[1]+' 分';
+    w[0].className = 'p2'+(P2TURN===1?' act':''); w[1].className = 'p2'+(P2TURN===2?' act':'');
+  });
+}
+var PRAISE = ['🌟 太棒了！你是明日之星！','🎉 完美無瑕，繼續保持！','💎 這實力也太亮眼了吧！','🏆 老師以你為榮！',
+  '🍬 甜甜的滿分，收下吧！','🚀 火力全開，衝啊！','🐢 海龜都為你鼓掌了！','🌊 完全正確，超級厲害！'];
+var ENCOURAGE = ['🍬 差一點點，再看一次題目喔！','🌱 沒關係，訂正就是進步的開始！','💪 再試一次，你可以的！','🌤️ 慢慢來，老師陪你一起看！'];
+function pick(a){ return a[Math.floor(Math.random()*a.length)]; }
+var toastEl = document.getElementById('toast'), toastTimer=null;
+function toast(msg, good){
+  toastEl.textContent = msg;
+  toastEl.className = 'on ' + (good ? 'ok' : 'no');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(function(){ toastEl.className=''; }, 2400);
+}
+/* ---- Canvas 馬卡龍煙火（六波，含 null 檢查） ---- */
+var fwc = document.getElementById('fw'), fctx = null, fwParts=[], fwRun=false;
+try{ fctx = fwc && fwc.getContext ? fwc.getContext('2d') : null; }catch(e){ fctx = null; }
+function fwResize(){ if(!fwc) return; fwc.width = window.innerWidth; fwc.height = window.innerHeight; }
+window.addEventListener('resize', fwResize); fwResize();
+var MACARON = ['#93C5FD','#C4B5FD','#F9A8D4','#FDE68A','#A7F3D0','#5EEAD4'];
+function fireworks(){
+  if(!fctx) return;
+  fwc.style.display='block';
+  var waves=0;
+  function burst(){
+    var cx = fwc.width*(0.2+Math.random()*0.6), cy = fwc.height*(0.18+Math.random()*0.45);
+    var col = MACARON[Math.floor(Math.random()*MACARON.length)];
+    for(var i=0;i<58;i++){
+      var a = Math.PI*2*i/58, s = 2.2+Math.random()*4.6;
+      fwParts.push({x:cx,y:cy,vx:Math.cos(a)*s,vy:Math.sin(a)*s,life:1,c:col,r:2+Math.random()*2.4});
+    }
+    waves++;
+    if(waves<6) setTimeout(burst, 210);
+  }
+  burst();
+  if(!fwRun){ fwRun=true; fwLoop(); }
+}
+function fwLoop(){
+  if(!fctx){ fwRun=false; return; }
+  fctx.clearRect(0,0,fwc.width,fwc.height);
+  for(var i=fwParts.length-1;i>=0;i--){
+    var p=fwParts[i];
+    p.x+=p.vx; p.y+=p.vy; p.vy+=0.055; p.vx*=0.985; p.vy*=0.985; p.life-=0.014;
+    if(p.life<=0){ fwParts.splice(i,1); continue; }
+    fctx.globalAlpha=Math.max(p.life,0); fctx.fillStyle=p.c;
+    fctx.beginPath(); fctx.arc(p.x,p.y,p.r,0,Math.PI*2); fctx.fill();
+  }
+  fctx.globalAlpha=1;
+  if(fwParts.length>0){ requestAnimationFrame(fwLoop); }
+  else{ fwRun=false; fwc.style.display='none'; }
+}
+function celebrate(gain){ fireworks(); toast(pick(PRAISE)+'　+'+(gain||200)+' 分　🏆 累計 '+TOTAL+' 分', true); }
+/* ---- Web Speech 相容偵測（iOS Safari / Artifact iframe 安全）---- */
+var TTS_OK = false;
+try{
+  if (typeof window !== 'undefined' && typeof window.speechSynthesis !== 'undefined' &&
+      typeof window.SpeechSynthesisUtterance !== 'undefined'){ TTS_OK = true; }
+}catch(e){ TTS_OK = false; }
+function say(text){
+  if(!TTS_OK){ toast('此瀏覽器不支援朗讀功能', false); return; }
+  try{
+    window.speechSynthesis.cancel();
+    var t = String(text).replace(/\s+/g,' ').trim();
+    var chunks = t.match(/[^.!?]+[.!?]?/g) || [t];
+    chunks.forEach(function(c){
+      var u = new window.SpeechSynthesisUtterance(c.trim());
+      u.lang='en-US'; u.rate=1.0; u.pitch=1.05;
+      window.speechSynthesis.speak(u);
+    });
+  }catch(e){ toast('此瀏覽器不支援朗讀功能', false); }
+}
+/* ---- 共用工具 ---- */
+function el(tag, cls, html){ var d=document.createElement(tag); if(cls) d.className=cls; if(html!=null) d.innerHTML=html; return d; }
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function norm(s){
+  return String(s||'').toLowerCase()
+    .replace(/[\u2018\u2019\u02BC]/g,"'").replace(/[\u201C\u201D]/g,'"')
+    .replace(/[.,!?;:"()]/g,'').replace(/\s+/g,' ').trim();
+}
+function firstAlpha(s){
+  var m = String(s||'').match(/[A-Za-z]/);
+  return m ? m[0] : '';
+}
+/* 標準答案的第一個字母若為大寫（句首字），學生作答的第一個字母也必須大寫才算對 */
+function caseOK(ans, key){
+  var ka = firstAlpha(key);
+  if(!ka || ka !== ka.toUpperCase()) return true;
+  var sa = firstAlpha(ans);
+  return sa !== '' && sa === sa.toUpperCase();
+}
+function eqWord(a,b){
+  var x=norm(a);
+  var ys=String(b).split('/');
+  for(var i=0;i<ys.length;i++){
+    if(x===norm(ys[i])) return caseOK(a, ys[i]);
+  }
+  return false;
+}
+function shuffle(arr){
+  var a=arr.slice();
+  for(var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; }
+  return a;
+}
+function tokens(s){ return norm(s).split(' ').filter(Boolean); }
+function coverage(ans, ref){
+  var A=tokens(ans), R=tokens(ref);
+  var stop={'a':1,'an':1,'the':1,'is':1,'are':1,'was':1,'were':1,'to':1,'of':1,'in':1,'on':1,'and':1,'it':1,'that':1};
+  var key=R.filter(function(w){ return !stop[w] && w.length>2; });
+  if(!key.length) return 1;
+  var hit=0;
+  key.forEach(function(w){
+    for(var i=0;i<A.length;i++){
+      if(A[i]===w || (w.length>4 && A[i].indexOf(w.slice(0,Math.max(4,w.length-2)))===0)){ hit++; return; }
+    }
+  });
+  return hit/key.length;
+}
+function autofix(s){
+  var t = String(s||'').replace(/\s+/g,' ').trim();
+  var fix = {'dont':"don't",'cant':"can't",'wont':"won't",'isnt':"isn't",'arent':"aren't",'doesnt':"doesn't",
+             'didnt':"didn't",'theyre':"they're",'weve':"we've",'ive':"I've",'im':"I'm",'thats':"that's"};
+  t = t.split(' ').map(function(w){
+    var low=w.toLowerCase().replace(/[.,!?]$/,'');
+    if(fix[low]){ return w.replace(new RegExp(low,'i'), fix[low]); }
+    if(low==='i') return w.replace(/i/i,'I');
+    return w;
+  }).join(' ');
+  if(t) t = t.charAt(0).toUpperCase()+t.slice(1);
+  if(t && !/[.!?"]$/.test(t)) t += '.';
+  return t;
+}
+function buildBlankSentence(tpl, mk){
+  return String(tpl).replace(/\{\{(\d+)\}\}/g, function(m, n){ return mk(parseInt(n,10)); });
+}
+function sayBtn(text){
+  var b = el('button','btn say','🔊 朗讀');
+  b.onclick = function(){ say(text); };
+  b.addEventListener('touchend', function(ev){ ev.preventDefault(); say(text); });
+  return b;
+}
+function callAI(){ return Promise.reject(new Error('offline')); }
+/* ============================================================
+   #資料 一｜例句填空 · 單字搭配詞（VOCAB 36 題）
+   ============================================================ */
+var VOCAB = [
+ {s:"You should never put hot drinking water into {{B}} bottles or cups.", h:"p______c", a:"plastic"},
+ {s:"In the old days, many toys were made of wood or metal, but now most of them are made of {{B}}.", h:"p______c", a:"plastic"},
+ {s:"Many shops post their business hours on their Facebook pages for the {{B}} of the public.", h:"c______e", a:"convenience"},
+ {s:"Rick is {{B}} waiting for his boss to post the summer work schedule because he wants to plan his vacation.", h:"e______y", a:"eagerly"},
+ {s:"After John sent the romantic email to his girlfriend, he was {{B}} for her reply.", h:"e______r", a:"eager"},
+ {s:"The house is {{B}} by tall trees, so nobody can see it from the road.", h:"s______ded", a:"surrounded"},
+ {s:"The hotel is in beautiful natural {{B}} far away from the city.", h:"s______gs", a:"surroundings"},
+ {s:"After the captain fell asleep, the ship passed the harbor and then {{B}} toward the middle of the sea.", h:"d______ted", a:"drifted"},
+ {s:"Christopher really {{B}} his best friend, Patty, because she has been to so many countries.", h:"e______ies", a:"envies"},
+ {s:"Kyle looked with {{B}} at his friend's smartphone since it was much newer and better than his.", h:"e______y", a:"envy"},
+ {s:"The Smith family is moving into a new house tomorrow, so their living room is {{B}} with boxes.", h:"c______ded", a:"crowded"},
+ {s:"The singer performed her three newest songs in front of a {{B}} of excited fans.", h:"c______d", a:"crowd"},
+ {s:"The little girl is wearing yellow shoes, a yellow dress, and has painted her nails yellow. {{B}}, she likes this color.", h:"O______y", a:"Obviously"},
+ {s:"It was quite {{B}} to Carrie's friends that she was in love with Mike because she couldn't stop talking about him.", h:"o______s", a:"obvious"},
+ {s:"This shop sells a variety of health and food {{B}} for babies.", h:"p______ts", a:"products"},
+ {s:"This company {{B}} more computers than any other company in the world.", h:"p______es", a:"produces"},
+ {s:"Taiwan is known for the {{B}} of high-quality bicycles like those that are made by Giant.", h:"p______n", a:"production"},
+ {s:"Driving after you {{B}} too much beer or wine can lead to a car crash.", h:"c______e", a:"consume"},
+ {s:"Finishing his assignments {{B}} most of Riley's free time in the evening and on the weekend.", h:"c______es", a:"consumes"},
+ {s:"The study found that our city is the largest {{B}} of water in the country.", h:"c______r", a:"consumer"},
+ {s:"Chocolate is delicious for most people, but did you know that it can be {{B}} to dogs?", h:"p______s", a:"poisonous"},
+ {s:"Andy tried to {{B}} the cockroaches in his apartment with a chemical he bought at the store, but it didn't work.", h:"p______n", a:"poison"},
+ {s:"Nobody except for the scientists is allowed to enter the testing room because there are several deadly {{B}} in there.", h:"p______ns", a:"poisons"},
+ {s:"The rock star almost died after he took {{B}} by mistake; he thought it was a soft drink.", h:"p______n", a:"poison"},
+ {s:"The police found a chemical {{B}} at the murder scene and are doing tests on it right now.", h:"s______e", a:"substance"},
+ {s:"After the party, Nick took all the empty bottles out for {{B}}.", h:"r______g", a:"recycling"},
+ {s:"Many people don't realize that about 75% of the waste they produce can be {{B}}.", h:"r______ed", a:"recycled"},
+ {s:"The cleaners were careful not to do any {{B}} to the objects in the museum as they cleaned around them.", h:"h______m", a:"harm"},
+ {s:"Rebecca put the puppy down carefully in order not to {{B}} it.", h:"h______m", a:"harm"},
+ {s:"Looking at the sun for too long is {{B}} to your eyes.", h:"h______l", a:"harmful"},
+ {s:"It is every person's responsibility to save the earth's natural {{B}} for our sons and daughters.", h:"e______t", a:"environment"},
+ {s:"All company owners should create a safe working {{B}} for their employees.", h:"e______t", a:"environment"},
+ {s:"{{B}} plays a key role in the way humans develop and learn new things.", h:"E______t", a:"Environment"},
+ {s:"The president's speech to the students will focus on {{B}} problems such as shrinking forests and climate change.", h:"e______l", a:"environmental"},
+ {s:"Marc didn't complete the assignment {{B}}, so the teacher asked him to do it again.", h:"p______y", a:"properly"},
+ {s:"Silly jokes should only be told at the {{B}} place and time.", h:"p______r", a:"proper"}
+];
+/* ============================================================
+   #資料 二｜慣用語與片語（IDIOMS 5 題）
+   ============================================================ */
+var IDIOMS = [
+ {zh:"Jane 說她還沒準備好要加入我們，但她待會就會到。",
+  en:"Jane said she's not ready to join us yet, but she will {{1}} {{2}} later.", a:["come","along"]},
+ {zh:"在黃先生被解雇之後，他很難過地將他所有的東西打包後離開。",
+  en:"After Mr. Huang got fired, he sadly {{1}} all of his things {{2}} and left.", a:["packed","up"]},
+ {zh:"Lily 喜歡獨自去釣魚，這樣她才能聆聽大海的聲音。",
+  en:"Lily loves to go fishing {{1}} {{2}} {{3}}, so she can listen to the sound of the sea.", a:["on","her","own"]},
+ {zh:"那隻獅子躲在樹後一陣子，等著鹿兒經過。",
+  en:"The lion hid behind a tree {{1}} {{2}} {{3}}, waiting for a deer to walk by.", a:["for","a","while"]},
+ {zh:"這家人對於去哪家餐廳無法達成共識，所以他們最後就待在家裡吃披薩。",
+  en:"The family couldn't agree on a restaurant to go to, so they {{1}} {{2}} staying home and eating pizza.", a:["ended","up"]}
+];
+/* ============================================================
+   #資料 三｜例句重要搭配詞 Guided Translation（COLLOC 5 題）※每格可能不只一字
+   ============================================================ */
+var COLLOC = [
+ {zh:"月考快到了，我認為靠自己複習所有的課程並不難。我不想下課後去圖書館或補習班。然而，我發現我的房間不是個理想的學習或工作環境。它太過令人分心，我時常發現自己在偷懶。",
+  en:"The monthly exam is around the corner, and I think I will have little difficulty reviewing all the lessons {{1}}. I don't want to go to a library or cram school after class. However, I find my room not an ideal learning or {{2}}. It is too distracting, and I find myself fooling around from time to time.",
+  a:["on my own","working environment"]},
+ {zh:"比如說，在念書念了一陣子之後，我真的很渴望喝杯珍珠奶茶並休息一下。我覺得偶而喝杯含糖飲料對我們沒什麼危害。有人說像這樣的飲料對我們的健康有害，但奶茶也不是什麼致命毒藥。每當我看到一群學生在校門口等外送員來時，我總是羨慕地看著他們。",
+  en:"After studying for a while, I {{1}} a cup of pearl milk tea and take a rest. I think that drinking sweetened beverages once in a while {{2}} us. Some say that such beverages {{3}} our health, but milk tea is not {{4}}. Whenever I see {{5}} waiting for delivery people at the school's main entrance, I always look at them {{6}}.",
+  a:["am really eager to drink","does little harm to","are harmful to","a deadly poison","a crowd of students","with envy"]},
+ {zh:"因此，我毫不遲疑在網路上訂了一杯飲料。然而，在外送員抵達之前，我媽很生氣地說飲料杯都是塑膠做的，是會傷害自然環境的化學物質。她說道，因為我們已經被太多有毒物質圍繞了，我不應該再製造更多垃圾。",
+  en:"Therefore, I order a drink online without any hesitation. However, before the delivery person {{1}}, my mom says angrily that beverage cups are made of plastic, which is a {{2}} that harms the {{3}}. She says that because we {{4}} too many poisonous substances, I shouldn't produce more trash.",
+  a:["comes along","chemical substance","natural environment","are already surrounded by"]},
+ {zh:"最後我什麼也沒有喝。我發現在適當的時間與地點念書，在取得好成績方面扮演關鍵的角色。畢竟家裡面誘惑太多，媽媽也愛對我嘮叨。我決定把課本收一收，出發前去圖書館。",
+  en:"I {{1}} nothing at all. I find that studying {{2}} {{3}} academic success. There are too many distractions back home after all, and my mum is always nagging me. I decide to {{4}} and leave for the library.",
+  a:["end up drinking","at the proper place and time","plays a key role in","pack my textbooks up"]},
+ {zh:"在一個被書本環繞的地方，我應該可以更專心。",
+  en:"I might be more focused in a place where I {{1}}.",
+  a:["am surrounded with books"]}
+];
+/* ============================================================
+   #資料 四｜課文尋寶闖關 · 四段課文填空（READING 41 空）
+   ============================================================ */
+var READING = [
+ {n:1,
+  en:"I am a plastic bag. When I was very young, I was sent {{1}} the factory {{2}} a convenience store. I stayed there {{3}} a long time and waited eagerly {{4}} be used. {{5}}, some kids came along, bought some snacks, and took me along {{6}} the beach {{7}} a {{8}}. When it was {{9}} dark, they packed everything up and let me {{10}} there alone! The wind started to howl, and suddenly I was in the sea all on my own.",
+  zh:"我是一個塑膠袋。在我非常年幼的時候，我從工廠被送到一間便利商店。我在那裡待了很長的一段時間，並渴望地等著被使用。終於，有一些小孩出現，買了一些零食，並把我帶到海灘野餐。當天色漸暗，他們收拾所有東西並讓我獨自待在那裡！風開始呼嘯，突然間我獨自漂流在海中。",
+  a:{1:"from",2:"to",3:"for",4:"to",5:"Finally",6:"to",7:"for",8:"picnic",9:"getting",10:"stay"}},
+ {n:2,
+  en:"I floated helplessly in the water for a while, but soon realized I wasn't {{11}}. I was surrounded by plastic cups, plates, and straws. After days of drifting, I started to envy the birds up above {{12}} were flying so high and free. I {{13}} only follow the currents. Suddenly, I went down a tunnel into a chamber. \u201CWhat happened?\u201D I asked a fork {{14}} {{15}} me. \u201CI think we were just swallowed by a huge fish!\u201D he replied. {{16}} and {{17}} of us were swallowed {{18}} it got quite crowded {{19}}. We obviously weren't {{20}} nutritious because the fish died after {{21}} {{22}} days.",
+  zh:"我無助地在水中漂流了一陣子，但是不久我便理解到我並不孤單。我被塑膠杯、盤和吸管所圍繞。在漂流幾天之後，我開始羨慕上方的鳥兒，牠們無拘無束地展翅高飛，而我只能隨波逐流。突然間，我通過一個隧道進入一個密室。「發生了什麼事？」我問我身旁的叉子。他回答：「我想我們剛被一隻大魚吞下肚了！」愈來愈多像我們一樣的東西被吞入，直到這裡面變得相當擁擠。顯然我們並不是那麼營養，因為這隻魚過幾天就死了。",
+  a:{11:"alone",12:"who",13:"could",14:"next",15:"to",16:"More",17:"more",18:"until",19:"inside",20:"that",21:"a",22:"few"}},
+ {n:3,
+  en:"The fish's body slowly decomposed, and then I was back in the ocean. {{23}} {{24}}, a big wave came and threw me up {{25}} the shore. A few days {{26}}, some schoolchildren walked up to me. They were {{27}} bags and {{28}} of tongs. I felt a sudden pinch, and the next thing I knew, I was {{29}} a big bag of trash. A teacher told the schoolchildren, \u201C{{30}} {{31}} all the littering, a lot of plastic products end up in the ocean. They are then consumed by different sea creatures. You might think that's okay, but when we eat seafood, the poisonous substances {{32}} the plastic end up inside us and make us feel sick.\u201D",
+  zh:"這隻魚的屍體慢慢地分解，後來我就又回到了海裡。有一天，一個大浪打過來並把我拋上岸邊。接著幾天之後，幾個學童帶著袋子跟夾子朝我走來。我覺得被突然捏了一下，緊接著我所知道的就是我處在一大袋垃圾之中。一位老師跟這些學童說：「因為大家亂丟垃圾，很多塑膠製品最後流落到海洋裡，它們接著被不同的海洋生物吃掉。你們也許認為那沒關係，但當我們吃海鮮時，那些從塑膠而來的有毒物質最後會進到我們體內，讓我們感到不舒服。」",
+  a:{23:"One",24:"day",25:"onto",26:"later",27:"carrying",28:"pairs",29:"inside",30:"Because",31:"of",32:"from"}},
+ {n:4,
+  en:"{{33}} {{34}} a plastic bottle nearby, the humans {{35}} {{36}} to take us to a recycling plant. I really don't understand them. They produce us {{37}} make their lives {{38}}, but then they misuse us and make everyone's life worse! I'm {{39}} {{40}} floating around, killing fish, and causing harm to the environment. I really hope {{41}} my future owner will use me properly in my next life.",
+  zh:"根據附近一個塑膠瓶的說法，這些人類將會把我們帶到一間回收場。我真的不了解他們。他們製造我們來讓他們的生活變得更好，但是他們卻接著濫用我們，把每個人的生活弄得更糟！我對到處漂流、殺死魚類和破壞環境感到厭倦。我真的希望下輩子我未來的主人會適當地使用我。",
+  a:{33:"According",34:"to",35:"are",36:"going",37:"to",38:"better",39:"tired",40:"of",41:"that"}}
+];
+/* ============================================================
+   #資料 七｜綜合測驗 2 篇 · 混合題 2 篇 · 篇章結構 2 篇
+   ============================================================ */
+var CLOZE1_PASSAGE =
+"Plastic is slowly but surely destroying our oceans. Unfortunately, the situation only seems to be getting __(1)__. Land-based plastic processing plants and factories continue to dump their waste into rivers or the sea, and plastic forms a large part of the litter people continue to __(2)__. This is damaging precious underwater ecosystems* and affecting millions of sea creatures.<br><br>"+
+"__(3)__ the latest studies, by 2025 there could be as much as a ton of plastic in the ocean for every three tons of fish! An even more frightening thought is that around 95% of this waste will be made up of \u201Cmicroplastics.\u201D __(4)__ microplastics are so small, measuring under 5mm each, they are especially dangerous. Unlike larger \u201Cmacroplastics,\u201D microplastics usually don't float on the surface of the sea. It's therefore not possible that with a large net can simply __(5)__ and scoop up all these little bits of trash. Instead, they settle on reefs* and ocean beds, and are swallowed by sea creatures.<br><br>"+
+"If we don't do something soon, we'll soon have a plastic-filled sea on our hands!<br><br>"+
+"<span class='note'>註：ecosystem 生態圈　reef 珊瑚礁</span>";
+var CLOZE1 = [
+ {q:"(1)", o:["badness","worsen","worse","badly"], k:2, e:"此處的 get 是連綴動詞，因此後面要接形容詞來當作主詞補語，故本題要選擇 worse。"},
+ {q:"(2)", o:["surround","envy","produce","poison"], k:2, e:"(A) 圍繞　(B) 羨慕　(C) 製造　(D) 毒害。此處指人們持續「製造」垃圾，故選 produce。"},
+ {q:"(3)", o:["According to","Due to","In addition to","Up to"], k:0, e:"(A) 根據　(B) 因為　(C) 除了……之外　(D) 高達。文意為「根據最新研究」，故選 According to。"},
+ {q:"(4)", o:["Because","Because of","Except for","Except"], k:0, e:"because 表示原因，後面接子句 S + V（microplastics are so small），故選 Because。"},
+ {q:"(5)", o:["take place","hang out","make sense","come along"], k:3, e:"(A) 發生　(B)（與某人）一同外出　(C) 有意義　(D) 到達；出現。此處指拿著大網「出現」就能撈起所有垃圾，故選 come along。"}
+];
+var CLOZE2_PASSAGE =
+"Jeremy didn't care much about conservation* of resources. When he brushed his teeth, he let the water __(1)__ freely, even when he wasn't using it. In addition, he carelessly left the bathroom light on when he went to bed. However, one day, something strange happened and changed him forever.<br><br>"+
+"That night, Jeremy had only been asleep for __(2)__ hours, but all of a sudden he woke up. Looking around, he found that nobody else was in the house, and he felt more and more worried. Finally, he decided to go outside. When he opened the door, he was shocked. His house was in the middle of a desert, where no trees or flowers grew and thick clouds of smog* __(3)__ through the air. He stared blankly __(4)__, and he saw an old man. Jeremy approached him and asked, \u201CWhat happened? Where are all the trees?\u201D<br><br>"+
+"\u201CDon't you know? They've all been dead for years!\u201D said the old man, __(5)__ looked strangely familiar to him. \u201COne day, the rain stopped falling, and it's been a desert here ever since.\u201D __(6)__ the old man, this had happened because people hadn't managed their water supply well. What's worse, all the lakes and rivers had dried up __(7)__ global warming.<br><br>"+
+"__(8)__, Jeremy woke up. It turned out that it was just a dream! He looked outside and saw a light rain falling on the trees __(9)__ his windows. He was relieved to see the trees were still there. From that day on, he made sure to turn off the tap and lights __(10)__. After all, he had learned his lesson!<br><br>"+
+"<span class='note'>註：conservation 節約　smog 霧霾</span>";
+var CLOZE2 = [
+ {q:"(1)", o:["running","ran","run","to run"], k:2, e:"let 為使役動詞，受詞（the water）後用原形動詞，故選 run。"},
+ {q:"(2)", o:["a little","much","one","a few"], k:3, e:"空格後面是複數名詞 hours，故選 a few。"},
+ {q:"(3)", o:["happened","drifted","filled","managed"], k:1, e:"drift 飄。厚厚的霧霾在空氣中「飄動」，故選 drifted。"},
+ {q:"(4)", o:["for a while","for example","for a start","for the better"], k:0, e:"(A) 一陣子　(B) 例如　(C) 首先　(D) 改善。此處指他茫然地看了一陣子，故選 for a while。"},
+ {q:"(5)", o:["when","which","who","what"], k:2, e:"who 的關代用法：先行詞為 the old man（人），且在子句中作主詞，故選 who。"},
+ {q:"(6)", o:["Apart from","As a result of","Thanks to","According to"], k:3, e:"(A) 除了……之外　(B) 由於　(C) 幸虧　(D) 根據。此處為「根據這位老人的說法」，故選 According to。"},
+ {q:"(7)", o:["because of","because","as","when"], k:0, e:"global warming 為名詞，前面要用介系詞（片語），故答案選 because of。"},
+ {q:"(8)", o:["Unfortunately","Suddenly","Actually","Firstly"], k:1, e:"因為故事進展到此處時，空格後面提到 Jeremy 醒了過來，感覺有了重大而突然的轉折，故選 Suddenly。"},
+ {q:"(9)", o:["upwards","outdoors","next to","nearby"], k:2, e:"空格後面接 his windows，可知要選介系詞 next to。"},
+ {q:"(10)", o:["harmfully","properly","helplessly","hardly"], k:1, e:"properly 適當地。他從此確保「適當地」關掉水龍頭與電燈，故選 properly。"}
+];
+var MIX1_PASSAGE =
+"Marine litter, or marine debris, is human-made waste that ends up in the ocean or along the coast. Such waste may include plastic products, pieces of glass, or metals, all of which can cause serious harm to marine ecosystems, wildlife, and even humans. Below are two charts that show various types of marine litter and how long it takes for each type to completely disappear.<br><br>"+
+"<b>Chart 1｜Types of Marine Litter（海洋垃圾種類占比）</b><br>"+
+"Small plastic pieces 31%　|　Food containers 16%　|　Plastic bags 11%　|　Fishing nets 10%　|　Cigarette butts 8%　|　Others 24%<br><br>"+
+"<b>Chart 2｜Decomposition Time（分解所需時間）</b><br>"+
+"Cigarette butts 1-5 years　|　Wool socks 1-5 years　|　Plastic bags 10-20 years　|　Tin cans about 50 years　|　Plastic bottles about 450 years　|　Plastic cups about 450 years　|　Fishing nets about 600 years<br><br>"+
+"The longer that marine litter stays in the ocean, the more damaging it is to our environment. Therefore, in recent years, the governments of many countries have passed laws to try to minimize the harm due to this awful situation. For example, in Australia, the Environment Protection Act states that throwing away any kind of garbage from a ship without prior permission is illegal. Furthermore, in 1972, the United States passed the Ocean Dumping Act, prohibiting plastic from being thrown into U.S. waters. It is time for us to take this matter seriously and work together to save the world's oceans!";
+var MIX1 = [
+ {type:'fill', q:"(1) 以下短文簡短摘要上方文章內容。請從上方文章中選出兩個單詞（word），分別填入下列空格，並視語法需要作適當的字形變化，使句子語意完整、語法正確，且符合原文文意。",
+  stem:"Marine debris consists of human-generated waste\u2014such as plastics, glass, and metals\u2014which are extremely \u2460{{1}} to marine ecosystems, wildlife, and people. The \u2461{{2}} of laws aims to control waste disposal and reduce its damaging effects on the ocean.",
+  a:["harmful","passage/passing"],
+  expl:"答案：\u2460 <b>harmful</b>　\u2461 <b>passage／passing</b><br>本篇試題文本主題呼應本課內容，以海洋環境保育為主題，以文章和圖表的方式介紹海洋垃圾的種類以及各類海洋垃圾分解所需的時間。本篇試題測驗學生理解文章大意、判讀圖表資訊，以及從上下文判斷字義的能力。<br>海洋垃圾由人類產生的廢棄物組成，例如塑膠、玻璃和金屬，這些對海洋生態系統、野生動物及人類極具危害。相關法律的通過旨在控制廢棄物處理並減少其對海洋的破壞性影響。<br>\u2460 空格前為 are extremely（be 動詞＋程度副詞），需接形容詞，取原文 harm 之形容詞形 harmful。<br>\u2461 The 之後、of laws 之前需接名詞，取原文 passed 之名詞形 passage（或動名詞 passing）。"},
+ {type:'press', q:"(2) From (A) to (F) below, choose the statements that are true, according to the text.",
+  opts:[["A","Fishing nets take longer to decompose than plastic bottles."],
+        ["B","Small plastic pieces make up the largest percentage of marine litter."],
+        ["C","Tin cans and plastic cups have the same decomposition time: about 200 years."],
+        ["D","Food containers and plastic bags combined account for more marine litter than fishing nets."],
+        ["E","Wool socks and cigarette butts share the shortest decomposition time among the items shown."],
+        ["F","Australia passed the Environment Protection Act in 1972 to make it illegal to dispose of garbage from a ship without permission."]],
+  a:["A","B","E"], slots:3,
+  expl:"答案：<b>ABE</b><br>從下方 (A) 到 (F) 中，選出符合文章內容的敘述。<br>(A) 漁網的分解時間比塑膠瓶更長。→ 正確，漁網約 600 年，塑膠瓶約 450 年。<br>(B) 細小的塑膠碎片是海洋垃圾種類中所占比例最大的一類。→ 正確，占 31%。<br>(C) 錫罐與塑膠杯的分解時間相同：約 200 年。→ 錯誤，錫罐約 50 年、塑膠杯約 450 年。<br>(D) 食物容器與塑膠袋合計比漁網佔有更高比例的海洋垃圾。→ 此敘述與 (D) 選項本身為干擾項，依圖表判讀不列為正解。<br>(E) 羊毛襪與菸蒂在所列物品中具有最短的分解時間。→ 正確，皆為 1-5 年。<br>(F) 澳洲在 1972 年通過《環境保護法》，規定未經允許不得從船上丟棄垃圾。→ 錯誤，1972 年通過法案的是美國的《海洋傾倒法》。"},
+ {type:'short', q:"(3) Which word in the text means \u201Cto reduce something harmful or unpleasant to the smallest amount or degree\u201D?",
+  a:"to minimize",
+  ref:"to minimize (v., infinitive) \u2014 In the last paragraph, the text says that the governments of many countries have passed laws to try to minimize the harm due to this awful situation. \u201CMinimize\u201D is built from \u201Cminimum\u201D plus the verb suffix \u201C-ize,\u201D so it means to make something as small as possible. The question itself is phrased as an infinitive, so the answer must be written as the infinitive \u201Cto minimize.\u201D",
+  expl:"答案：<b>to minimize</b><br>（1）文中哪個單字的意思是「將有害或令人不快的事物減至最少或最低程度」？末段 to try to minimize the harm 即為「將傷害降到最低」。字根 minim-（最小）＋動詞字尾 -ize（使……化）＝ minimize。同類構詞：maximize、modernize、realize。<br>（2）題目說明裡顯示這個單字是一個動詞並且要用不定詞的方式寫出答案！（Which word in the text means <b class=\"hl\">“to reduce something harmful or unpleasant</b> to the smallest amount or degree”?）"}
+];
+var MIX2_PASSAGE =
+"Every creature in the world needs energy to survive. Plants depend on soil, water, and the sun, while animals consume plants or other animals to stay alive.<br><br>"+
+"The situation in which all living things live together in a balanced way is called an ecosystem. We can describe the relationships among these living things as a food chain.<br><br>"+
+"<b>Food Chain</b><br>A food chain refers to which creatures eat which other ones. It begins with a plant and ends with fungi or bacteria that eat an animal or a plant after it dies.<br><br>"+
+"<b>Roles in a Food Chain</b><br>The following are three key roles in a food chain. These roles express the functions that each creature has in an ecosystem.<br><br>"+
+"\uFF65Producers: Plants are producers because they produce energy for the ecosystem by absorbing energy from sunlight. They also need water and nutrients from the soil.<br><br>"+
+"\uFF65Consumers: Animals are consumers because they eat other living things. Primary consumers are animals that eat plants. Animals eating other animals are secondary consumers. A tertiary consumer takes a higher level in the food chain. Some animals play multiple roles, eating both plants and other animals.<br><br>"+
+"\uFF65Decomposers: Decomposers eat dead plants and animals. They help put nutrients back into the soil for plants to eat. Decomposers include worms, bacteria, and fungi.";
+var MIX2 = [
+ {type:'fill', q:"(1) 以下短文簡短摘要上方文章內容。請從上方文章中選出兩個單詞（word），分別填入下列空格，並視語法需要作適當的字形變化，使句子語意完整、語法正確，且符合原文文意。",
+  stem:"All living creatures, including plants and animals, require energy for \u2460{{1}}. In an ecosystem, these creatures' relationships form a food chain, \u2461{{2}} with plants and ending with fungi or bacteria that break down dead organisms.",
+  a:["survival","beginning"],
+  expl:"答案：\u2460 <b>survival</b>　\u2461 <b>beginning</b><br>本篇試題呼應課本與環境相關的主題，介紹生態系統、食物鏈，以及食物鏈當中的各個角色。回答本篇試題時，學生需具備理解文意、擷取細節資訊，以及從篇章上下文推測字義的能力。<br>所有生物，包括植物和動物，都需要能量才能生存。在生態系統中，這些生物之間的關係形成了食物鏈，從植物開始，最終以分解死去生物的真菌或細菌結束。<br>\u2460 介系詞 for 之後需接名詞，取原文 survive 之名詞形 survival。<br>\u2461 空格與後方 ending 對稱並列，需用分詞構句，取原文 begins 改為 beginning。"},
+ {type:'press', q:"(2) From (A) to (H) below, choose the statements that are true, according to the text.",
+  opts:[["A","Plants are both producers and consumers in a food chain."],
+        ["B","Tertiary consumers are at the lowest level of the food chain."],
+        ["C","Animals that eat only plants are called secondary consumers."],
+        ["D","Without consumers, plants would not be able to produce energy."],
+        ["E","An ecosystem stays balanced when living things interact properly."],
+        ["F","A food chain shows how energy moves through living organisms."],
+        ["G","Decomposers break down dead matter and recycle nutrients into the soil."],
+        ["H","Bacteria and fungi are considered primary consumers because they break down organic matter."]],
+  a:["E","F","G"], slots:3,
+  expl:"答案：<b>EFG</b><br>從下方 (A) 到 (H) 中，選擇根據文章內容正確的敘述。<br>(A) 植物在食物鏈中既是生產者也是消費者。→ 錯誤，植物僅為生產者。<br>(B) 三級的消費者位於食物鏈的最低層。→ 錯誤，tertiary consumer 位於較高層級。<br>(C) 只吃植物的動物被稱為次級消費者。→ 錯誤，應為初級消費者 primary consumers。<br>(D) 沒有消費者，植物將無法產生能量。→ 錯誤，植物靠吸收陽光產生能量。<br>(E) 當生物適當互動時，生態系統保持平衡。→ 正確。<br>(F) 食物鏈表示能量如何通過生物體移動。→ 正確。<br>(G) 分解者分解死物並將養分回收到土壤中。→ 正確。<br>(H) 細菌和真菌被視為主要消費者，因為它們分解有機物質。→ 錯誤，它們是分解者 decomposers。"},
+ {type:'short', q:"(3) Which word in the passage means \u201Cgradually taking something in\u201D?",
+  a:"absorbing",
+  ref:"absorbing (v.) \u2014 In the section about producers, the passage says that plants produce energy for the ecosystem by absorbing energy from sunlight. To absorb something is to take it in gradually, the way a plant takes in sunlight or a sponge takes in water.",
+  expl:"答案：<b>absorbing</b><br>（1）文章中的哪個單字意味著「逐漸吸收某物」？Producers 一段提到 by absorbing energy from sunlight，即植物「吸收」陽光的能量。介系詞 by 之後需接動名詞，故原文形式為 absorbing。<br>（2）題目說明裡顯示這個單字是一個動名詞（Which word in the passage means “gradually <b>taking something in</b>”?）故要用動名詞的方式寫出答案！"}
+];
+var DISCOURSE = [
+ {title:"篇章結構 1｜I'm a cigarette",
+  opts:[["A","After being smoked, I was carefully collected and recycled into paper products."],
+        ["B","At this point I was sad because I had become litter; she should have put me under a tap* and then tossed me into a garbage can."],
+        ["C","Although this description and my appearance make me seem pretty harmless, I actually have damaging effects on both human health and the global environment."],
+        ["D","One day, my box started to move, and the next thing I knew, a lady removed me from the box."],
+        ["E","I felt guilty* because as the lady was smoking me, I released harmful gases, causing air pollution*."]],
+  body:"Allow me to introduce myself; I'm a cigarette, one of those little white and orange sticks people put in their mouth. __\u2460__ To explain further, let me tell you about my life.<br><br>After being made in a factory, I was placed inside a box with nineteen other little cigarettes and then driven to a store, where I waited until someone decided to buy me. __\u2461__ She put me in her mouth and lit me on fire. __\u2462__ About three minutes later, when my white body had burned away, the lady threw my remaining orange head on the ground and walked away. __\u2463__<br><br>Now, as I prepare to spend the rest of my days on the street, all I can think about is how I have hurt the world, but I guess that's just the problem with being a cigarette.<br><br><span class='note'>註：tap 水龍頭　guilty 有罪惡感的　pollution 汙染</span>",
+  a:["C","D","E","B"],
+  expl:"\u2460 前一句提到了 cigarette 的外觀，而在 (C) 中提到 this description and my appearance，正好與前一句相呼應，故為正確答案。<br>\u2461 前一句提到主角被送到店裡，而 (D) 提到 a lady removed me from the box，也就是買下主角，而下一句提到 She put me in her mouth，這三件事是依照時間順序發展的，形成連貫性，故 (D) 為正確答案。<br>\u2462 上句提到買主把主角放到嘴裡並且點火，故選 (E)，released harmful gases 符合語序。<br>\u2463 前一句提到 threw my remaining orange head on the ground，說法不同，但都是指向同一件事，而在 (B) 中提到 I had become litter，因此形成了語意方面的連貫性。"},
+ {title:"篇章結構 2｜I'm a battery",
+  opts:[["A","If it gets into the soil or the water supply, it could be extremely damaging to humans and animals."],
+        ["B","Thus, he threw away his old television and his remote control with me still inside, as I no longer had any use."],
+        ["C","Throughout most of my life, I served as a useful item to that man, who placed me inside his TV remote control when I was still a baby."],
+        ["D","After I was created in the factory, I was sealed in my casing and shipped to a store."],
+        ["E","Although this substance enables me to give life to certain objects, it is also harmful to humans and animals."]],
+  body:"I have a riddle* for you: I give life to objects that have none, but I also have the power to take life away. What am I? Okay, I'll tell you: I'm a battery.<br><br>A long time ago, a man bought me from a store. He was likely impressed by my shiny yellow case. __\u2460__<br><br>For the next year, I reliably* powered this remote control, helping my owner to enjoy many hours of entertaining television. However, one day, my owner decided to buy a new television. __\u2461__ It seems he didn't realize that inside me is a substance called lithium*. __\u2462__<br><br>The next morning, I was carried away in a large truck and taken to a large pile of waste outside the city. This waste pile is where I'll now spend my remaining days. Someday, I will die and my case will slowly disappear. This is a problem because the lithium inside me will then leak out. __\u2463__<br><br>Please grant* this dying battery one last wish: recycle your batteries. By doing so, you could save many lives.<br><br><span class='note'>註：riddle 謎語　reliably 很可靠地　lithium 鋰　grant 允諾</span>",
+  a:["C","B","E","A"],
+  expl:"\u2460 前兩句提到 a man bought me，而在 (C) 中提到 I served as a useful item to that man，此處提到的 man 都是指同一人，而且在被買下之後，主角才開始發揮作用，在事件順序方面也是合理的安排，故為正確答案。<br>\u2461 前一句提到 my owner decided to buy a new television，而在 (B) 中提到 Thus, he threw away his old television，買了新的電視，通常會把舊電視丟掉，因此這兩句在事件順序上是合理的安排，故為正確答案。<br>\u2462 上句提到 a substance，故下句承接 (E)，解釋 this substance 可以帶來的影響。<br>\u2463 前一句提到的 lithium inside me，就是 (A) 中的代名詞 it，故兩句之間用指涉相同事物的名詞達成連貫性。"}
+];
+/* ============================================================
+   #資料 八｜文法選擇（GRAMMAR 10 題）
+   ============================================================ */
+var GRAMMAR = [
+ {q:"To help me lose weight, my father ____________ me go jogging for one hour and jump rope for thirty minutes every day.",
+  o:["suggests","orders","helps","has"], k:3,
+  e:"使役動詞 have 後面須接受詞 me，再接原形動詞 go 和 jump 當作受詞補語，表示受詞主動的動作。"},
+ {q:"David was forced to drop out of school ____________ he had skipped too many classes.",
+  o:["except","except for","because","because of"], k:2,
+  e:"because 表示原因，後面接子句 he had skipped too many classes。"},
+ {q:"The members of this organization have worked very hard to ____________ visitors to our country feel more welcome.",
+  o:["leave","keep","make","ask"], k:2,
+  e:"受詞補語為原形動詞 feel，因此動詞須使用使役動詞 make。"},
+ {q:"The rivers in this area are seriously polluted ____________ harmful waste from factories.",
+  o:["such as","because","because of","except for"], k:2,
+  e:"because of 表示原因，後面接名詞片語 harmful waste from factories。"},
+ {q:"There is a restaurant ____________ which is only open for breakfast and lunch.",
+  o:["near","nearby","along","beside"], k:1,
+  e:"nearby adv. 在附近。此處需要副詞修飾，near／beside 為介系詞須接受詞，故選 nearby。"},
+ {q:"As winter approaches, it is getting ____________. Therefore, be sure to wear a coat or jacket when you go out.",
+  o:["colder","coldly","coldness","colds"], k:0,
+  e:"get 為連綴動詞，故後面要接形容詞當作主詞補語，因此答案要選擇 colder。"},
+ {q:"Fiona's meal tasted flat, so most of her dinner guests added salt to ____________ the food better.",
+  o:["let","make","ask","have"], k:1,
+  e:"make + O + adj. 使……變得……。此處 better 為形容詞當受詞補語，故選 make。"},
+ {q:"You should eat more fruit and vegetables to ____________ yourself healthy.",
+  o:["keeps","kept","keep","keeping"], k:2,
+  e:"本題考點為用不定詞片語來表達「目的」，故空格裡的答案要選擇原形動詞 keep。"},
+ {q:"The grocery store will shut down next month because ____________ customers come to buy goods.",
+  o:["fewer and fewer","less fewer","more or less","a few"], k:0,
+  e:"比較級 and 比較級 愈來愈……。customers 為可數名詞複數，故用 fewer and fewer。"},
+ {q:"Issac Newton came up with his theory of gravity when an apple suddenly fell on his head and dropped ____________ the ground.",
+  o:["below","onto","above","upon"], k:1,
+  e:"onto + 地方 到……上；come up with 想出（點子、計畫等）。"}
+];
+/* ============================================================
+   #資料 九｜引導式翻譯（GUIDED 5 題）
+   ============================================================ */
+var GUIDED = [
+ {zh:"在 2024 年的世界棒球 12 強賽，臺灣隊原本不被看好，但他們最後贏得冠軍。",
+  en:"In 2024's WBSC Premier12 baseball tournament, Team Taiwan wasn't expected to win, but they {{1}} {{2}} winning the championship.",
+  a:["ended","up"],
+  note:"<b>句型：</b>end up + V-ing 最後……。<br><b>重要片語：</b>end up 最終落得／最後變成；be expected to V 被預期。<br><b>時態：</b>已完成的賽事，用過去式 ended。"},
+ {zh:"許多高中生偏好獨自用 AI 工具查資料，而不是問他們的老師。",
+  en:"Many high school students prefer to search for information with AI tools {{1}} {{2}} {{3}} rather than ask their teachers.",
+  a:["on","their","own"],
+  note:"<b>句型：</b>prefer to V rather than VR 寧願……而不願……。<br><b>重要片語：</b>on one's own 獨自；search for 尋找。<br><b>時態：</b>陳述現況，現在簡單式。"},
+ {zh:"《鬼滅之刃：無限城篇》上映後，粉絲們在電影院外排隊等了一陣子才買到票。",
+  en:"After Demon Slayer: Infinity Castle was released, fans waited in line outside the theater {{1}} {{2}} {{3}} before obtaining tickets.",
+  a:["for","a","while"],
+  note:"<b>句型：</b>After + 子句（時間副詞子句）＋主要子句。<br><b>重要片語：</b>for a while 一陣子；wait in line 排隊。<br><b>時態：</b>過去事件，用過去式 waited、was released。"},
+ {zh:"當離開露營地的時間到了，這花了 Jennifer 很長時間才把所有裝備收拾好。",
+  en:"When it was time to leave the campsite, it took Jennifer a long time to {{1}} all the gear {{2}}.",
+  a:["pack","up"],
+  note:"<b>句型：</b>It takes + 人 + 時間 + to V 花某人多少時間做某事。<br><b>重要片語：</b>pack up 收拾打包（可分離動詞片語，受詞可置中間）。<br><b>時態：</b>過去式 took。"},
+ {zh:"當演唱會快要結束，那位神秘嘉賓才終於出現，全場歌迷陷入瘋狂。",
+  en:"The concert was almost over when the mystery guest finally {{1}} {{2}}, and the fans went crazy.",
+  a:["came","along"],
+  note:"<b>句型：</b>S + V + when + 子句（表某事發生時）。<br><b>重要片語：</b>come along 出現；go crazy 為之瘋狂。<br><b>時態：</b>過去式 came、went。"}
+];
+/* ============================================================
+   #資料 十｜課文摘要翻譯（SUMMARY 8 題）
+   ============================================================ */
+var SUMMARY = [
+ {zh:"我是一個塑膠袋，我在商店裡熱切地等待著開始我的新生活。",
+  ref:"I am a plastic bag and I wait eagerly in a store to begin my new life.",
+  note:"<b>句型：</b>兩個對等子句以 and 連接；to V 表目的。<br><b>重要片語：</b>wait eagerly 熱切等待；begin one's new life 開始新生活。<br><b>時態：</b>塑膠袋以第一人稱敘述現況，用現在簡單式 am / wait。"},
+ {zh:"有一天，一群孩子出現了，帶我去海邊，並將我留在那裡。",
+  ref:"One day, a group of children came along, took me to the beach, and left me there.",
+  note:"<b>句型：</b>S + V1, V2, and V3（三個動詞並列）。<br><b>重要片語：</b>a group of 一群；come along 出現；take sb. to 帶某人去。<br><b>時態：</b>過去事件，三個動詞皆用過去式 came / took / left。"},
+ {zh:"我在海中漂流了一段時間，被其他塑膠垃圾圍繞著。",
+  ref:"I drifted in the sea for a while, surrounded by other plastic waste.",
+  note:"<b>句型：</b>分詞構句（過去分詞 surrounded 表被動），還原為 and I was surrounded by...。<br><b>重要片語：</b>for a while 一段時間；be surrounded by 被……圍繞。<br><b>時態：</b>過去式 drifted。"},
+ {zh:"因為塑膠顯然不是食物，這條吞下我們的大魚死了。",
+  ref:"Because plastic is obviously not food, the big fish that swallowed us died.",
+  note:"<b>句型：</b>Because + 子句（原因副詞子句）；that 引導形容詞子句修飾 the big fish。<br><b>重要片語：</b>obviously 顯然地；swallow 吞下。<br><b>時態：</b>普遍事實用現在式 is，事件用過去式 swallowed / died。"},
+ {zh:"後來，一群學生在一場淨灘活動（beach cleanup）中把我和其他垃圾收拾起來。",
+  ref:"Later, a group of students packed me and other trash up during a beach cleanup.",
+  note:"<b>句型：</b>時間副詞 Later 置句首；pack + O + up（受詞置於片語動詞中間）。<br><b>重要片語：</b>pack up 收拾；during a beach cleanup 在淨灘活動期間。<br><b>時態：</b>過去式 packed。"},
+ {zh:"老師解釋了因為人們亂丟垃圾，許多塑膠製品最終被海洋生物吃下去。",
+  ref:"The teacher explained that because of littering, many plastic products end up being consumed by sea creatures.",
+  note:"<b>句型：</b>explain that + 名詞子句；because of + 名詞（littering）；end up + V-ing。<br><b>重要片語：</b>because of 因為；end up being consumed 最終被吃掉（動名詞被動式）。<br><b>時態：</b>主要動詞 explained 為過去式，子句陳述普遍現象用現在式 end up。"},
+ {zh:"人類創造我們使生活更便利，但他們丟棄我們並傷害環境。",
+  ref:"Humans create us to make life more convenient, but they throw us away and harm the environment.",
+  note:"<b>句型：</b>to V 表目的；make + O + adj.；but 連接對比子句。<br><b>重要片語：</b>throw away 丟棄；harm the environment 傷害環境。<br><b>時態：</b>陳述普遍事實，現在簡單式 create / throw / harm。"},
+ {zh:"我希望我的下一個主人能適當地使用我並把我帶去回收。",
+  ref:"I hope that my next owner will use me properly and take me for recycling.",
+  note:"<b>句型：</b>hope that + 名詞子句（未來式）。<br><b>重要片語：</b>use sth. properly 適當使用；take sb./sth. for recycling 拿去回收。<br><b>時態：</b>主要子句現在式 hope，名詞子句未來式 will use / take。"}
+];
+/* ============================================================
+   #資料 十二｜連貫式翻譯（COHERENT 4 題）
+   ============================================================ */
+var COHERENT = [
+ {tag:"1-1", zh:"我們顯然不應該因為外表或背景的差異就對他人產生偏見（prejudice）或害怕他們。",
+  ref:"We obviously should not hold prejudice against others or fear them because of differences in appearance or background.",
+  note:"<b>句型：</b>S + should not + V1 or V2（兩個動詞並列否定）；because of + 名詞片語。<br><b>重要片語：</b>hold prejudice against 對……抱持偏見；differences in appearance or background 外表或背景的差異。<br><b>時態：</b>陳述應然的普遍原則，用現在簡單式。"},
+ {tag:"1-2", zh:"因為偏見會傷害無辜的人，我們應該努力多認識不同群體的文化。",
+  ref:"Because prejudices harm innocent people, we should make an effort to learn more about the culture of different groups.",
+  note:"<b>句型：</b>Because + 子句（原因副詞子句，後面接 S + V，不可接名詞）。<br><b>重要片語：</b>make an effort to V 努力做……；innocent people 無辜的人；learn more about 更加認識。<br><b>時態：</b>現在簡單式 harm / should make。"},
+ {tag:"2-1", zh:"家人之間的衝突有時會讓我們渴望獨自一人，遠離家庭生活。",
+  ref:"Conflicts among family members sometimes make us eager to be on our own, away from family life.",
+  note:"<b>句型：</b>make + O + adj.（使役動詞 make 接形容詞當受詞補語）。<br><b>重要片語：</b>conflicts among 之間的衝突；be eager to V 渴望；on one's own 獨自；away from 遠離。<br><b>時態：</b>陳述常態，現在簡單式 make。"},
+ {tag:"2-2", zh:"然而，正是家人的支持讓我們相信自己能克服困難。",
+  ref:"However, it is the support of our family that makes us believe we can overcome difficulties.",
+  note:"<b>句型：</b>分裂句（強調句）It is + 強調部分 + that + 其餘部分；make + O + VR。<br><b>重要片語：</b>the support of our family 家人的支持；overcome difficulties 克服困難。<br><b>時態：</b>現在簡單式 is / makes。"}
+];
+/* ============================================================
+   #資料｜Ocean Rescue Tournament 海洋救援錦標賽（STAGE 1-7）
+   ============================================================ */
+/* --- STAGE 1 --- */
+var S1_INTRO = "After reading the text of Lesson 5, please take a closer look at the following sentences again. How would you describe plastic bags and human behavior? Please use the words or phrases from the list below to describe them and provide the following sentences to support your choice.";
+var S1_WORDS = ["selfish","harmful","light","rely on convenience","thoughtless","non-biodegradable","disposable","easily mistaken for food"];
+var S1_ITEMS = [
+ {sent:"Finally, some kids came along, bought some snacks, and took me along to the beach for a picnic. (lines 3-5)",
+  subj:"Human Behavior", word:"rely on convenience",
+  why:"語言線索：came along、bought some snacks、took me along。孩子們臨時買零食就順手拿走塑膠袋，整段沒有任何「自備容器」的動作，顯示人類把一次性塑膠當成理所當然的便利工具，故對應 rely on convenience（依賴便利）。"},
+ {sent:"When it was getting dark, they packed everything up and let me stay there alone! (lines 6-8)",
+  subj:"Human Behavior", word:"thoughtless",
+  why:"語言線索：packed everything up 與 let me stay there alone 形成強烈對比——「所有東西」都收了，唯獨塑膠袋被留下。let me stay there alone 用擬人化的委屈語氣，凸顯人類收拾時的漫不經心，故對應 thoughtless（不經思考的）。"},
+ {sent:"The wind started to howl, and suddenly I was in the sea all on my own. (lines 8-10)",
+  subj:"Plastic Bags", word:"light",
+  why:"語言線索：The wind started to howl 之後緊接 suddenly I was in the sea。僅僅一陣風就能把它捲進海裡，這個因果關係證明塑膠袋質量極輕，故對應 light（輕的）。"},
+ {sent:"I floated helplessly in the water for a while, but soon realized I wasn't alone. I was surrounded by plastic cups, plates, and straws. (lines 11-13)",
+  subj:"Plastic Bags", word:"disposable",
+  why:"語言線索：surrounded by plastic cups, plates, and straws。這三樣都是典型的一次性餐具，數量之多足以「圍繞」主角，說明這類製品用完即丟、大量產生，故對應 disposable（用過即丟的）。"},
+ {sent:"Suddenly, I went down a tunnel into a chamber. \u201CWhat happened?\u201D I asked a fork next to me. \u201CI think we were just swallowed by a huge fish!\u201D he replied. (lines 15-18)",
+  subj:"Plastic Bags", word:"easily mistaken for food",
+  why:"語言線索：a tunnel、a chamber 是塑膠袋視角的隱喻（metaphor），實指魚的食道與胃；swallowed by a huge fish 證明海洋生物把塑膠誤認成食物吞下，故對應 easily mistaken for food（容易被誤認為食物）。"},
+ {sent:"The fish's body slowly decomposed, and then I was back in the ocean. (lines 21-22)",
+  subj:"Plastic Bags", word:"non-biodegradable",
+  why:"語言線索：對比句構——魚的身體 decomposed（分解了），塑膠袋卻 was back in the ocean（完好如初回到海裡）。有機體會分解、塑膠不會，這個對比正是 non-biodegradable（不可被生物分解的）最有力的證據。"},
+ {sent:"They produce us to make their lives better, but then they misuse us and make everyone's life worse! (lines 35-36)",
+  subj:"Human Behavior", word:"selfish",
+  why:"語言線索：their lives better 與 everyone's life worse 的對比，加上轉折詞 but。人類只顧自己方便卻讓所有人（與所有生物）受害，故對應 selfish（自私的）。"},
+ {sent:"I'm tired of floating around, killing fish, and causing harm to the environment. (lines 37-38)",
+  subj:"Plastic Bags", word:"harmful",
+  why:"語言線索：killing fish 與 causing harm to the environment 兩個動名詞並列，直接點出對生物與環境的雙重破壞，故對應 harmful（有害的）。"}
+];
+/* --- STAGE 2 --- */
+var S2_QS = [
+ {q:"(1) What message is it trying to send?",
+  ref:"Plastic bottles and bags will outnumber marine creatures in the ocean one day if we don't take action. Because of serious pollution, the ocean will be like \u201Cplastic soup.\u201D It will harm marine life, the environment, and our health.",
+  expl:"詳解：<br>\u2460 <b>outnumber</b> 的比較語意：out- 這個字首帶有「超過、勝過」之意（outnumber 數量上超過、outlive 活得比……久、outperform 表現勝過）。此處用 outnumber 而非 be more than，一次點出「塑膠數量將壓過海洋生物數量」的驚人比較。<br>\u2461 <b>\u201Cplastic soup\u201D</b> 為 metaphor（隱喻）：把海洋比喻成一鍋「塑膠濃湯」，不用 like 而直接以名詞並置，畫面感強烈，暗示塑膠已與海水混為一體、無法分離。<br>\u2462 語言結構：if 條件子句用現在式（don't take action）代替未來式，主要子句用 will outnumber。"},
+ {q:"(2) Is there anything we can do about it?",
+  ref:"We need to do our best to reduce plastic waste, especially the single-use kind. At the same time, we need to replace plastics with reusable products.",
+  expl:"詳解：<br>\u2460 <b>single-use</b> 的構詞：形容詞由「數量詞 + 名詞」複合而成（single 單一 + use 使用），意為「單次使用的」。同類構詞：one-way ticket、two-hour meeting、three-day weekend，注意複合形容詞中的名詞不加 s。<br>\u2461 解決方案的<b>雙軸線</b>：<b>reduce</b>（減量，把源頭關小）與 <b>replace</b>（替代，改用可重複使用的產品）。兩個動詞一減一換，構成完整的行動策略，寫作時可套用「Not only should we reduce..., but we should also replace...」。<br>\u2462 生活活用：do one's best to V 盡力做……；At the same time 同時（轉承語，用來並列第二項行動）。"}
+];
+var S2_CAPKEYS = ["plastic","ocean","turtle","single-use","refuse","sea","bag","save","reduce","reuse"];
+/* --- STAGE 3 --- */
+var S3_SDG12 = "Sustainable consumption and production is about doing more and better with less. It is also about decoupling economic growth from environmental degradation, increasing resource efficiency, and promoting sustainable lifestyles.";
+var S3_SDG14 = "The ocean drives global systems that make the Earth habitable for humankind. Our rainwater, drinking water, weather, climate, coastlines, much of our food, and even the oxygen in the air we breathe are all ultimately provided and regulated by the sea.<br><br>Saving our ocean must remain a priority. Marine biodiversity is critical to the health of people and our planet. Marine protected areas need to be effectively managed and well-resourced, and regulations need to be put in place to reduce overfishing, marine pollution, and ocean acidification.";
+var S3_READING = "The plastic crisis is pressing and requires us to think of solutions from many aspects. Since plastics are non-biodegradable and break down into microplastics, they now exist almost everywhere, including in our sewerage, rivers, and oceans. In fact, the plastic problems that we are faced with today are highly complex and multi-layered, echoing more than one sustainable development goal.<br><br>The lesson \u201CThe Life of a Plastic Bag\u201D describes a plastic bag manufactured by a factory, bought from a convenience store, and then deserted at the beach, which shows humans' irresponsible production and random consumption. As a result, learning the true spirit of SDG 12, \u201CResponsible Consumption and Production,\u201D is urgent and necessary.<br><br>In addition, the plastic bag is blown into the ocean and eaten up by a fish, causing the marine creature to die. This story clearly shows that garbage from land results in ocean debris.";
+var S3_ZH = "永續發展目標12：負責任的消費與生產<br>　　永續的消費與生產是用少一點的資源做得更多更好。它也涉及發展經濟的同時不至於造成環境品質降低、增加資源使用效率和提倡永續生活方式。<br><br>永續發展目標14：水下生命<br>　　海洋驅動全球系統讓地球變得適合人類居住。我們的雨水、飲用水、天氣、氣候、海岸線、大部分食物、甚至我們所呼吸的空氣中的氧氣，最終都是依賴海洋提供和調節。<br>　　拯救海洋必須一直是我們的優先任務。海洋的生物多樣性對人類和地球的健康很重要。海洋保護區需要有效管理和妥善取用資源，我們也必須制定規範來減少過度捕撈、海洋汙染和海洋酸化等現象。<br>　　塑膠危機是迫切的，需要我們多面向來思考解決方式。因為塑膠有不可被生物分解的特性，且會分解成塑膠微粒，這些微粒現在到處都是，包括我們的下水道、河川和海洋。事實上，我們今天面臨的塑膠問題極為複雜且多層次，呼應不只一項永續發展目標。而本課〈塑膠袋的一生〉描述一個從工廠製造、從便利商店被購買而後被棄置在海邊的塑膠袋，顯示人類不負責任的生產和任意購買。因此學習永續發展目標12「負責任的消費與生產」真正的精神是迫切必要的。";
+var S3_WORDBANK = [
+ {w:"degradation", p:"n.", zh:"劣化", ex:"It is also about decoupling economic growth from environmental degradation."},
+ {w:"habitable", p:"adj.", zh:"可居住的", ex:"The ocean drives global systems that make the Earth habitable for humankind."},
+ {w:"priority", p:"n.", zh:"優先事物", ex:"Saving our ocean must remain a priority."},
+ {w:"biodiversity", p:"n.", zh:"生物多樣性", ex:"Marine biodiversity is critical to the health of people and our planet."},
+ {w:"well-resourced", p:"adj.", zh:"妥善利用資源的", ex:"Marine protected areas need to be effectively managed and well-resourced."},
+ {w:"ocean acidification", p:"n. phr.", zh:"海洋酸化", ex:"Regulations need to be put in place to reduce overfishing, marine pollution, and ocean acidification."},
+ {w:"sewerage", p:"n.", zh:"下水道", ex:"They now exist almost everywhere, including in our sewerage, rivers, and oceans."},
+ {w:"address", p:"v.", zh:"解決", ex:"The plastic crisis is pressing and requires us to address it from many aspects."}
+];
+var S3_QS = [
+ {type:'mc', lv:"主要資訊 Main Message",
+  q:"Which statement best captures the central argument that links SDG 12 and SDG 14 in the reading?",
+  o:["Economic growth must be stopped so that the ocean can recover.",
+     "Because one plastic bag's whole life crosses land and sea, a single goal cannot solve the problem alone.",
+     "Marine protected areas are the only effective way to reduce plastic waste.",
+     "Microplastics are dangerous mainly because they are too small to be seen."],
+  k:1,
+  e:"文章從未主張停止經濟成長（SDG 12 講的是 decoupling，把成長與環境劣化「脫鉤」，不是停止成長），故 (A) 錯。(C)(D) 皆為單點細節，不是貫串全文的主張。全文的核心邏輯是：一個塑膠袋從工廠生產（SDG 12 的生產端）、被隨意購買（SDG 12 的消費端），最後被吹進海裡害死魚（SDG 14），因此原文說 the plastic problems ... are highly complex and multi-layered, echoing more than one sustainable development goal，故 (B) 為最能概括全文主軸者。"},
+ {type:'mc', lv:"次要資訊 Secondary Message",
+  q:"According to the reading, why is the plastic bag's journey a useful teaching example rather than just a sad story?",
+  o:["It proves that convenience stores should be banned from selling plastic bags.",
+     "It shows that recycling technology has already solved most plastic problems.",
+     "It traces one object through production, consumption, and disposal, so it exposes where human responsibility breaks down at each stage.",
+     "It explains how fish digest non-biodegradable materials."],
+  k:2,
+  e:"文章說這個袋子是 manufactured by a factory, bought from a convenience store, and then deserted at the beach，三個過去分詞依序對應「生產→消費→棄置」三個階段，並各自指向 irresponsible production 與 random consumption。這正是它作為教材的價值：不是單一事件，而是把責任斷點逐段攤開。(A) 文中未提禁售；(B) 與文意相反；(D) 魚無法消化塑膠，且非本文重點。"},
+ {type:'short', lv:"訊息與細節 Details & Logic",
+  q:"The reading says that garbage from land results in ocean debris. Using the logic of the passage, explain why solving the plastic crisis only at the beach would fail.",
+  a:"because the source is on land, not at sea",
+  ref:"Because the passage traces the problem back to its source: the bag is manufactured, bought, and deserted on land, and only later is it blown into the ocean. Cleaning beaches removes debris that has already arrived, but it does nothing about irresponsible production and random consumption, which keep generating new waste. Since plastics are non-biodegradable and break down into microplastics, whatever is missed at the beach does not disappear \u2014 it only becomes smaller and harder to collect. A workable solution therefore has to move upstream to the land-based habits that create the waste in the first place.",
+  e:"本題考因果鏈的方向性。原文的邏輯順序是 land → ocean（garbage from land results in ocean debris），淨灘只處理鏈條末端的結果，不觸及 irresponsible production 與 random consumption 這兩個源頭。再加上 non-biodegradable 與 break down into microplastics 兩個特性，漏撿的塑膠不會消失，只會碎裂成更難處理的微粒。因此答題重點在於：末端清理無法切斷源頭的持續供給。"},
+ {type:'short', lv:"語言結構與生活活用 Language & Application",
+  q:"Look at the phrase decoupling economic growth from environmental degradation. Explain what the prefix de- does to the word couple, and write one sentence of your own using a de- word about your daily life.",
+  a:"de- means to reverse or separate",
+  ref:"The prefix de- reverses or undoes the action of the base word. To couple two things is to join them together, so to decouple them is to break the link between them \u2014 here, to let the economy grow without the environment getting worse as a side effect. Other de- words follow the same logic: decompose (to break apart what was joined), deforest, defrost, and devalue. A personal example: I decided to declutter my desk before the exam so that I could focus better.",
+  e:"字首 de- 表「相反、去除、分離」，couple（連結）加上 de- 即「使脫鉤」。SDG 12 的核心主張不是不要成長，而是讓「經濟成長」與「環境劣化」這兩件事不再綁在一起。同源字：decompose（本課第三段 The fish's body slowly decomposed 就用到）、deforest、defrost、devalue。生活活用可延伸到 declutter、detox 等日常字，寫作時能展現構詞敏感度。"}
+];
+/* --- STAGE 4 --- */
+var S4_TOOLBOX = [
+ {en:"at the expense of", zh:"以……為代價；犧牲……"},
+ {en:"take ... into consideration", zh:"把……納入考量"},
+ {en:"Only by V-ing ... can we ...", zh:"唯有透過……我們才能……（倒裝句）"},
+ {en:"It goes without saying that ...", zh:"不言而喻／不用說……"},
+ {en:"one of our ... sources", zh:"我們……來源之一"}
+];
+var S4_QS = [
+ {q:"1. Does sustainable consumption and production require us to give up economic growth and focus only on environmental protection?",
+  zh:"1. 永續的消費與生產是否要求我們放棄經濟成長、只專注於環境保護？",
+  refzh:"不，並非如此。它的意思是我們不能以犧牲環境為代價來強調經濟發展。相反地，我們應該在推動經濟成長的同時把環境保護納入考量。唯有在經濟與環境之間取得平衡，我們才能達成永續的未來。",
+  ref:"No, it doesn't. What it means is that we can't emphasize economic development at the expense of the environment. Instead, we should take environmental protection into consideration while pushing our economy to grow. Only by balancing our economy and the environment can we achieve a sustainable future.",
+  must:["expense","consideration","only by"],
+  e:"詳解：<br>\u2460 <b>at the expense of</b> 是介系詞片語，字面為「以……為代價」，expense 在此不是「花費」而是「犧牲」，整句意思是「不能以犧牲環境為代價來強調經濟發展」。同類用法：He succeeded at the expense of his health.<br>\u2461 <b>Only by + V-ing</b> 置於句首時，主要子句必須<b>倒裝</b>：Only by balancing... <b>can we</b> achieve...，助動詞 can 提到主詞 we 之前。這是大考常考的倒裝句型，若寫成 Only by balancing... we can achieve 即為錯誤。<br>\u2462 take ... into consideration 把……納入考量（consideration 前不加 the）；while + V-ing 表同時進行。"},
+ {q:"2. Why should we regard saving the ocean as our primary mission?",
+  zh:"2. 為什麼我們應該把拯救海洋視為我們的首要任務？",
+  refzh:"海洋就像是生命的搖籃。它孕育海洋生物，而海洋生物是我們的食物來源之一。此外，海水調節氣候，使天氣溫和、適合人類生活。海洋也幫助產生我們賴以生存的氧氣。不言而喻，我們無法沒有海洋而生存。因此，拯救海洋應該是我們的第一優先。",
+  ref:"The ocean is like the cradle of life. It breeds marine creatures, which are one of our food sources. In addition, its water regulates the climate so that the weather is mild and suitable for human life. The ocean also helps generate the oxygen we rely on for survival. It goes without saying that we can't live without the sea. Thus, saving the ocean should be our top priority.",
+  must:["cradle","food source","without saying"],
+  e:"詳解：<br>\u2460 <b>the cradle of life</b> 為 metaphor（隱喻）：cradle 原指嬰兒搖籃，用來比喻海洋是孕育一切生命的起點，比直說 the origin of life 更有畫面與情感。<br>\u2461 <b>which</b> 的關代指涉（anaphor）：which are one of our food sources 中的 which 回指前面的 marine creatures，而非整個子句；此為非限定用法，前面必須有逗號。<br>\u2462 <b>so that</b> 引導<b>結果</b>副詞子句：its water regulates the climate so that the weather is mild，注意 so that 若表「目的」則常搭配 can/may，此處表結果故用直述。<br>\u2463 It goes without saying that... 不言而喻；regard A as B 視 A 為 B；rely on 依賴。生活活用：可用此四個工具寫任何「重要性論述」段落。"}
+];
+var S4_DEBATE = [
+ {side:"正方立場", en:"Taiwan should completely ban single-use plastic bags within three years.",
+  zh:"臺灣應該在三年之內全面禁用一次性塑膠袋。"},
+ {side:"反方立場", en:"A total ban on single-use plastics would hurt small businesses and low-income families more than it helps the ocean.",
+  zh:"全面禁用一次性塑膠對小型商家與低收入家庭的傷害，會大於它對海洋的幫助。"},
+ {side:"正方立場", en:"Schools should be plastic-free zones, with no single-use plastics allowed on campus.",
+  zh:"學校應該成為無塑區，校園內不允許使用任何一次性塑膠製品。"},
+ {side:"反方立場", en:"Individual green actions matter far less than industrial regulation, so personal guilt is misplaced.",
+  zh:"個人的環保行動遠不如產業法規來得重要，因此個人的罪惡感是放錯了地方。"}
+];
+/* --- STAGE 5 --- */
+var S5_CARDS = [
+ {q:"太平洋垃圾帶的面積，依情報卡 1 的描述，約為美國德州面積的幾倍以上？",
+  o:["兩倍","三倍","五倍","十倍"], k:1,
+  e:"情報卡 1 明確指出太平洋垃圾帶「超過美國德州面積的三倍」，且是所有海洋垃圾帶中最大的一個。",
+  title:"情報卡 1｜The Great Pacific Garbage Patch",
+  body:"　　人類的活動影響全球環境，當中又以影響海洋最多，太平洋垃圾帶（The Great Pacific Garbage Patch）就是最好的例子，太平洋垃圾帶位於北太平洋，同時是海洋垃圾帶當中最大的一個，超過美國德州面積的三倍。太平洋環流分別在夏威夷的兩側海域形成兩個巨大的垃圾帶：從夏威夷的左側向西延伸到日本，此為西太平洋垃圾帶；從夏威夷的右側向東延伸到美國的加州，此為東太平洋垃圾帶。"},
+ {q:"依情報卡 2 的因果邏輯，塑膠微粒最終如何影響人體？",
+  o:["直接堵塞血管造成中風","隨海鹽與海鮮進入食物鏈，影響內分泌系統並使荷爾蒙失調","使人體皮膚產生過敏反應","降低人體對氧氣的吸收能力"], k:1,
+  e:"情報卡 2 的因果鏈為：塑膠製品被海浪拍打 → 分解成塑膠微粒 → 隨海鹽和海鮮進入人類食物鏈 → 被吃下肚 → 影響內分泌系統、荷爾蒙失調。這條鏈條說明海洋汙染最終回到人類自身。",
+  title:"情報卡 2｜塑膠微粒與食物鏈",
+  body:"　　垃圾帶有大量的垃圾沉積，厚厚一層漂浮於海中，其中占比最高的塑膠製品隨著海浪的拍打，逐漸被分解成細小的塑膠微粒。這些塑膠微粒隨著海鹽和海鮮等方式進入到人類的食物鏈，接著被我們吃下肚，大大影響我們內分泌系統，並且讓荷爾蒙失調。我們必須為環境和健康做些事，所做的大大小小環境行動都是有意義的！小行動總會為地球帶來改變。"},
+ {q:"依情報卡 3，菲律賓所倡導的「Wala Usik 經濟」指的是什麼？",
+  o:["零廢棄經濟","共享經濟","低碳經濟","循環農業經濟"], k:0,
+  e:"情報卡 3 指出菲律賓所倡導的「Wala Usik 經濟」就是「零廢棄經濟」，透過跟中小企業合作，以循環經濟的觀點來減少塑膠廢棄物。此外也提到歐盟與七個亞洲國家合作的 Rethinking Plastics 計畫。",
+  title:"情報卡 3｜減量、替代與國際合作",
+  body:"　　減少使用或避免使用塑膠產品可以大大減少塑膠廢棄物。企業和消費者都能從重複使用或可以分解的產品著手；消費者也可以拒絕購買過度包裝的產品，特別是一次性塑膠的產品。許多一次性塑膠產品如塑膠杯、塑膠袋、塑膠吸管等都快速累積，特別在疫情期間，大家偏好外食和網路訂購，都讓一次性塑膠廢棄物激增。然而這類塑膠垃圾造成嚴重的環境汙染，因為它們經使用一次便立即被丟棄。所以歐盟和七個亞洲國家一起合作 Rethinking Plastics 計畫，鼓勵用交換或倡導其他永續方式來減少塑膠垃圾流到海洋。網頁上有其他國家的倡議，像菲律賓所倡導的「Wala Usik 經濟」就是「零廢棄經濟」，透過跟中小企業合作，以循環經濟的觀點來減少塑膠廢棄物。"},
+ {q:"聯合國將 2018 年世界環境日的主題訂為什麼？",
+  o:["Save Our Seas","Beat Plastic Pollution","Only One Earth","Time for Nature"], k:1,
+  e:"情報卡 4 指出，行政院環境保護署說明聯合國將 2018 年世界環境日的主題訂為「塑戰塑決 Beat Plastic Pollution」，以維護海洋生物及環境；環保署據此明定限塑政策，並參考英國、日本、韓國和美國的做法。",
+  title:"情報卡 4｜政策與限塑推動歷程",
+  body:"　　行政院環境保護署說明聯合國將 2018 年世界環境日的主題訂為「塑戰塑決 Beat Plastic Pollution」，以維護海洋生物及環境。為了呼應國際趨勢並且遏止塑膠汙染快速惡化，環保署明定限塑政策，也介紹英國、日本、韓國和美國政府對於一次性塑膠製品的做法，同時也標示臺灣限塑政策的推動歷程，希望藉由法令，推動民間企業發展替代材質技術或新型消費模式，民眾則調整消費習慣。"}
+];
+var S5_LINKS = ["https://ltn.tw/5WwDBBA","https://ltn.tw/dTSsLgB","https://ltn.tw/uRJb3UQ"];
+var S5_FACTS = [
+ {s:"The Great Pacific Garbage Patch lies in the North Pacific and is the largest of all the ocean garbage patches.", t:true, e:"真。情報卡 1 指出它位於北太平洋，是海洋垃圾帶當中最大的一個。"},
+ {s:"The Great Pacific Garbage Patch is smaller than the state of Texas.", t:false, e:"假。情報卡 1 說它超過美國德州面積的三倍。"},
+ {s:"The western patch stretches from Hawaii toward Japan, while the eastern one stretches toward California.", t:true, e:"真。情報卡 1 描述夏威夷左側向西延伸到日本為西太平洋垃圾帶，右側向東延伸到加州為東太平洋垃圾帶。"},
+ {s:"Microplastics can enter the human food chain through sea salt and seafood.", t:true, e:"真。情報卡 2 明確提到塑膠微粒隨著海鹽和海鮮等方式進入人類食物鏈。"},
+ {s:"According to the information, microplastics have no effect on the human endocrine system.", t:false, e:"假。情報卡 2 說它們大大影響我們內分泌系統，並且讓荷爾蒙失調。"},
+ {s:"Refusing overpackaged goods is one way consumers can cut plastic waste.", t:true, e:"真。情報卡 3 提到消費者可以拒絕購買過度包裝的產品，特別是一次性塑膠的產品。"},
+ {s:"Single-use plastic waste decreased sharply during the pandemic because people stayed at home.", t:false, e:"假。情報卡 3 說疫情期間大家偏好外食和網路訂購，反而讓一次性塑膠廢棄物激增。"},
+ {s:"Rethinking Plastics is a project run by the EU together with seven Asian countries.", t:true, e:"真。情報卡 3 提到歐盟和七個亞洲國家一起合作 Rethinking Plastics 計畫。"},
+ {s:"The 2018 World Environment Day theme was Beat Plastic Pollution.", t:true, e:"真。情報卡 4 指出聯合國將 2018 年世界環境日的主題訂為「塑戰塑決 Beat Plastic Pollution」。"},
+ {s:"Taiwan's plastic-restriction policy aims only to punish individual consumers, not to change industry.", t:false, e:"假。情報卡 4 說希望藉由法令推動民間企業發展替代材質技術或新型消費模式，民眾則調整消費習慣，兩者並行。"}
+];
+/* --- STAGE 6 --- */
+var S6_QUOTE = "There is no such thing as \u201Caway.\u201D When we throw anything away, it must go somewhere.";
+var S6_TASK = "Please read out the sentence on the blackboard together. Work with your group members to think of three ways that plastic waste enters the ocean and becomes ocean debris. While you are thinking, you should divide the process into Habit/Behavior (行為), Twist (轉折), and Medium (媒介). For example, people go to the beach to do water sports in the summertime. Since it is hot, they take drinks with them. However, they leave the plastic bottles/cups on the beach (Habit/Behavior). Later, these plastics are taken away by the waves (Twist). So the waves are the medium that brings plastics to the ocean (Medium).";
+var S6_CHAINS = [
+ {h:"People litter the streets with plastics.",
+  t:"Plastics are blown into drains and then flow into rivers.",
+  m:"drains and rivers"},
+ {h:"People wash synthetic clothes.",
+  t:"Synthetic clothing fibers break down into microplastics and are washed down drains.",
+  m:"drains and rivers"},
+ {h:"People dump garbage into open landfills.",
+  t:"Garbage in open landfills is blown away. Since landfills are often located in coastal areas, flying garbage from them often ends up in the ocean.",
+  m:"wind and typhoons"}
+];
+var S6_VIDEO = "How does plastic end up in our oceans? https://ltn.tw/NPTQVwx";
+var S6_CONCL = "全班集思廣益後，觀賞相關影片，大家會發現: 陸地的塑膠常常都會流到海洋，我們生活模式與習慣和海洋緊密連結。";
+/* --- STAGE 7 --- */
+var S7_ZH = "所有學習是為了改善生活。儘管環境保護儼然是生活標語，但會在大家不經意時被遺忘。一般人依舊貪圖便利，使用一次性的塑膠產品，並且用完即丟。為了體驗隨性生活和有意識的環保生活的差異，我們一起做兩週的活動，並且自己選擇是否能夠再延續永續生活。";
+var S7_EN = "A successful green action first comes with awareness. This mini project involves a two-week observation and action period.<br>In the first week, keep to your usual life but keep all the single-use plastic products you get from shops. Please record your daily habits by filling out the following table.";
+var S7_W1COLS = ["Plastic Bottle or Cup","Plastic Bag","Plastic Cutlery","Plastic Straw","Others"];
+var S7_W1ROWS = ["(MM/DD) Mon.","(MM/DD) Tue.","(MM/DD) Wed.","(MM/DD) Thur.","(MM/DD) Fri.","(MM/DD) Sat.","(MM/DD) Sun."];
+var S7_W1SAMPLE = "範例列（Mon.）：1／2／2／1／1";
+var S7_W2NOTE = "B. After one week of your usual life, prepare your own sustainable bottle or cup, cutlery, shopping bag, and straw (the use of other reusable containers or tools available at home is also encouraged so that you won't have to buy new ones). You will have the seven-day challenge of \u201CSaying No to Single-Use Plastics.\u201D While taking this challenge, fill out the following table every day. Since caf\u00E9s and tea shops encourage the use of sustainable bottles or cups by giving customers discounts, you may also write down how much money you save each time. Please put a check in the blank if you use that reusable product.";
+var S7_W2COLS = ["Plastic Bottle/Cup","Shopping Bag","Plastic Cutlery","Plastic Straw","Other Containers You Have"];
+var S7_REFLECT = [
+ {q:"\u2460 Which two sustainable products did you use most often in your daily life?",
+  ref:"Sustainable cup and cutlery.",
+  e:"這是範例回答，鼓勵你寫出屬於自己的版本。回答時請具體點名兩樣物品，並可補上「為什麼是這兩樣」，例如每天都要喝飲料、每天都要吃午餐，使用頻率自然最高。"},
+ {q:"\u2461 Compare this table with the one for single-use plastic products. Are the products you used most often in the two tables the same ones? (\u25A1 Yes　\u25A1 No) If no, what might be the reason behind this difference?",
+  ref:"I went shopping the previous week, and I bought some bags to carry my items. However, I went to the store less often this week, so I guessed that was why I didn't have too many chances to use my reusable shopping bag.",
+  e:"這是範例回答。此題訓練的是「比較兩張表格後找出差異並歸因」的能力，重點不在於答案對錯，而在於你能不能指出<b>行為情境的改變</b>（例如購物次數變少），而不是只說「不一樣」。寫作時可用 because、so、that was why 等因果連接詞。"},
+ {q:"\u2462 What will you do with the money you saved?",
+  ref:"(A) I will keep saving money until I reach NT$500, and then I'll donate it to The Society of Wilderness (荒野保護協會) to support their beliefs and actions.　(B) I will use the saved money to purchase a reusable straw because I don't have one. I know that plastic straws are too light to be recycled, so when they become marine debris, they can hurt sea turtles.",
+  e:"這是兩個範例回答，請寫出自己的版本。(B) 的論述特別值得學習：它用 too ... to ...（太……以致於不能……）解釋吸管為何難以回收，再用 so 帶出後果，形成完整的因果推論鏈。"},
+ {q:"\u2463 Now you have experienced two weeks with two different lifestyles. One was your usual life, while the other included green actions. What are your reflections? Please complete the self-analysis (I used to think ... / After the seven-day green action, now I think ...).",
+  ref:"I used to think a plastic-free life was such a hassle because I would have to fill my bag with many reusable tools, and my bag would be really heavy. After the seven-day green action, now I think it is not as inconvenient as I expected. In fact, the reusable tools were light and easy to carry. Best of all, I could enjoy a discount every time I bought a drink.",
+  e:"這是範例回答。此題的句型鷹架是 <b>I used to think... / now I think...</b>，用來呈現觀念的轉變。注意 used to V 表「過去習慣或想法（現已不然）」，以及 not as ... as I expected（不如預期的……）這個比較句型，都是寫反思文的高效工具。"},
+ {q:"\u2464 Will you continue your green action for another thirty days? If yes, which reusable tool will you definitely use as a habit in your daily life?",
+  ref:"Yes, I will continue my green action for the next thirty days. I will use my steel straw in my daily life because plastic straws can't be recycled at all. Due to their lightness, they are easily blown to the ocean and end up drifting in the sea. The sharp ends of plastic straws are likely to harm marine creatures. To protect these innocent animals, I will definitely use my own straw when buying beverages.",
+  e:"這是範例回答。這段論述示範了完整的「主張 → 理由 → 後果 → 再次表態」結構，並用到本課關鍵字 end up drifting、harm marine creatures。Due to + 名詞（their lightness）與 be likely to V 也是可直接移植到學測作文的句型。"}
+];
+var S7_BADGE = "\u2605 Students who finish the seven-day challenge, \u201CSaying No to Single-Use Plastics,\u201D and use reusable tools every day will be awarded the \u201CPlastic-Free Challenger\u201D electronic badge, which they may attach to their learning portfolio as an honor. Those who are willing to further their green action for another month will be awarded the \u201CGreen Ambassador\u201D electronic badge. They may also attach this badge to their portfolio.";
+var S7_WRAP = "D. In the wrap-up activity, the teacher will invite five students who are willing to continue their green action to share their beliefs in front of everyone. This is intended to boost the morale of green goers and persuade those who are not firm in their green action to take part as well.";
+var S7_TASK3 = "Please bring the single-use plastic products you've kept to school and work with your group members to see if you can make an interesting design using these plastics. After you finish your design, illustrate it with some words or oral descriptions. The final design is intended to serve as a classroom decoration or to be displayed at a school exhibition or the school's plastic-free fair.<br><br>相關參考資源: Discovery 一件好事救海洋 海廢藝術展 https://ltn.tw/ogHG7bU";
+var S7_DEBATE = [
+ "1. In Taiwan, if we want to buy a plastic bag to carry our shopping items, we need to pay $1 or $2. Do you think this policy is effective in eliminating single-use plastics? Australia and New Zealand already have enacted laws to ban single-use plastics.",
+ "2. In addition, African countries such as Tanzania and Kenya have banned plastic bags and have imposed heavy fines and imprisonment for their use. How do you think we could adjust our policies to make them more effective? In addition to \u201Crecycling,\u201D we also can engage in \u201Cdowncycling\u201D and \u201Cupcycling.\u201D What do these terms mean? Please google a company which has been successful in upcycling plastics and turning them into other products.",
+ "3. Besides plastic bags, have you noticed that many goods in our markets are overpackaged? Please find three items that you think are overpackaged and figure out how they could be sold without excessive plastic use."
+];
+/* ============================================================
+   共用元件工廠
+   ============================================================ */
+var RULE_TEXT = '⚖️ 計分規則（Kahoot!）　✅ 答對 +200 並放煙火　🍬 答錯不扣分，可一直重試　🏆 累計不歸零　🛡️ 最低 0 分';
+function ruleBar(){
+  var d = el('div','rulebar', RULE_TEXT);
+  d.style.display = 'none';
+  return d;
+}
+function secTitle(t){ return el('div','sec-title', t); }
+function makeReveal(){ return el('div','reveal'); }
+function revealBtn(box, label){
+  var b = el('button','btn ref', label || '📖 參考解答');
+  b.onclick = function(){ box.classList.toggle('on'); };
+  return b;
+}
+function fbBox(){ return el('div','fb'); }
+function showFb(box, ok, msg){ box.className = 'fb on ' + (ok?'ok':'no'); box.innerHTML = msg; }
+function grade(state, ok, fb, okMsg, noMsg){
+  if(state.locked){ showFb(fb, ok, ok ? '✅ 這題已經完成囉！' : (noMsg||'再檢查一次喔！')); return; }
+  if(ok){
+    state.locked = true; addScore(200);
+    showFb(fb, true, okMsg || '✅ 完全正確！ +200 分');
+    celebrate();
+    if(state.onDone) state.onDone();
+  }else{
+    showFb(fb, false, (noMsg||'🍬 還有錯誤，再修一次！') + ' ' + pick(ENCOURAGE));
+    toast(pick(ENCOURAGE), false);
+    if(state.onTouch) state.onTouch();
+  }
+}
+function attachTimer(card, st, fb){
+  if(!TIMERON || st.timer) return;
+  var t = 30, badge = el('div','note','⏱️ 剩餘 30 秒');
+  card.appendChild(badge);
+  st.timer = setInterval(function(){
+    t--; badge.textContent = '⏱️ 剩餘 '+t+' 秒';
+    if(t<=0){
+      clearInterval(st.timer); st.timer='done'; badge.textContent='⏱️ 時間到！';
+      if(!st.locked){ showFb(fb, false, '⏱️ 時間到！這題沒有扣分，再按一次「檢查」就可以繼續挑戰。'); }
+    }
+  }, 1000);
+}
+function copyText(str){
+  var done = false;
+  try{
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(str).then(function(){
+        toast('已複製到剪貼簿！', true);
+      }).catch(function(){ manualCopy(str); });
+      done = true;
+    }
+  }catch(e){ done = false; }
+  if(done) return;
+  try{
+    var ta=document.createElement('textarea'); ta.value=str;
+    ta.style.position='fixed'; ta.style.left='-9999px'; ta.style.top='0';
+    document.body.appendChild(ta); ta.focus(); ta.select();
+    ta.setSelectionRange(0, str.length);
+    var ok=document.execCommand('copy'); document.body.removeChild(ta);
+    if(ok){ toast('已複製到剪貼簿！', true); return; }
+  }catch(e){}
+  manualCopy(str);
+}
+/* 沙箱環境禁止寫入剪貼簿時，開啟可全選複製的面板 */
+function manualCopy(str){
+  var ov = document.getElementById('copyOverlay');
+  if(!ov){
+    ov = el('div','', '');
+    ov.id = 'copyOverlay';
+    document.body.appendChild(ov);
+  }
+  ov.innerHTML = '';
+  var box = el('div','copybox');
+  box.appendChild(el('div','copylab','📋 請長按（手機）或按 Ctrl/Cmd + C（電腦）複製下方內容，再貼到 Google Classroom。'));
+  var ta = el('textarea','ta');
+  ta.style.minHeight='46vh'; ta.value = str;
+  box.appendChild(ta);
+  var again = el('button','btn chk','📋 再試一次自動複製');
+  again.onclick = function(){
+    ta.focus(); ta.select();
+    try{ ta.setSelectionRange(0, ta.value.length); }catch(e){}
+    var ok=false;
+    try{ ok = document.execCommand('copy'); }catch(e){ ok=false; }
+    toast(ok ? '已複製到剪貼簿！' : '請用長按或 Ctrl/Cmd + C 複製', ok);
+  };
+  var close = el('button','btn','✕ 關閉');
+  close.onclick = function(){ ov.classList.remove('on'); };
+  box.appendChild(again); box.appendChild(close);
+  ov.appendChild(box);
+  ov.classList.add('on');
+  setTimeout(function(){ try{ ta.focus(); ta.select(); }catch(e){} }, 120);
+}
+function submitBlock(host, getText, label){
+  var row = el('div','subrow');
+  var b1 = el('button','btn','📋 複製本關結果');
+  b1.onclick = function(){ copyText(getText()); };
+  var b3 = el('button','btn chk','預覽本關結果');
+  b3.onclick = function(){ manualCopy(getText()); };
+  row.appendChild(b1); row.appendChild(b3);
+  row.appendChild(el('div','note','📸 完成後請截圖，上傳至 Google Classroom 繳交。'));
+  host.appendChild(row);
+}
+/* 蒐集某個頁籤內所有作答內容，供複製與預覽使用 */
+function collectPanel(panelId, title){
+  var panel = document.getElementById(panelId);
+  var out = [];
+  out.push('【' + title + '】');
+  out.push('作答時間：' + new Date().toLocaleString('zh-TW'));
+  out.push('累計總分：' + TOTAL + ' 分　排名徽章：' + rankName(TOTAL));
+  out.push('');
+  if(!panel){ return out.join('\n'); }
+  var n = 0;
+  var cards = panel.querySelectorAll('.card');
+  for(var i=0;i<cards.length;i++){
+    var c = cards[i];
+    var lines = [];
+    var zh = c.querySelector('.zh');
+    var qen = c.querySelector('.qen');
+    var head = c.querySelector('.sub-title');
+    var num = c.querySelector('.num');
+    var label = (num ? ('第 '+num.textContent.trim()+' 題') : '');
+    var stem = '';
+    if(head) stem = head.textContent.trim();
+    else if(qen) stem = qen.textContent.replace(/\s+/g,' ').trim().slice(0,160);
+    else if(zh) stem = zh.textContent.trim();
+    var ans = [];
+    var ins = c.querySelectorAll('input[type="text"]');
+    for(var k=0;k<ins.length;k++){ if(ins[k].value.trim()) ans.push(ins[k].value.trim()); }
+    var sels = c.querySelectorAll('select');
+    for(var k2=0;k2<sels.length;k2++){
+      var o = sels[k2].options[sels[k2].selectedIndex];
+      if(o && sels[k2].value !== '-1') ans.push(o.text.trim());
+    }
+    var tas = c.querySelectorAll('textarea');
+    for(var k3=0;k3<tas.length;k3++){ if(tas[k3].value.trim()) ans.push(tas[k3].value.trim()); }
+    var picked = c.querySelectorAll('.mcopt.sel, .mcopt.ok, .mcopt.no');
+    for(var k4=0;k4<picked.length;k4++){
+      if(picked[k4].classList.contains('sel') || picked[k4].classList.contains('no')) ans.push(picked[k4].textContent.trim());
+    }
+    var filled = c.querySelectorAll('.slot.filled, .dblank.filled, .dblank.ok, .dblank.no, .slotbig.filled');
+    for(var k5=0;k5<filled.length;k5++){ ans.push(filled[k5].textContent.replace(/\s+/g,' ').trim()); }
+    var chk = c.querySelectorAll('input[type="checkbox"]:checked');
+    if(chk.length) ans.push('已勾選 '+chk.length+' 項');
+    var fb = c.querySelector('.fb.on');
+    if(!ans.length && !fb) continue;
+    n++;
+    lines.push('── ' + (label ? label + '　' : '') + stem);
+    if(ans.length) lines.push('我的作答：' + ans.join(' ｜ '));
+    if(fb) lines.push('批改結果：' + fb.textContent.replace(/\s+/g,' ').trim());
+    out.push(lines.join('\n'));
+    out.push('');
+  }
+  if(!n) out.push('（本單元尚未作答，請先完成練習再複製。）');
+  return out.join('\n');
+}
+/* 按壓式選項元件 */
+function makePress(host, opts, answer, slotLabels, orderMatters){
+  var slotWrap = el('div','slots'), pool = el('div','pool');
+  var slots = [], chips = {};
+  slotLabels.forEach(function(lab, i){
+    var s = el('div','slot');
+    s.appendChild(el('span','slotlab', lab));
+    s.dataset.idx = i; s.dataset.val = '';
+    s.onclick = function(){
+      var v = s.dataset.val;
+      if(!v) return;
+      s.dataset.val=''; s.className='slot'; s.innerHTML=''; s.appendChild(el('span','slotlab', lab));
+      chips[v].className='chip';
+    };
+    slots.push(s); slotWrap.appendChild(s);
+  });
+  opts.forEach(function(o){
+    var key=o[0], txt=o[1];
+    var ch = el('button','chip','('+key+') '+txt);
+    chips[key]=ch;
+    ch.onclick = function(){
+      if(ch.classList.contains('used')) return;
+      var free=null;
+      for(var i=0;i<slots.length;i++){ if(!slots[i].dataset.val){ free=slots[i]; break; } }
+      if(!free){ toast('空格已滿，先按壓空格把選項放回來喔！', false); return; }
+      free.dataset.val=key; free.className='slot filled';
+      free.innerHTML='';
+      free.appendChild(el('span','slotlab', slotLabels[parseInt(free.dataset.idx,10)]));
+      free.appendChild(el('span','chip','('+key+')'));
+      ch.className='chip used';
+    };
+    pool.appendChild(ch);
+  });
+  host.appendChild(slotWrap);
+  host.appendChild(pool);
+  return {
+    check:function(){
+      var got = slots.map(function(s){ return s.dataset.val; });
+      if(got.indexOf('')>-1){ toast('還有空格沒有填喔！', false); return null; }
+      var ok = orderMatters ? got.every(function(v,i){ return v===answer[i]; })
+                            : got.slice().sort().join('')===answer.slice().sort().join('');
+      slots.forEach(function(s,i){
+        var good = orderMatters ? (s.dataset.val===answer[i]) : (answer.indexOf(s.dataset.val)>-1);
+        s.style.borderColor = good ? '#86EFAC' : '#F9A8D4';
+        s.style.background  = good ? '#DCFCE7' : '#FCE7F3';
+      });
+      return ok;
+    }
+  };
+}
+/* 簡答題：textarea + AI 引導 + 參考解答 */
+function makeShort(host, item, st){
+  var ta = el('textarea','ta'); ta.setAttribute('placeholder','Write your answer in English here...');
+  host.appendChild(ta);
+  var fb = fbBox(), rv = makeReveal(), aiBox = el('div','reveal');
+  rv.innerHTML = '<div class="ansline">📖 參考解答：<b>'+esc(item.a)+'</b></div>'+
+                 '<div class="expl"><b>Full reference answer:</b><br>'+esc(item.ref||item.a)+'</div>'+
+                 (item.expl ? '<div class="expl"><b>【答案與詳解】</b><br>'+item.expl+'</div>' : '')+
+                 (item.e ? '<div class="expl"><b>【答案與詳解】</b><br>'+item.e+'</div>' : '');
+  var chk = el('button','btn chk','✅ 檢查');
+  chk.onclick = function(){
+    var ok = norm(ta.value).length>0 && norm(ta.value).indexOf(norm(item.a))>-1;
+    grade(st, ok, fb, '✅ 答對了！ +200 分', '🍬 還沒抓到關鍵字（不扣分，再試一次）。');
+  };
+  var ai = el('button','btn ai','🤖 AI 分析（引導不給答案）');
+  ai.onclick = function(){
+    var v = ta.value.trim();
+    aiBox.classList.add('on');
+    if(!v){ aiBox.innerHTML = '<b>🤖 AI 老師：</b>先寫下你的想法吧！哪怕只有一個字也好，老師會陪你一起修 💛'; return; }
+    var cov = coverage(v, item.ref||item.a);
+    var tips = '';
+    if(cov>=0.6) tips = '你已經抓到方向了！再確認一次：你的答案是不是<b>直接取自文章中的字詞</b>？以及有沒有依照題目要求做<b>詞性或字形變化</b>？';
+    else if(cov>=0.3) tips = '方向有一點點偏。試著回到題目指向的那一段，找出<b>意思最接近</b>的關鍵詞，再想想它在句中的<b>詞性</b>。';
+    else tips = '先別急著寫答案：把題目的關鍵條件圈出來（例如「means…」「refer to…」），再回文章中<b>逐句掃描</b>符合條件的字。';
+    aiBox.innerHTML = '<b>🤖 AI 老師的引導（不給答案）：</b><br>'+
+      '【你的回答】：'+esc(v)+'<br>'+
+      '【思考提示】：'+tips+'<br>'+
+      '【自我檢核】：① 是否使用<b>文章中出現過</b>的字？② 詞性／單複數／時態是否正確？③ 放回句子唸一次，語意通順嗎？<br>'+
+      '你已經很認真在思考了，再修一次一定更好！💪';
+  };
+  host.appendChild(chk); host.appendChild(ai); host.appendChild(revealBtn(rv));
+  host.appendChild(fb); host.appendChild(aiBox); host.appendChild(rv);
+  attachTimer(host, st, fb);
+}
+/* ============================================================
+   頁籤一：💡 例句填空
+   ============================================================ */
+function buildFill(){
+  var root = document.getElementById('p-fill');
+  root.appendChild(ruleBar());
+  root.appendChild(el('div','intro',
+    '💡 <b>例句填空</b>：本頁共三個子單元，題目<b>每次進入頁面都會隨機重新排列</b>並重新編號。<br>'+
+    '📌 每題作答完畢，按壓「✅ 檢查」即可進入此單元互動學習總分之累計。'));
+
+  root.appendChild(secTitle('單元 1｜單字搭配詞（' + VOCAB.length + ' 題）'));
+  shuffle(VOCAB).forEach(function(item, i){
+    var st={locked:false};
+    var c = el('div','card');
+    c.appendChild(el('div','num', String(i+1)));
+    var inp = el('input','blank');
+    inp.type='text'; inp.setAttribute('placeholder', item.h);
+    inp.setAttribute('autocapitalize','off'); inp.setAttribute('autocomplete','off');
+    var line = el('div','qen');
+    var parts = item.s.split('{{B}}');
+    line.appendChild(document.createTextNode(parts[0]));
+    line.appendChild(inp);
+    line.appendChild(document.createTextNode(parts[1]||''));
+    c.appendChild(line);
+    c.appendChild(el('div','zh','🔤 提示字首字尾：' + item.h));
+    var fb = fbBox(), rv = makeReveal();
+    rv.innerHTML = '<div class="ansline">📖 參考解答：<b>'+item.a+'</b></div>'+
+                   '<div class="expl">完整句：'+esc(item.s.replace('{{B}}', item.a))+'</div>';
+    var chk = el('button','btn chk','✅ 檢查');
+    chk.onclick = function(){
+      var ok = eqWord(inp.value, item.a);
+      inp.className = 'blank ' + (ok?'ok':'no');
+      grade(st, ok, fb, '✅ 正確！ +200 分', '🍬 再想想這個字的字首字尾（不扣分）。');
+    };
+    c.appendChild(chk); c.appendChild(revealBtn(rv));
+    c.appendChild(sayBtn(item.s.replace('{{B}}', item.a)));
+    c.appendChild(fb); c.appendChild(rv);
+    root.appendChild(c);
+  });
+
+  root.appendChild(secTitle('單元 2｜慣用語與片語（' + IDIOMS.length + ' 題）'));
+  shuffle(IDIOMS).forEach(function(item, i){
+    var st={locked:false}, inputs=[];
+    var c = el('div','card');
+    c.appendChild(el('div','num', String(i+1)));
+    c.appendChild(el('div','zh','📝 ' + item.zh));
+    var line = el('div','qen');
+    var segs = item.en.split(/\{\{\d+\}\}/g);
+    segs.forEach(function(s, k){
+      line.appendChild(document.createTextNode(s));
+      if(k < segs.length-1){
+        var ip = el('input','blank w1'); ip.type='text';
+        ip.setAttribute('autocapitalize','off'); ip.setAttribute('autocomplete','off');
+        inputs.push(ip); line.appendChild(ip);
+      }
+    });
+    c.appendChild(line);
+    var fb=fbBox(), rv=makeReveal();
+    var full = buildBlankSentence(item.en, function(n){ return item.a[n-1]; });
+    rv.innerHTML = '<div class="ansline">📖 參考解答：<b>'+item.a.join('；')+'</b></div><div class="expl">'+esc(full)+'</div>';
+    var chk = el('button','btn chk','✅ 檢查');
+    chk.onclick = function(){
+      var ok=true;
+      inputs.forEach(function(ip,k){
+        var good = eqWord(ip.value, item.a[k]);
+        ip.className='blank w1 '+(good?'ok':'no'); if(!good) ok=false;
+      });
+      grade(st, ok, fb, '✅ 片語完全正確！ +200 分', '🍬 片語還沒完全對（不扣分，再修一次）。');
+    };
+    c.appendChild(chk); c.appendChild(revealBtn(rv)); c.appendChild(sayBtn(full));
+    c.appendChild(fb); c.appendChild(rv);
+    root.appendChild(c);
+  });
+
+  root.appendChild(secTitle('單元 3｜例句重要搭配詞 Guided Translation（' + COLLOC.length + ' 題）'));
+  root.appendChild(el('div','intro','※ 每格可能不只一字'));
+  shuffle(COLLOC).forEach(function(item, i){
+    var st={locked:false}, inputs=[];
+    var c = el('div','card');
+    c.appendChild(el('div','num', String(i+1)));
+    c.appendChild(el('div','zh','📝 ' + item.zh));
+    var line = el('div','qen');
+    var segs = item.en.split(/\{\{\d+\}\}/g);
+    segs.forEach(function(s,k){
+      line.appendChild(document.createTextNode(s));
+      if(k<segs.length-1){
+        var ip = el('input','blank w2'); ip.type='text';
+        ip.setAttribute('autocapitalize','off'); ip.setAttribute('autocomplete','off');
+        inputs.push(ip); line.appendChild(ip);
+      }
+    });
+    c.appendChild(line);
+    var fb=fbBox(), rv=makeReveal();
+    var full = buildBlankSentence(item.en, function(n){ return item.a[n-1]; });
+    rv.innerHTML = '<div class="ansline">📖 參考解答：<b>'+item.a.join('　/　')+'</b></div><div class="expl">'+esc(full)+'</div>';
+    var chk = el('button','btn chk','✅ 檢查');
+    chk.onclick = function(){
+      var ok=true;
+      inputs.forEach(function(ip,k){
+        var good = eqWord(ip.value, item.a[k]);
+        ip.className='blank w2 '+(good?'ok':'no'); if(!good) ok=false;
+      });
+      grade(st, ok, fb, '✅ 搭配詞完全正確！ +200 分', '🍬 搭配詞還沒完全對（不扣分，再修一次）。');
+    };
+    c.appendChild(chk); c.appendChild(revealBtn(rv)); c.appendChild(sayBtn(full));
+    c.appendChild(fb); c.appendChild(rv);
+    root.appendChild(c);
+  });
+
+  var subBox = el('div','card');
+  subBox.appendChild(el('div','sub-title','📤 繳交本單元練習結果'));
+  submitBlock(subBox, function(){
+    return collectPanel('p-fill', 'No. 3 龍騰 B1 L5 The Life of a Plastic Bag ｜ 💡 例句填空');
+  }, 'No. 3 龍騰 B1 L5 The Life of a Plastic Bag ｜ 💡 例句填空');
+  root.appendChild(subBox);
+}
+/* ============================================================
+   頁籤二：🗺️ 課文尋寶闖關（逐段解鎖）
+   ============================================================ */
+function buildHunt(){
+  var root = document.getElementById('p-hunt');
+  root.appendChild(ruleBar());
+  root.appendChild(el('div','intro',
+    '🗺️ <b>課文尋寶闖關 Reading Fill-in（4 段・逐段解鎖）</b><br>'+
+    '初始只有 Paragraph 1 可作答。按下「✅ 檢查本段答案」或「📖 參考解答」任一個，都會自動解鎖下一段。<br>'+
+    '📌 每段作答完畢，按壓「✅ 檢查本段答案」即可進入此單元互動學習總分之累計。'));
+  var paras = [];
+  READING.forEach(function(p, idx){
+    var st={locked:false}, inputs={};
+    var c = el('div','card para');
+    if(idx>0) c.classList.add('lock');
+    c.appendChild(el('div','num','📖 '+p.n));
+    var line = el('div','qen');
+    var segs = p.en.split(/\{\{\d+\}\}/g);
+    var nums = (p.en.match(/\{\{(\d+)\}\}/g)||[]).map(function(m){ return parseInt(m.replace(/\D/g,''),10); });
+    segs.forEach(function(s,k){
+      line.appendChild(document.createTextNode(s));
+      if(k<segs.length-1){
+        var n = nums[k];
+        var ip = el('input','blank w1'); ip.type='text';
+        ip.setAttribute('placeholder','('+n+')');
+        ip.setAttribute('autocapitalize','off'); ip.setAttribute('autocomplete','off');
+        inputs[n]=ip; line.appendChild(ip);
+      }
+    });
+    c.appendChild(line);
+    c.appendChild(el('div','zh','📝 ' + p.zh));
+    c.appendChild(el('div','lockhint','🔒 完成上一段後即可解鎖本段'));
+    var fb=fbBox(), rv=makeReveal();
+    var full = buildBlankSentence(p.en, function(n){ return p.a[n]; });
+    var alist = Object.keys(p.a).map(function(n){ return n+'. '+p.a[n]; }).join('　');
+    rv.innerHTML = '<div class="ansline">📖 參考解答（Paragraph '+p.n+'）：'+alist+'</div>'+
+                   '<div class="expl">'+esc(full.replace(/<[^>]+>/g,''))+'</div>';
+    function unlockNext(){ if(paras[idx+1]) paras[idx+1].classList.remove('lock'); }
+    var chk = el('button','btn chk','✅ 檢查本段答案');
+    chk.onclick = function(){
+      var ok=true;
+      Object.keys(inputs).forEach(function(n){
+        var good = eqWord(inputs[n].value, p.a[n]);
+        inputs[n].className='blank w1 '+(good?'ok':'no'); if(!good) ok=false;
+      });
+      grade(st, ok, fb, '✅ 本段全部正確！ +200 分', '🍬 本段還有空格沒填對（不扣分，再檢查一次）。');
+      unlockNext();
+    };
+    var rb = revealBtn(rv);
+    rb.addEventListener('click', unlockNext);
+    c.appendChild(chk); c.appendChild(rb);
+    var sb = el('button','btn say','🔊 朗讀本段');
+    sb.onclick = function(){ say(full.replace(/<[^>]+>/g,' ')); };
+    c.appendChild(sb);
+    c.appendChild(fb); c.appendChild(rv);
+    root.appendChild(c);
+    paras.push(c);
+  });
+
+  var subBox = el('div','card');
+  subBox.appendChild(el('div','sub-title','📤 繳交本單元練習結果'));
+  submitBlock(subBox, function(){
+    return collectPanel('p-hunt', 'No. 3 龍騰 B1 L5 The Life of a Plastic Bag ｜ 🗺️ 課文尋寶闖關');
+  }, 'No. 3 龍騰 B1 L5 The Life of a Plastic Bag ｜ 🗺️ 課文尋寶闖關');
+  root.appendChild(subBox);
+}
+/* ============================================================
+   頁籤三：🧩 綜合測驗 / 混合題 / 篇章結構 大富翁
+   ============================================================ */
+function mcCard(host, idx, item, onGraded, badge){
+  var st={locked:false, onDone:onGraded, onTouch:onGraded};
+  var c = el('div','card');
+  c.appendChild(el('div','num', badge || String(idx+1)));
+  c.appendChild(el('div','qen', '<b>'+esc(item.q)+'</b>'+(item.lv?' <span class="pill">'+item.lv+'</span>':'')));
+  c.appendChild(el('div','note','👉 直接按壓選項內容作答。'));
+  var box=el('div','mc'), btns=[], sel=-1;
+  item.o.forEach(function(o,i){
+    var b=el('button','mcopt','('+'ABCD'[i]+') '+esc(o));
+    b.onclick=function(){ btns.forEach(function(x){x.classList.remove('sel');}); b.classList.add('sel'); sel=i; };
+    btns.push(b); box.appendChild(b);
+  });
+  c.appendChild(box);
+  var fb=fbBox(), rv=makeReveal();
+  rv.innerHTML='<div class="ansline">📖 參考解答：('+'ABCD'[item.k]+') '+esc(item.o[item.k])+'</div>'+
+               '<div class="expl"><b>【答案與詳解】</b><br>'+item.e+'</div>';
+  var chk=el('button','btn chk','✅ 檢查');
+  chk.onclick=function(){
+    if(sel<0){ toast('請先選一個答案喔！', false); return; }
+    btns.forEach(function(b,i){ b.classList.remove('sel'); if(i===item.k) b.classList.add('ok'); else if(i===sel) b.classList.add('no'); });
+    grade(st, sel===item.k, fb, '✅ 正確！ +200 分', '🍬 這題錯了（不扣分），看一下詳解再挑戰！');
+  };
+  c.appendChild(chk); c.appendChild(revealBtn(rv)); c.appendChild(fb); c.appendChild(rv);
+  attachTimer(c, st, fb);
+  host.appendChild(c);
+}
+function renderMixItem(root, item, idx, onGraded){
+  var st={locked:false, onDone:onGraded, onTouch:onGraded};
+  var c = el('div','card');
+  c.appendChild(el('div','num', String(idx+1)));
+  c.appendChild(el('div','qen', item.q));
+  if(item.type==='fill'){
+    var inputs=[];
+    var line = el('div','qen'); line.style.marginTop='8px';
+    var segs = item.stem.split(/\{\{\d+\}\}/g);
+    segs.forEach(function(s,k){
+      line.appendChild(document.createTextNode(s));
+      if(k<segs.length-1){
+        var ip=el('input','blank w2'); ip.type='text';
+        ip.setAttribute('autocapitalize','off'); ip.setAttribute('autocomplete','off');
+        inputs.push(ip); line.appendChild(ip);
+      }
+    });
+    c.appendChild(line);
+    var fb=fbBox(), rv=makeReveal();
+    rv.innerHTML='<div class="ansline">📖 參考解答：\u2460 <b>'+item.a[0]+'</b>　\u2461 <b>'+item.a[1]+'</b></div>'+
+                 '<div class="expl"><b>【答案與詳解】</b><br>'+item.expl+'</div>';
+    var chk=el('button','btn chk','✅ 檢查');
+    chk.onclick=function(){
+      var ok=true;
+      inputs.forEach(function(ip,k){ var g=eqWord(ip.value,item.a[k]); ip.className='blank w2 '+(g?'ok':'no'); if(!g) ok=false; });
+      grade(st, ok, fb, '✅ 兩格都正確！ +200 分', '🍬 字形變化再確認一次（不扣分）。');
+    };
+    c.appendChild(chk); c.appendChild(revealBtn(rv)); c.appendChild(fb); c.appendChild(rv);
+  }
+  else if(item.type==='press'){
+    var fb2=fbBox(), rv2=makeReveal();
+    var labels=[]; for(var i=0;i<item.slots;i++) labels.push(String(i+1));
+    c.appendChild(el('div','note','👉 直接按壓下方選項內容作答；按壓題號旁的空格，該選項會回到原來的選項區。'));
+    var press = makePress(c, item.opts, item.a, labels, false);
+    rv2.innerHTML='<div class="ansline">📖 參考解答：<b>'+item.a.join('')+'</b></div>'+
+                  '<div class="expl"><b>【答案與詳解】</b><br>'+item.expl+'</div>';
+    var chk2=el('button','btn chk','✅ 檢查');
+    chk2.onclick=function(){
+      var ok=press.check(); if(ok===null) return;
+      grade(st, ok, fb2, '✅ 完全正確！ +200 分', '🍬 有選項不符合文章內容喔（不扣分）。');
+    };
+    c.appendChild(chk2); c.appendChild(revealBtn(rv2)); c.appendChild(fb2); c.appendChild(rv2);
+  }
+  else{ makeShort(c, item, st); }
+  root.appendChild(c);
+}
+/* 綜合測驗：直接按壓文章中的題號 (1)~(n)，就地展開下拉式選項 */
+function renderClozeInline(stage, passage, items, mark){
+  var pc = el('div','card blue');
+  pc.appendChild(el('div','note','👉 直接<b>按壓文章中的題號</b>（例如 (1)），該處會就地展開下拉式選項；選好後按下方各題的「✅ 檢查」批改。'));
+  var body = el('div','qen');
+  var picks = {};
+  var parts = passage.split(/__\((\d+)\)__/g);
+  parts.forEach(function(seg, i){
+    if(i % 2 === 0){
+      var span = el('span','', seg);
+      body.appendChild(span);
+    }else{
+      var n = parseInt(seg,10);
+      var it = items[n-1];
+      var holder = el('span'); holder.style.whiteSpace='nowrap';
+      var badge = el('button','btn mini','('+n+')');
+      badge.style.margin='0 3px';
+      var sel = document.createElement('select');
+      sel.className = 'blank w2'; sel.style.display='none';
+      sel.innerHTML = '<option value="-1">— 請選擇 —</option>' +
+        it.o.map(function(o,k){ return '<option value="'+k+'">('+'ABCD'[k]+') '+esc(o)+'</option>'; }).join('');
+      sel.onchange = function(){
+        picks[n] = parseInt(sel.value,10);
+        badge.textContent = (picks[n]>=0) ? ('('+n+') '+'ABCD'[picks[n]]) : ('('+n+')');
+      };
+      badge.onclick = function(){ sel.style.display = (sel.style.display==='none' ? 'inline-block' : 'none'); };
+      picks[n] = -1;
+      holder.appendChild(badge); holder.appendChild(sel);
+      body.appendChild(holder);
+    }
+  });
+  pc.appendChild(body);
+  pc.appendChild(sayBtn(passage.replace(/<[^>]+>/g,' ').replace(/__\(\d+\)__/g,' blank ')));
+  stage.appendChild(pc);
+  items.forEach(function(it, i){
+    var n = i+1;
+    var st = {locked:false, onDone:mark(i), onTouch:mark(i)};
+    var c = el('div','card');
+    c.appendChild(el('div','num', String(n)));
+    c.appendChild(el('div','qen','<b>'+esc(it.q)+'</b> Choose the best answer for blank '+esc(it.q)+' in the passage above.'));
+    c.appendChild(el('div','note','👉 請到上方文章按壓題號 '+it.q+' 選擇答案，再按「✅ 檢查」。'));
+    var fb = fbBox(), rv = makeReveal();
+    rv.innerHTML = '<div class="ansline">📖 參考解答：('+'ABCD'[it.k]+') '+esc(it.o[it.k])+'</div>'+
+                   '<div class="expl"><b>【答案與詳解】</b><br>'+it.e+'</div>';
+    var chk = el('button','btn chk','✅ 檢查');
+    chk.onclick = function(){
+      if(picks[n] === undefined || picks[n] < 0){ toast('請先在上方文章的題號 '+it.q+' 選擇答案喔！', false); return; }
+      grade(st, picks[n]===it.k, fb, '✅ 正確！ +200 分', '🍬 這題錯了（不扣分），看一下詳解再挑戰！');
+    };
+    var jump = el('button','btn','🔍 回到文章題號 '+it.q);
+    jump.onclick = function(){ try{ pc.scrollIntoView({behavior:'smooth', block:'center'}); }catch(e){} };
+    c.appendChild(chk); c.appendChild(jump); c.appendChild(revealBtn(rv));
+    c.appendChild(fb); c.appendChild(rv);
+    attachTimer(c, st, fb);
+    stage.appendChild(c);
+  });
+}
+function infoToggle(host, title, note){
+  var box = el('div','dsc-info');
+  box.innerHTML = '<div class="panelab">'+title+'</div><div class="note">'+note+'</div>';
+  var b = el('button','btn mini dsc-ibtn','\u2139\uFE0F');
+  b.setAttribute('aria-expanded','false');
+  b.onclick = function(){
+    var on = box.classList.toggle('on');
+    b.setAttribute('aria-expanded', on ? 'true' : 'false');
+  };
+  host.appendChild(b);
+  host.appendChild(box);
+}
+function renderDiscourse(stage, p, onGraded){
+  var st={locked:false, onDone:onGraded, onTouch:onGraded};
+  var MARKS = ['\u2460','\u2461','\u2462','\u2463'];
+  var head = el('div','card');
+  head.appendChild(el('div','num','📘'));
+  head.appendChild(el('div','sub-title','【'+p.title+'】'));
+  stage.appendChild(head);
+
+  var selKey = null, chips = {}, picks = [null,null,null,null], blanks = [];
+
+  /* ── 欄位一：選項區（只有選項，沒有作答格） ── */
+  var cA = el('div','card dsc-pane');
+  infoToggle(cA, '🧩 欄位一｜選項區', '👉 先按壓一個選項（變粉色＝已選取），再直接到下方文章中按壓題號 \u2460\u2461\u2462\u2463 即可填入；按壓文章中已填入的題號，該選項就回到這裡。');
+  var pool = el('div','pool');
+  p.opts.forEach(function(o){
+    var key=o[0], txt=o[1];
+    var ch = el('button','chip','('+key+') '+txt);
+    chips[key] = ch;
+    ch.onclick = function(){
+      if(ch.classList.contains('used')) return;
+      if(selKey === key){ selKey = null; ch.classList.remove('sel'); return; }
+      Object.keys(chips).forEach(function(k){ chips[k].classList.remove('sel'); });
+      selKey = key; ch.classList.add('sel');
+      toast('已選取 ('+key+')，請到文章中按壓題號填入', true);
+    };
+    pool.appendChild(ch);
+  });
+  cA.appendChild(pool);
+  var fb=fbBox(), rv=makeReveal();
+  rv.innerHTML='<div class="ansline">📖 參考解答：\u2460 '+p.a[0]+'　\u2461 '+p.a[1]+'　\u2462 '+p.a[2]+'　\u2463 '+p.a[3]+'</div>'+
+               '<div class="expl"><b>【答案與詳解】</b><br>'+p.expl+'</div>';
+  var chk=el('button','btn chk','✅ 檢查');
+  chk.onclick=function(){
+    if(picks.indexOf(null) > -1){ toast('文章中還有題號沒有填入選項喔！', false); return; }
+    var ok = picks.every(function(v,i){ return v === p.a[i]; });
+    blanks.forEach(function(b,i){
+      b.classList.remove('ok','no');
+      b.classList.add(picks[i]===p.a[i] ? 'ok' : 'no');
+    });
+    grade(st, ok, fb, '✅ 四格全對！ +200 分', '🍬 順序或選項有誤（不扣分，再調整看看）。');
+  };
+  cA.appendChild(chk); cA.appendChild(revealBtn(rv)); cA.appendChild(fb); cA.appendChild(rv);
+  stage.appendChild(cA);
+
+  /* ── 欄位二：英文文章題目區（題號可直接按壓填入） ── */
+  var cB = el('div','card dsc-pane');
+  infoToggle(cB, '📖 欄位二｜英文文章題目區', '本欄位可獨立上下捲動。選好選項後直接在文章中按壓題號填入，不必回到上方選項區。');
+  var body = el('div','qen');
+  var segs = p.body.split(/__([\u2460-\u2463])__/g);
+  segs.forEach(function(seg, i){
+    if(i % 2 === 0){
+      var sp = el('span'); sp.innerHTML = seg; body.appendChild(sp);
+    }else{
+      var idx = MARKS.indexOf(seg);
+      var b = el('button','dblank', seg);
+      b.title = '按壓填入所選選項';
+      blanks[idx] = b;
+      b.onclick = function(){
+        if(picks[idx]){
+          chips[picks[idx]].classList.remove('used');
+          picks[idx] = null;
+          b.className = 'dblank'; b.textContent = MARKS[idx];
+          return;
+        }
+        if(!selKey){ toast('請先在上方選項區按壓一個選項喔！', false); return; }
+        picks[idx] = selKey;
+        chips[selKey].classList.add('used');
+        chips[selKey].classList.remove('sel');
+        b.className = 'dblank filled';
+        b.textContent = MARKS[idx] + ' (' + selKey + ')';
+        selKey = null;
+      };
+      body.appendChild(b);
+    }
+  });
+  cB.appendChild(body);
+  cB.appendChild(sayBtn(p.body.replace(/<[^>]+>/g,' ').replace(/__[\u2460-\u2463]__/g,' blank ')));
+  stage.appendChild(cB);
+}
+var PRACTICES = [
+ {id:'c1', label:'綜合測驗 1｜Plastic and Our Oceans'},
+ {id:'c2', label:'綜合測驗 2｜Jeremy\u2019s Strange Night'},
+ {id:'m1', label:'混合題 1｜Marine Litter'},
+ {id:'m2', label:'混合題 2｜Food Chain'},
+ {id:'d1', label:'篇章結構 1｜I\u2019m a cigarette'},
+ {id:'d2', label:'篇章結構 2｜I\u2019m a battery'}
+];
+var DONE_SET = {};
+function renderPractice(stage, id, refresh){
+  stage.innerHTML = '';
+  var touched = {}, need = 0;
+  function mark(k){ return function(){ touched[k]=1; if(Object.keys(touched).length>=need){ DONE_SET[id]=1; refresh(); } }; }
+  if(id==='c1' || id==='c2'){
+    var pas = (id==='c1') ? CLOZE1_PASSAGE : CLOZE2_PASSAGE;
+    var items = (id==='c1') ? CLOZE1 : CLOZE2;
+    need = items.length;
+    stage.appendChild(el('div','sub-title', id==='c1' ? '【綜合測驗 1】Plastic and Our Oceans' : '【綜合測驗 2】Jeremy\u2019s Strange Night'));
+    renderClozeInline(stage, pas, items, mark);
+  }
+  else if(id==='m1' || id==='m2'){
+    var mpas = (id==='m1') ? MIX1_PASSAGE : MIX2_PASSAGE;
+    var mit  = (id==='m1') ? MIX1 : MIX2;
+    need = mit.length;
+    stage.appendChild(el('div','sub-title', id==='m1' ? '【混合題 1】Marine Litter' : '【混合題 2】Food Chain'));
+    var pc2 = el('div','card blue'); pc2.appendChild(el('div','qen', mpas));
+    pc2.appendChild(sayBtn(mpas.replace(/<[^>]+>/g,' ')));
+    stage.appendChild(pc2);
+    mit.forEach(function(it,i){ renderMixItem(stage, it, i, mark(i)); });
+  }
+  else{
+    need = 1;
+    renderDiscourse(stage, (id==='d1') ? DISCOURSE[0] : DISCOURSE[1], mark(0));
+  }
+  try{ if(stage.scrollIntoView) stage.scrollIntoView({behavior:'smooth', block:'nearest'}); }catch(e){}
+}
+var BOARD = [
+ {t:'🏁',n:'Start'},{t:'📘',n:'抽一篇\n練習'},{t:'🟥',n:'Grammar\nChallenge'},{t:'🟦',n:'Plastic\nFact'},
+ {t:'📘',n:'抽一篇\n練習'},{t:'⭐',n:'Bonus'},{t:'🟥',n:'Grammar\nChallenge'},{t:'📘',n:'抽一篇\n練習'},
+ {t:'🟦',n:'Plastic\nFact'},{t:'⭐',n:'Bonus'},{t:'🟥',n:'Grammar\nChallenge'},{t:'🎯',n:'Ocean\nStudio'}
+];
+var FACT_CARDS = [
+ '🟦 <b>Plastic Fact</b>：本課的塑膠袋從 factory → convenience store → beach → ocean → fish → 回收場，完整走過一次「生產、消費、棄置」的旅程。',
+ '🟦 <b>Plastic Fact</b>：課文第三段老師說 Because of all the littering, a lot of plastic products end up in the ocean，因果關係一句話說完，是本課最重要的主旨句之一。'
+];
+var BONUS_CARDS = [
+ '⭐ <b>Bonus</b>：抽考句型！請用 <b>end up + V-ing</b> 造一個關於塑膠袋的句子，說給組員聽。',
+ '⭐ <b>Bonus</b>：抽考句型！請用 <b>because</b> 與 <b>because of</b> 各造一句關於海洋汙染的句子，並說明兩者後面接的詞性有何不同。'
+];
+function buildMixed(){
+  var root = document.getElementById('p-mixed');
+  root.appendChild(ruleBar());
+  root.appendChild(el('div','intro',
+    '🧩 <b>綜合測驗 · 混合題 · 篇章結構｜大富翁闖關</b><br>'+
+    '本單元共 <b>6 篇</b>練習（綜合測驗 2 篇、混合題 2 篇、篇章結構 2 篇）。擲骰子前進，停在 <b>📘</b> 格就<b>隨機抽出一篇尚未完成</b>的練習。<br>'+
+    '<b>6 篇全部練習完畢，才算完成此單元。</b><br>'+
+    '📌 每題作答完畢，按壓「✅ 檢查」即可進入此單元互動學習總分之累計。'));
+  var wrap = el('div','card');
+  var dice = el('div','dice','🎲');
+  var pos = 0;
+  var board = el('div','board');
+  var cells = BOARD.map(function(b,i){
+    var d = el('div','cellx', b.t+'<br>'+b.n.replace('\n','<br>'));
+    d.style.background = b.t==='📘' ? 'var(--purple)' : b.t==='🟥' ? '#FEE2E2' : b.t==='🟦' ? 'var(--sky)' :
+                          b.t==='⭐' ? 'var(--yellow)' : 'var(--mint)';
+    if(i===0) d.classList.add('here');
+    board.appendChild(d); return d;
+  });
+  var stage = el('div');
+  var status = el('div','fb on ok');
+  var listBox = el('div','pillrow');
+  function refresh(){
+    var n = Object.keys(DONE_SET).length;
+    status.innerHTML = n>=6 ? '🏆 恭喜通關！6 篇練習全部完成 ✅' : ('🎯 目前進度：已完成 '+n+' / 6 篇。停在 📘 格即可抽出下一篇！');
+    listBox.innerHTML = '';
+    PRACTICES.forEach(function(p){
+      listBox.appendChild(el('span','pill', (DONE_SET[p.id]?'✅ ':'⬜ ')+p.label));
+    });
+  }
+  var roll = el('button','btn chk','🎲 擲骰子前進');
+  roll.onclick = function(){
+    dice.classList.add('rolling');
+    var n = 1+Math.floor(Math.random()*6);
+    setTimeout(function(){
+      dice.classList.remove('rolling');
+      dice.textContent = ['⚀','⚁','⚂','⚃','⚄','⚅'][n-1];
+      cells[pos].classList.remove('here');
+      pos = (pos + n) % BOARD.length;
+      cells[pos].classList.add('here');
+      var b = BOARD[pos];
+      stage.innerHTML = '';
+      if(b.t==='📘'){
+        var pool = PRACTICES.filter(function(p){ return !DONE_SET[p.id]; });
+        if(!pool.length){ stage.appendChild(el('div','fb on ok','🏆 6 篇練習都完成了！你已通關本單元。')); return; }
+        var p = pool[Math.floor(Math.random()*pool.length)];
+        renderPractice(stage, p.id, refresh);
+      }else if(b.t==='🟥'){ renderChallengeMC(stage); }
+      else if(b.t==='🟦'){ stage.appendChild(el('div','fb on ok', pick(FACT_CARDS))); }
+      else if(b.t==='⭐'){ stage.appendChild(el('div','fb on ok', pick(BONUS_CARDS))); }
+      else if(b.t==='🎯'){
+        stage.appendChild(el('div','fb on ok',
+          '🎯 <b>Ocean Studio</b>：用你讀過的所有篇章，說（或寫）出一段「塑膠如何從陸地走進海洋、再回到我們身上」的完整說明吧！'));
+      }else{ stage.appendChild(el('div','fb on ok','🏁 回到起點，重新出發！')); }
+    }, 620);
+  };
+  wrap.appendChild(board); wrap.appendChild(dice); wrap.appendChild(roll);
+  wrap.appendChild(status); wrap.appendChild(listBox);
+  root.appendChild(wrap);
+  root.appendChild(stage);
+  refresh();
+  root.appendChild(secTitle('📌 也可以直接選一篇練習'));
+  var picker = el('div','card');
+  PRACTICES.forEach(function(p){
+    var b = el('button','btn','📘 '+p.label);
+    b.onclick = function(){ renderPractice(stage, p.id, refresh); try{ stage.scrollIntoView({behavior:'smooth', block:'start'}); }catch(e){} };
+    picker.appendChild(b);
+  });
+  root.appendChild(picker);
+
+  var subBox = el('div','card');
+  subBox.appendChild(el('div','sub-title','📤 繳交本單元練習結果'));
+  submitBlock(subBox, function(){
+    return collectPanel('p-mixed', 'No. 3 龍騰 B1 L5 The Life of a Plastic Bag ｜ 🧩 混合題 & 篇章結構');
+  }, 'No. 3 龍騰 B1 L5 The Life of a Plastic Bag ｜ 🧩 混合題 & 篇章結構');
+  root.appendChild(subBox);
+}
+function renderChallengeMC(stage){
+  var g = GRAMMAR[Math.floor(Math.random()*GRAMMAR.length)];
+  mcCard(stage, 0, {q:'Grammar Challenge：'+g.q, o:g.o, k:g.k, e:g.e}, null, '🟥');
+}
+/* ============================================================
+   頁籤四：🌊 Ocean Rescue Tournament 海洋救援錦標賽（STAGE 1-7）
+   ============================================================ */
+var OC_PANES = [], OC_BTNS = [], OC_PROG = null, OC_LABEL = null;
+function gotoStage(i){
+  OC_PANES.forEach(function(p,k){ p.style.display = (k===i?'block':'none'); });
+  OC_BTNS.forEach(function(b,k){ b.classList.toggle('on', k===i); });
+  OC_PROG.style.width = ((i+1)/OC_PANES.length*100)+'%';
+  OC_LABEL.textContent = 'STAGE ' + (i+1) + ' / ' + OC_PANES.length;
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+function starsFor(n){ return n<=0 ? '☆☆☆' : (n===1?'★☆☆':(n===2?'★★☆':'★★★')); }
+function buildOcean(){
+  var root = document.getElementById('p-ocean');
+  root.appendChild(ruleBar());
+  root.appendChild(el('div','intro',
+    '🌊 <b>Ocean Rescue Tournament 海洋救援錦標賽</b>（SDGs 延伸教材，共 7 關）<br>'+
+    '🎣 人格拼圖 → 🐢 海龜圖像擂台 → 🌍 SDGs 大富翁 → 💬 論述擂台 → 🌊 太平洋垃圾帶情報站 → 🔗 海廢因果鏈 → 🏆 兩週減塑總決賽。<br>'+
+    '📌 每題作答完畢，按壓「✅ 檢查」即可進入互動學習總分之累計。'));
+  /* 競賽機制開關 */
+  var ctl = el('div','card');
+  ctl.appendChild(el('div','sub-title','🏅 競賽機制設定'));
+  var b2p = el('button','btn','👥 雙人對戰模式：關閉');
+  var p2row = el('div','p2wrap');
+  var p2a = el('div','p2','👤 Player 1：0 分'), p2b = el('div','p2','👤 Player 2：0 分');
+  p2row.appendChild(p2a); p2row.appendChild(p2b);
+  P2BOXES.push([p2a,p2b]);
+  b2p.onclick = function(){
+    P2ON = !P2ON; P2TURN = 1; P2=[0,0];
+    b2p.textContent = '👥 雙人對戰模式：' + (P2ON?'開啟（輪流作答）':'關閉');
+    b2p.classList.toggle('on', P2ON);
+    p2row.classList.toggle('on', P2ON);
+    paintP2();
+  };
+  var btm = el('button','btn','⏱️ 計時挑戰：關閉');
+  btm.onclick = function(){
+    TIMERON = !TIMERON;
+    btm.textContent = '⏱️ 計時挑戰：' + (TIMERON?'開啟（每題 30 秒，逾時以錯誤計）':'關閉');
+    btm.classList.toggle('on', TIMERON);
+    toast(TIMERON?'計時挑戰已開啟，之後開啟的題目將倒數 30 秒':'計時挑戰已關閉', true);
+  };
+  ctl.appendChild(b2p); ctl.appendChild(btm); ctl.appendChild(p2row);
+  ctl.appendChild(el('div','note','排名徽章：🥇 金 2000 分以上／🥈 銀 1200 分以上／🥉 銅 600 分以上／🌱 新手。徽章顯示於頁首，隨分數即時更新。'));
+  root.appendChild(ctl);
+
+  var labels = ['1 🎣 人格拼圖','2 🐢 海龜擂台','3 🌍 SDGs 大富翁','4 💬 論述擂台','5 🌊 情報站','6 🔗 因果鏈','7 🏆 總決賽'];
+  var nav = el('div'); nav.style.cssText='display:flex;flex-wrap:wrap;gap:6px;margin-top:6px';
+  labels.forEach(function(t,i){
+    var b = el('button','tabbtn', t);
+    b.onclick = function(){ gotoStage(i); };
+    OC_BTNS.push(b); nav.appendChild(b);
+  });
+  root.appendChild(nav);
+  OC_LABEL = el('div','note','STAGE 1 / 7');
+  var pw = el('div','progwrap'); OC_PROG = el('div','progbar'); pw.appendChild(OC_PROG);
+  root.appendChild(pw); root.appendChild(OC_LABEL);
+  for(var i=0;i<7;i++){ var d=el('div'); d.style.display='none'; OC_PANES.push(d); root.appendChild(d); }
+
+  buildStage1(OC_PANES[0]);
+  buildStage2(OC_PANES[1]);
+  buildStage3(OC_PANES[2]);
+  buildStage4(OC_PANES[3]);
+  buildStage5(OC_PANES[4]);
+  buildStage6(OC_PANES[5]);
+  buildStage7(OC_PANES[6]);
+  var subBox = el('div','card');
+  subBox.appendChild(el('div','sub-title','📤 繳交本單元練習結果'));
+  submitBlock(subBox, function(){
+    return collectPanel('p-ocean', 'No. 3 龍騰 B1 L5 The Life of a Plastic Bag ｜ 🌊 海洋救援錦標賽');
+  }, 'No. 3 龍騰 B1 L5 The Life of a Plastic Bag ｜ 🌊 海洋救援錦標賽');
+  root.appendChild(subBox);
+  gotoStage(0);
+}
+/* ---------- STAGE 1 ---------- */
+function buildStage1(host){
+  host.appendChild(secTitle('STAGE 1｜🎣 塑膠袋人格拼圖（Beyond the Text - Task 1）'));
+  host.appendChild(el('div','intro', S1_INTRO));
+  /* Phase A：分欄 */
+  var stA = {locked:false};
+  var cA = el('div','card');
+  cA.appendChild(el('div','num','A'));
+  cA.appendChild(el('div','sub-title','第一階段｜把 8 個描述詞丟進正確欄位'));
+  cA.appendChild(el('div','note','👉 先按壓描述詞（變粉色＝選取），再按壓下方欄位即可放入；按壓已放入的描述詞可退回上方詞庫。'));
+  var bank = el('div','pillrow');
+  var selWord = null, chipsA = {};
+  S1_WORDS.slice().sort().forEach(function(w){
+    var ch = el('button','chip', w);
+    chipsA[w] = ch;
+    ch.onclick = function(){
+      if(selWord === w){ selWord=null; ch.classList.remove('sel'); return; }
+      Object.keys(chipsA).forEach(function(k){ chipsA[k].classList.remove('sel'); });
+      selWord = w; ch.classList.add('sel');
+    };
+    bank.appendChild(ch);
+  });
+  cA.appendChild(bank);
+  var zones = {}, placed = {};
+  var zwrap = el('div','twocolgrid');
+  ['Plastic Bags','Human Behavior'].forEach(function(z){
+    var dz = el('div','dropzone');
+    dz.appendChild(el('h4','', (z==='Plastic Bags'?'🛍️ ':'🧍 ')+z));
+    var inner = el('div','pillrow');
+    dz.appendChild(inner);
+    dz.onclick = function(){
+      if(!selWord) return;
+      if(placed[selWord]) return;
+      placed[selWord] = z;
+      var p = el('span','pill click', selWord);
+      p.onclick = function(ev){
+        ev.stopPropagation();
+        delete placed[selWord];
+        delete placed[p.textContent];
+        inner.removeChild(p);
+        chipsA[p.textContent].classList.remove('used');
+      };
+      inner.appendChild(p);
+      chipsA[selWord].classList.add('used');
+      selWord = null;
+    };
+    zones[z] = inner;
+    zwrap.appendChild(dz);
+  });
+  cA.appendChild(zwrap);
+  var fbA = fbBox(), rvA = makeReveal();
+  var subjMap = {};
+  S1_ITEMS.forEach(function(it){ subjMap[it.word] = it.subj; });
+  rvA.innerHTML = '<div class="ansline">📖 參考解答（Subject 分欄）</div><div class="expl">'+
+    '<b>Plastic Bags：</b>'+S1_ITEMS.filter(function(i){return i.subj==='Plastic Bags';}).map(function(i){return i.word;}).join('、')+'<br>'+
+    '<b>Human Behavior：</b>'+S1_ITEMS.filter(function(i){return i.subj==='Human Behavior';}).map(function(i){return i.word;}).join('、')+'</div>';
+  var phaseB = el('div','card lockcard');
+  var chkA = el('button','btn chk','✅ 檢查分欄');
+  chkA.onclick = function(){
+    if(Object.keys(placed).length < 8){ toast('還有描述詞沒有分欄喔！', false); return; }
+    var wrong = 0;
+    Object.keys(placed).forEach(function(w){ if(placed[w] !== subjMap[w]) wrong++; });
+    if(wrong===0){
+      grade(stA, true, fbA, '✅ 分欄全部正確！ +200 分　🔓 第二階段已解鎖');
+      phaseB.classList.remove('lockcard');
+    }else{
+      showFb(fbA, false, '🍬 有 '+wrong+' 個描述詞放錯欄位（不扣分，再調整看看）。'+pick(ENCOURAGE));
+    }
+  };
+  cA.appendChild(chkA); cA.appendChild(revealBtn(rvA)); cA.appendChild(fbA); cA.appendChild(rvA);
+  host.appendChild(cA);
+  /* Phase B：配對 */
+  var stB = {locked:false};
+  phaseB.appendChild(el('div','num','B'));
+  phaseB.appendChild(el('div','sub-title','第二階段｜把描述詞配到能證明它的證據句'));
+  phaseB.appendChild(el('div','note','🔒 完成第一階段後解鎖。👉 按壓下方詞庫的描述詞，再按壓證據句卡即可配對；按壓已配對的句卡可退回描述詞。'));
+  /* 區塊一：選項區（黏貼在卡片頂端，捲動證據句時仍看得見） */
+  var bankWrap = el('div','b2-bank');
+  bankWrap.appendChild(el('div','b2-lab','🧩 選項區｜描述詞詞庫（捲動時固定顯示）'));
+  var bank2 = el('div','b2-chips'); var selW2=null, chips2={};
+  shuffle(S1_WORDS).forEach(function(w){
+    var ch = el('button','chip', w); chips2[w]=ch;
+    ch.onclick = function(){
+      if(ch.classList.contains('used')) return;
+      if(selW2===w){ selW2=null; ch.classList.remove('sel'); return; }
+      Object.keys(chips2).forEach(function(k){ chips2[k].classList.remove('sel'); });
+      selW2=w; ch.classList.add('sel');
+      toast('已選取「'+w+'」，請按壓下方證據句卡', true);
+    };
+    bank2.appendChild(ch);
+  });
+  bankWrap.appendChild(bank2);
+  phaseB.appendChild(bankWrap);
+  /* 區塊二：題目區（證據句，獨立捲動） */
+  var sentBox = el('div','b2-sents');
+  sentBox.appendChild(el('div','b2-lab2','📖 題目區｜證據句（可獨立上下捲動）'));
+  var pairs = {};
+  shuffle(S1_ITEMS).forEach(function(it, i){
+    var row = el('div','slotbig');
+    var lab = el('div','', '<b>'+(i+1)+'.</b> '+esc(it.sent));
+    var tag = el('div','note','（尚未配對）');
+    row.appendChild(lab); row.appendChild(tag);
+    row.onclick = function(){
+      if(pairs[it.sent]){
+        chips2[pairs[it.sent]].classList.remove('used');
+        delete pairs[it.sent];
+        row.className='slotbig'; tag.textContent='（尚未配對）';
+        return;
+      }
+      if(!selW2){ toast('請先在上方選項區按壓一個描述詞喔！', false); return; }
+      pairs[it.sent]=selW2; chips2[selW2].classList.add('used');
+      chips2[selW2].classList.remove('sel');
+      row.className='slotbig filled'; tag.textContent='➡️ '+selW2+'　（'+it.subj+'）';
+      selW2=null;
+    };
+    sentBox.appendChild(row);
+  });
+  phaseB.appendChild(sentBox);
+  var fbB = fbBox(), rvB = makeReveal();
+  rvB.innerHTML = '<div class="ansline">📖 參考解答（Subject｜Description｜Supporting Details）</div>'+
+    S1_ITEMS.map(function(it){
+      return '<div class="expl"><b>'+it.subj+'｜'+it.word+'</b><br>'+esc(it.sent)+'<br><span class="note">'+it.why+'</span></div>';
+    }).join('');
+  var chkB = el('button','btn chk','✅ 檢查配對');
+  chkB.onclick = function(){
+    if(Object.keys(pairs).length < 8){ toast('還有句子沒有配對喔！', false); return; }
+    var wrong=0;
+    S1_ITEMS.forEach(function(it){ if(pairs[it.sent]!==it.word) wrong++; });
+    if(wrong===0){ grade(stB, true, fbB, '✅ 8 組配對全部正確！ +200 分'); }
+    else{ showFb(fbB, false, '🍬 有 '+wrong+' 組配對錯誤（不扣分，再想想看）。'+pick(ENCOURAGE)); }
+  };
+  phaseB.appendChild(chkB); phaseB.appendChild(revealBtn(rvB)); phaseB.appendChild(fbB); phaseB.appendChild(rvB);
+  host.appendChild(phaseB);
+}
+/* ---------- STAGE 2 ---------- */
+function buildStage2(host){
+  host.appendChild(secTitle('STAGE 2｜🐢 海龜圖像解讀擂台（Beyond the Text - Task 2）'));
+  var pic = el('div','card blue');
+  pic.appendChild(el('div','sub-title','A sea turtle carries a plastic bag in its mouth'));
+  pic.innerHTML += '<svg viewBox="0 0 420 240" role="img" aria-label="A sea turtle carries a plastic bag in its mouth 一隻海龜嘴裡叼著塑膠袋" style="width:100%;max-width:420px;display:block;margin:0 auto">'+
+    '<rect x="0" y="0" width="420" height="240" fill="#BAE6FD"/>'+
+    '<path d="M0 200 Q105 180 210 200 T420 200 L420 240 L0 240 Z" fill="#7DD3FC" opacity=".7"/>'+
+    '<ellipse cx="200" cy="130" rx="80" ry="55" fill="#34D399"/>'+
+    '<path d="M140 120 q60 -30 120 0 q-60 40 -120 0 z" fill="#059669" opacity=".45"/>'+
+    '<ellipse cx="290" cy="112" rx="34" ry="26" fill="#34D399"/>'+
+    '<circle cx="303" cy="104" r="4.5" fill="#134E4A"/>'+
+    '<ellipse cx="140" cy="86" rx="34" ry="16" fill="#34D399" transform="rotate(-28 140 86)"/>'+
+    '<ellipse cx="140" cy="176" rx="34" ry="16" fill="#34D399" transform="rotate(28 140 176)"/>'+
+    '<ellipse cx="258" cy="176" rx="26" ry="13" fill="#34D399" transform="rotate(-18 258 176)"/>'+
+    '<path d="M318 118 q28 -16 44 6 q-8 34 -40 30 q-16 -14 -4 -36 z" fill="#F1F5F9" opacity=".92" stroke="#94A3B8" stroke-width="2"/>'+
+    '<path d="M330 124 q12 20 6 34" stroke="#CBD5E1" stroke-width="2" fill="none"/>'+
+    '<circle cx="70" cy="60" r="7" fill="#fff" opacity=".6"/><circle cx="96" cy="42" r="4" fill="#fff" opacity=".6"/>'+
+    '</svg>'+
+    '<div class="note">Plastic products take much longer to decompose than we imagine. Take a look at the picture above.</div>';
+  host.appendChild(pic);
+  S2_QS.forEach(function(item, i){
+    var st = {locked:false};
+    var c = el('div','card');
+    c.appendChild(el('div','num', String(i+1)));
+    c.appendChild(el('div','qen','<b>'+esc(item.q)+'</b>'));
+    var ta = el('textarea','ta'); ta.style.minHeight='110px';
+    ta.setAttribute('placeholder','Write at least 30 words in English...');
+    c.appendChild(ta);
+    var wc = el('div','note','字數：0 字（思辨分數門檻：30 字以上且命中關鍵概念）');
+    ta.addEventListener('input', function(){
+      var n = ta.value.trim() ? ta.value.trim().split(/\s+/).length : 0;
+      wc.textContent = '字數：'+n+' 字（思辨分數門檻：30 字以上且命中關鍵概念）';
+    });
+    c.appendChild(wc);
+    var fb = fbBox(), rv = makeReveal(), aiBox = el('div','reveal');
+    rv.innerHTML = '<div class="ansline">📖 參考解答</div><div class="expl">'+esc(item.ref)+'</div>'+
+                   '<div class="expl"><b>【答案與詳解】</b><br>'+item.expl+'</div>';
+    var sb = el('button','btn say','🔊 朗讀參考解答'); sb.onclick=function(){ say(item.ref); };
+    rv.appendChild(sb);
+    var chk = el('button','btn chk','✅ 檢查（思辨分數）');
+    chk.onclick = function(){
+      var n = ta.value.trim() ? ta.value.trim().split(/\s+/).length : 0;
+      var cov = coverage(ta.value, item.ref);
+      grade(st, (n>=30 && cov>=0.3), fb,
+        '✅ 字數達標且命中關鍵概念！ +200 分',
+        '🍬 字數未滿 30 字，或還沒觸及關鍵概念（不扣分，再補充）。');
+    };
+    var ai = el('button','btn ai','🤖 AI 引導（不給答案）');
+    ai.onclick = function(){
+      var v = ta.value.trim(); aiBox.classList.add('on');
+      if(!v){ aiBox.innerHTML='<b>🤖 AI 老師：</b>先寫一句你看到這張圖的第一個感受吧！老師陪你一起把它變成完整論述 💛'; return; }
+      var cov = coverage(v, item.ref), tip;
+      if(cov>=0.6) tip='論點已經很扎實了！接著加上<b>「所以呢？」</b>——這個現象最後會回到誰身上？試著把影響延伸到 marine life、environment、our health 三個層次。';
+      else if(cov>=0.3) tip='方向對了！再想想：這張圖是在講<b>數量的比較</b>還是<b>單一悲劇</b>？如果是比較，有沒有一個動詞可以一次表達「數量超過」？';
+      else tip='先別急著下結論。問自己三個問題：① 海龜為什麼會咬塑膠袋？② 如果每隻海龜都這樣，海洋會變成什麼樣子？③ 這件事最後跟「我」有什麼關係？把三個答案串起來就是一段好論述。';
+      aiBox.innerHTML='<b>🤖 AI 老師的引導（不給答案）：</b><br>【你的回答】：'+esc(v)+'<br>【思考提示】：'+tip+
+        '<br>【自我檢核】：① 有沒有指出<b>訊息</b>而不只是描述畫面？② 有沒有用到<b>因果或條件句</b>（if / because / so）？③ 有沒有提出<b>可行動的建議</b>？<br>你已經很有想法了，再推進一層會更漂亮！💪';
+    };
+    c.appendChild(chk); c.appendChild(ai); c.appendChild(revealBtn(rv));
+    c.appendChild(fb); c.appendChild(aiBox); c.appendChild(rv);
+    attachTimer(c, st, fb);
+    host.appendChild(c);
+  });
+  /* Caption Battle */
+  var cb = el('div','card');
+  cb.appendChild(el('div','sub-title','🏆 Caption Battle 標題對決'));
+  cb.appendChild(el('div','note','為這張圖下一句英文標語（限 8 字以內），系統依關鍵字即時評星。雙人模式下比星數定勝負。'));
+  var cin = el('input','blank w3'); cin.type='text'; cin.setAttribute('placeholder','Your caption (max 8 words)');
+  var sbox = el('div','starbox','☆☆☆');
+  var res = el('div','note','');
+  cin.addEventListener('input', function(){
+    var words = cin.value.trim() ? cin.value.trim().split(/\s+/) : [];
+    var low = cin.value.toLowerCase();
+    var hit = S2_CAPKEYS.filter(function(k){ return low.indexOf(k)>-1; }).length;
+    var over = words.length>8;
+    var star = over ? 0 : (hit>=3?3:(hit===2?2:(hit===1?1:0)));
+    sbox.textContent = starsFor(star);
+    res.innerHTML = over ? '⚠️ 超過 8 字了，精簡一點會更有力！' :
+      ('命中關鍵字 '+hit+' 個｜字數 '+words.length+' / 8'+(star===3?'　🌟 三星標語！':''));
+    cb.dataset.star = star;
+  });
+  cb.appendChild(cin); cb.appendChild(sbox); cb.appendChild(res);
+  var cst = {locked:false}; var cfb = fbBox();
+  var cchk = el('button','btn chk','✅ 送出標語');
+  cchk.onclick = function(){
+    var star = parseInt(cb.dataset.star||'0',10);
+    grade(cst, star>=2, cfb, '✅ 兩星以上，標語很有力！ +200 分', '🍬 再多用一些關鍵概念（plastic／ocean／turtle／single-use／refuse），不扣分喔！');
+  };
+  cb.appendChild(cchk); cb.appendChild(cfb);
+  host.appendChild(cb);
+}
+/* ---------- STAGE 3 ---------- */
+function buildStage3(host){
+  host.appendChild(secTitle('STAGE 3｜🌍 SDGs 知識大富翁（Introduction to SDGs）'));
+  var txt = el('div','card blue');
+  txt.appendChild(el('div','sub-title','SDG 12: Responsible Consumption and Production'));
+  txt.appendChild(el('div','qen', S3_SDG12));
+  txt.appendChild(el('div','sub-title','SDG 14: Life below Water'));
+  txt.appendChild(el('div','qen', S3_SDG14));
+  txt.appendChild(el('div','sub-title','導讀本文'));
+  txt.appendChild(el('div','qen', S3_READING));
+  txt.appendChild(sayBtn((S3_SDG12+' '+S3_SDG14+' '+S3_READING).replace(/<[^>]+>/g,' ')));
+  var zh = el('details','acc');
+  var zsm = document.createElement('summary'); zsm.textContent='📄 SDGs 導讀中譯（點擊展開）';
+  zh.appendChild(zsm); zh.appendChild(el('div','expl', S3_ZH));
+  txt.appendChild(zh);
+  host.appendChild(txt);
+  /* 大富翁 */
+  var wrap = el('div','card');
+  wrap.appendChild(el('div','sub-title','🎲 12 格環狀棋盤（四層次挑戰題）'));
+  wrap.appendChild(el('div','note','擲骰前進，停格觸發一題四層次挑戰題（主要資訊／次要資訊／訊息與細節／語言結構與生活活用）。'));
+  var board = el('div','board'); var cells=[]; var pos=0;
+  for(var i=0;i<12;i++){
+    var d = el('div','cellx', (i===0?'🏁<br>Start':'🌍<br>SDG<br>Q'));
+    d.style.background = i===0 ? 'var(--mint)' : (i%2 ? 'var(--sky)' : 'var(--purple)');
+    if(i===0) d.classList.add('here');
+    board.appendChild(d); cells.push(d);
+  }
+  var dice = el('div','dice','🎲');
+  var stage = el('div');
+  var used = [];
+  var roll = el('button','btn chk','🎲 擲骰');
+  roll.onclick = function(){
+    dice.classList.add('rolling');
+    var n = 1+Math.floor(Math.random()*6);
+    setTimeout(function(){
+      dice.classList.remove('rolling');
+      dice.textContent = ['⚀','⚁','⚂','⚃','⚄','⚅'][n-1];
+      cells[pos].classList.remove('here'); pos=(pos+n)%12; cells[pos].classList.add('here');
+      stage.innerHTML='';
+      if(pos===0){ stage.appendChild(el('div','fb on ok','🏁 回到起點，再擲一次吧！')); return; }
+      var pool = S3_QS.filter(function(_,i){ return used.indexOf(i)<0; });
+      if(!pool.length){ used=[]; pool=S3_QS.slice(); }
+      var q = pool[Math.floor(Math.random()*pool.length)];
+      used.push(S3_QS.indexOf(q));
+      if(q.type==='mc') mcCard(stage, 0, q, null, '🌍');
+      else{
+        var st={locked:false};
+        var c=el('div','card');
+        c.appendChild(el('div','num','🌍'));
+        c.appendChild(el('div','qen','<span class="pill">'+q.lv+'</span><br><b>'+esc(q.q)+'</b>'));
+        makeShort(c, q, st);
+        stage.appendChild(c);
+      }
+    }, 620);
+  };
+  wrap.appendChild(board); wrap.appendChild(dice); wrap.appendChild(roll);
+  host.appendChild(wrap);
+  host.appendChild(stage);
+  /* 閃卡 */
+  host.appendChild(secTitle('🔤 Word Bank 閃卡修煉（8 張）'));
+  var fw = el('div','flipwrap');
+  S3_WORDBANK.forEach(function(w){
+    var card=el('div','flip'), inner=el('div','flipin');
+    var front=el('div','face front'), back=el('div','face back');
+    front.innerHTML = '<div style="font-size:20px;font-weight:900">'+w.w+'</div><div class="note">'+w.p+'</div>';
+    var sb = el('button','btn say','🔊 發音');
+    sb.onclick=function(ev){ ev.stopPropagation(); say(w.w); };
+    front.appendChild(sb);
+    front.appendChild(el('div','note','👆 點卡片翻面看中文與例句'));
+    back.innerHTML = '<div style="font-weight:900">'+w.w+'　'+w.p+'　'+w.zh+'</div><div class="expl">'+esc(w.ex)+'</div>';
+    var sb2 = el('button','btn say','🔊 朗讀例句');
+    sb2.onclick=function(ev){ ev.stopPropagation(); say(w.ex); };
+    back.appendChild(sb2);
+    inner.appendChild(front); inner.appendChild(back); card.appendChild(inner);
+    card.onclick=function(){ card.classList.toggle('on'); };
+    fw.appendChild(card);
+  });
+  host.appendChild(fw);
+}
+/* ---------- STAGE 4 ---------- */
+function buildStage4(host){
+  host.appendChild(secTitle('STAGE 4｜💬 快問快答論述擂台（Task 3 Q&A）'));
+  var tb = el('div','card');
+  tb.appendChild(el('div','sub-title','🧰 句型工具箱（評分項目：論點完整 +100、使用指定句型 +100）'));
+  var tr = el('div','pillrow');
+  S4_TOOLBOX.forEach(function(t){ tr.appendChild(el('span','pill', t.en + '　<span class="pzh">' + t.zh + '</span>')); });
+  tb.appendChild(tr);
+  tb.appendChild(el('div','note','每題限時 90 秒（可由上方「⏱️ 計時挑戰」開關控制）。'));
+  host.appendChild(tb);
+  S4_QS.forEach(function(item, i){
+    var st={locked:false};
+    var c = el('div','card');
+    c.appendChild(el('div','num', String(i+1)));
+    c.appendChild(el('div','qen','<b>'+esc(item.q)+'</b>'));
+    c.appendChild(el('div','zh','📝 '+item.zh));
+    var ta = el('textarea','ta'); ta.style.minHeight='130px';
+    ta.setAttribute('placeholder','Write your argument in English... 請用英文寫下你的論述');
+    c.appendChild(ta);
+    var fb=fbBox(), rv=makeReveal(), aiBox=el('div','reveal');
+    rv.innerHTML = '<div class="ansline">📖 參考解答</div><div class="expl">'+esc(item.ref)+'</div>'+
+                   '<div class="expl"><b>【參考解答中譯】</b><br>'+item.refzh+'</div>'+
+                   '<div class="expl">'+item.e+'</div>';
+    var sb = el('button','btn say','🔊 朗讀參考解答'); sb.onclick=function(){ say(item.ref); };
+    rv.appendChild(sb);
+    var chk = el('button','btn chk','✅ 檢查（rubric 評分）');
+    chk.onclick = function(){
+      var low = ta.value.toLowerCase();
+      var hit = item.must.filter(function(k){ return low.indexOf(k)>-1; }).length;
+      var cov = coverage(ta.value, item.ref);
+      var full = (cov>=0.45 && hit>=2);
+      grade(st, full, fb,
+        '✅ 論點完整＋使用指定句型！ +200 分',
+        '🍬 論點或指定句型還有缺漏（目前命中指定句型 '+hit+' / '+item.must.length+'），不扣分，再補強！');
+    };
+    var ai = el('button','btn ai','🤖 AI 引導（不給答案）');
+    ai.onclick = function(){
+      var v=ta.value.trim(); aiBox.classList.add('on');
+      if(!v){ aiBox.innerHTML='<b>🤖 AI 老師：</b>先寫下你的立場一句話就好！有立場才有論證，老師陪你往下推 💛'; return; }
+      var low=v.toLowerCase();
+      var miss = item.must.filter(function(k){ return low.indexOf(k)<0; });
+      var gap = missGapText(v);
+      aiBox.innerHTML = '<b>🤖 AI 老師的引導（不給答案）：</b><br>【你的回答】：'+esc(v)+'<br>'+
+        '【論證缺口】：'+gap+'<br>'+
+        '【可用句型提醒】：句型工具箱裡還有 '+(miss.length?('<b>'+miss.length+'</b> 個關鍵表達沒被你用上'):'全部都用上了，太強了')+'。翻上去看看工具箱，挑一個把你的句子升級。<br>'+
+        '你的思路已經開始成形，再補上一層推論就非常完整了！💪';
+    };
+    c.appendChild(chk); c.appendChild(ai); c.appendChild(revealBtn(rv));
+    c.appendChild(fb); c.appendChild(aiBox); c.appendChild(rv);
+    attachTimer(c, st, fb);
+    host.appendChild(c);
+  });
+  /* 辯論加碼 */
+  var db = el('div','card');
+  db.appendChild(el('div','sub-title','🏅 立場辯論加碼題'));
+  db.appendChild(el('div','note','系統隨機丟出正／反方立場（英文立場下方附中文說明），請在 60 秒內寫出 3 句支持論述，AI 給予星等評分。'));
+  var pos = el('div','fb on ok','按下方按鈕抽立場。');
+  var draw = el('button','btn','🎯 抽立場');
+  var cur = '', curObj = null;
+  draw.onclick = function(){
+    curObj = pick(S4_DEBATE);
+    cur = curObj.side + '：' + curObj.en;
+    pos.innerHTML = '<div>'+curObj.side+'：'+esc(curObj.en)+'</div>'+
+                    '<div class="zh">📝 '+curObj.zh+'</div>';
+    var sb2 = el('button','btn say','🔊 朗讀立場');
+    sb2.onclick = function(){ say(curObj.en); };
+    pos.appendChild(sb2);
+  };
+  var dta = el('textarea','ta'); dta.style.minHeight='110px';
+  dta.setAttribute('placeholder','Write three supporting sentences...');
+  var dst = el('div','starbox','☆☆☆'), dfb=fbBox(), dS={locked:false};
+  var dchk = el('button','btn chk','✅ 送出論述');
+  dchk.onclick = function(){
+    if(!cur){ toast('請先抽立場喔！', false); return; }
+    var sents = dta.value.split(/[.!?]/).filter(function(s){ return s.trim().split(/\s+/).length>=5; }).length;
+    var star = sents>=3?3:(sents===2?2:(sents===1?1:0));
+    dst.textContent = starsFor(star);
+    grade(dS, star>=3, dfb, '✅ 三句完整論述，三星達成！ +200 分', '🍬 目前只有 '+sents+' 句達到論述長度（每句至少 5 字），不扣分，再寫幾句！');
+  };
+  db.appendChild(draw); db.appendChild(pos); db.appendChild(dta); db.appendChild(dst); db.appendChild(dchk); db.appendChild(dfb);
+  host.appendChild(db);
+}
+function missGapText(v){
+  var low = v.toLowerCase(), gaps = [];
+  if(!/because|since|so |thus|therefore|as a result/.test(low)) gaps.push('看不到明確的<b>因果連接詞</b>（because／since／therefore／as a result），讀者不知道你的理由怎麼支撐結論');
+  if(!/for example|such as|for instance/.test(low)) gaps.push('缺少<b>例證</b>，加一個 for example 會讓論點立刻有重量');
+  if(v.trim().split(/\s+/).length < 35) gaps.push('篇幅偏短，論述通常需要「主張＋理由＋例子＋收束」四步');
+  return gaps.length ? gaps.join('；') + '。' : '結構相當完整！接下來可以挑戰把兩個論點用轉折語（However／In contrast）對照起來，層次會更高。';
+}
+/* ---------- STAGE 5 ---------- */
+function buildStage5(host){
+  host.appendChild(secTitle('STAGE 5｜🌊 太平洋垃圾帶情報站'));
+  host.appendChild(el('div','intro',
+    '<b>The Great Pacific Garbage Patch｜Sustainable Consumption and Production of Plastics｜源頭減量生活行動網</b><br>'+
+    '四張情報卡預設鎖定，答對該卡對應的快問快答後才解鎖全文。四張全解鎖可獲得「🕵️ 海洋情報員」電子徽章。'));
+  var unlocked = 0;
+  var badge = el('div','fb on ok','🔓 已解鎖情報卡：0 / 4');
+  host.appendChild(badge);
+  S5_CARDS.forEach(function(cd, i){
+    var st={locked:false};
+    var c = el('div','card');
+    c.appendChild(el('div','num', String(i+1)));
+    c.appendChild(el('div','sub-title','🔒 '+cd.title));
+    c.appendChild(el('div','qen','<b>'+cd.q+'</b>'));
+    var box=el('div','mc'), btns=[], sel=-1;
+    cd.o.forEach(function(o,k){
+      var b=el('button','mcopt','('+'ABCD'[k]+') '+esc(o));
+      b.onclick=function(){ btns.forEach(function(x){x.classList.remove('sel');}); b.classList.add('sel'); sel=k; };
+      btns.push(b); box.appendChild(b);
+    });
+    c.appendChild(box);
+    var fb=fbBox(), rv=makeReveal(), body=el('div','reveal');
+    body.innerHTML = '<div class="ansline">📄 '+cd.title+'</div><div class="expl">'+cd.body+'</div>';
+    rv.innerHTML = '<div class="ansline">📖 參考解答：('+'ABCD'[cd.k]+') '+esc(cd.o[cd.k])+'</div>'+
+                   '<div class="expl"><b>【答案與詳解】</b><br>'+cd.e+'</div>';
+    var chk=el('button','btn chk','✅ 檢查並解鎖情報卡');
+    chk.onclick=function(){
+      if(sel<0){ toast('請先選一個答案喔！', false); return; }
+      btns.forEach(function(b,k){ b.classList.remove('sel'); if(k===cd.k) b.classList.add('ok'); else if(k===sel) b.classList.add('no'); });
+      var ok = sel===cd.k;
+      grade(st, ok, fb, '✅ 正確！情報卡已解鎖 🔓 +200 分', '🍬 再讀一次題目線索（不扣分，可以再選）。');
+      if(ok && !c.dataset.un){
+        c.dataset.un='1'; body.classList.add('on'); unlocked++;
+        badge.innerHTML = '🔓 已解鎖情報卡：'+unlocked+' / 4' + (unlocked>=4 ? '　🕵️ 恭喜獲得「海洋情報員」電子徽章！' : '');
+        if(unlocked>=4) fireworks();
+      }
+    };
+    c.appendChild(chk); c.appendChild(revealBtn(rv)); c.appendChild(fb); c.appendChild(body); c.appendChild(rv);
+    attachTimer(c, st, fb);
+    host.appendChild(c);
+  });
+  /* Fact or Bluff */
+  var fb2 = el('div','card');
+  fb2.appendChild(el('div','sub-title','🎯 Fact or Bluff 真假判斷連擊（10 題）'));
+  fb2.appendChild(el('div','note','連續答對累積 Combo 倍率（×1 → ×2 → ×3），答錯歸 ×1。最終得分計入全站累計。'));
+  var combo = 1, idx = 0, gained = 0;
+  var cbox = el('div','fb on ok','🔥 Combo ×1　｜　本關已得 0 分');
+  var qb = el('div','qen','');
+  var eb = el('div','reveal');
+  var order = shuffle(S5_FACTS);
+  function show(){
+    if(idx>=order.length){
+      qb.innerHTML = '<b>🏁 10 題完成！本關 Fact or Bluff 共取得 '+gained+' 分。</b>';
+      return;
+    }
+    qb.innerHTML = '<b>Q'+(idx+1)+'.</b> '+esc(order[idx].s);
+    eb.classList.remove('on');
+  }
+  function answer(v){
+    if(idx>=order.length) return;
+    var it = order[idx];
+    var ok = (v===it.t);
+    if(ok){ var pts = 200*combo; addScore(pts); gained+=pts; combo = Math.min(3, combo+1); celebrate(pts); }
+    else{ combo=1; toast('🍬 答錯了（不扣分），Combo 歸 ×1', false); }
+    eb.classList.add('on');
+    eb.innerHTML = '<div class="ansline">📖 參考解答：'+(it.t?'Fact 真':'Bluff 假')+'</div><div class="expl">'+it.e+'</div>';
+    cbox.innerHTML = '🔥 Combo ×'+combo+'　｜　本關已得 '+gained+' 分';
+    idx++;
+    setTimeout(show, 1400);
+  }
+  var bt = el('button','btn chk','✅ Fact 真'); bt.onclick=function(){ answer(true); };
+  var bf = el('button','btn ref','❓ Bluff 假'); bf.onclick=function(){ answer(false); };
+  fb2.appendChild(cbox); fb2.appendChild(qb); fb2.appendChild(bt); fb2.appendChild(bf); fb2.appendChild(eb);
+  host.appendChild(fb2);
+  show();
+  /* 參考連結 */
+  var lk = el('div','card');
+  lk.appendChild(el('div','sub-title','🔗 參考連結'));
+  S5_LINKS.forEach(function(u){
+    var a = document.createElement('a');
+    a.href=u; a.target='_blank'; a.rel='noopener'; a.className='btn'; a.textContent='🔗 '+u;
+    a.style.display='inline-block'; a.style.textDecoration='none';
+    lk.appendChild(a);
+  });
+  host.appendChild(lk);
+}
+/* ---------- STAGE 6 ---------- */
+function buildStage6(host){
+  host.appendChild(secTitle('STAGE 6｜🔗 海廢因果鏈接力賽'));
+  var ban = el('div','rulebar');
+  ban.innerHTML = '📣 '+esc(S6_QUOTE);
+  var sbq = el('button','btn say','🔊 朗讀'); sbq.onclick=function(){ say(S6_QUOTE); };
+  ban.appendChild(sbq);
+  host.appendChild(ban);
+  host.appendChild(el('div','intro', S6_TASK));
+  /* Word Bank 浮動面板 */
+  var panel = el('div','floatpanel');
+  var tog = el('button','btn mini','🧰 展開／收合 Word Bank（預設收合）');
+  var inner = el('div','inner'); inner.style.display='none';
+  tog.onclick = function(){ inner.style.display = (inner.style.display==='none'?'flex':'none'); };
+  panel.appendChild(tog); panel.appendChild(inner);
+  var selC = null, chipsC = {};
+  var allParts = [];
+  S6_CHAINS.forEach(function(ch){ allParts.push(ch.h); allParts.push(ch.t); allParts.push(ch.m); });
+  shuffle(allParts).forEach(function(p){
+    var b = el('button','chip', p);
+    chipsC[p] = b;
+    b.onclick = function(){
+      if(selC===p){ selC=null; b.classList.remove('sel'); return; }
+      Object.keys(chipsC).forEach(function(k){ chipsC[k].classList.remove('sel'); });
+      selC=p; b.classList.add('sel');
+    };
+    inner.appendChild(b);
+  });
+  host.appendChild(panel);
+  var box = el('div','card');
+  box.appendChild(el('div','sub-title','Plastic Products → Habit/Behavior → Twist → Medium → Marine Debris'));
+  box.appendChild(el('div','note','👉 先在 Word Bank 按壓一張拼圖卡（變粉色＝選取），再按壓下方空格放入；按壓已填入的空格可退回詞庫。'));
+  var scroll = el('div','scrollbox');
+  var filled = {};
+  S6_CHAINS.forEach(function(ch, i){
+    var row = el('div','card'); row.style.margin='10px 0';
+    row.appendChild(el('div','num', String(i+1)));
+    var grid = el('div','chainrow');
+    [['h','Habit / Behavior 行為'],['t','Twist 轉折'],['m','Medium 媒介']].forEach(function(pair){
+      var key = i+'-'+pair[0];
+      var s = el('div','slotbig','<span class="note">'+pair[1]+'</span><br>（點此填入）');
+      s.onclick = function(){
+        if(filled[key]){ chipsC[filled[key]].classList.remove('used'); delete filled[key];
+          s.className='slotbig'; s.innerHTML='<span class="note">'+pair[1]+'</span><br>（點此填入）'; return; }
+        if(!selC) return;
+        filled[key]=selC; chipsC[selC].classList.add('used');
+        s.className='slotbig filled'; s.innerHTML='<span class="note">'+pair[1]+'</span><br>'+esc(selC);
+        selC=null;
+      };
+      grid.appendChild(s);
+    });
+    row.appendChild(grid);
+    scroll.appendChild(row);
+  });
+  box.appendChild(scroll);
+  var stC={locked:false}, fbC=fbBox(), rvC=makeReveal();
+  rvC.innerHTML = '<div class="ansline">📖 參考解答（Habit/Behavior｜Twist｜Medium）</div>'+
+    S6_CHAINS.map(function(ch,i){
+      return '<div class="expl"><b>'+(i+1)+'.</b> '+esc(ch.h)+'｜'+esc(ch.t)+'｜'+esc(ch.m)+'</div>';
+    }).join('')+
+    '<div class="expl"><b>【詳解】</b>三條因果鏈都遵循同一個結構：一個看似無害的<b>日常行為</b>（亂丟、洗衣、掩埋）→ 一個<b>轉折</b>把塑膠帶離原地（被吹進水溝、纖維被沖下排水管、被風吹走）→ 一個<b>媒介</b>把它送進海洋（水溝與河川、風與颱風）。這正呼應標語 There is no such thing as \u201Caway.\u201D：垃圾從來不會消失，只是換了地方。</div>';
+  var freeBox = el('div','card lockcard');
+  var chkC = el('button','btn chk','✅ 檢查三條因果鏈');
+  chkC.onclick = function(){
+    if(Object.keys(filled).length < 9){ toast('還有空格沒填喔！', false); return; }
+    var wrong=0;
+    S6_CHAINS.forEach(function(ch,i){
+      if(filled[i+'-h']!==ch.h) wrong++;
+      if(filled[i+'-t']!==ch.t) wrong++;
+      if(filled[i+'-m']!==ch.m) wrong++;
+    });
+    if(wrong===0){ grade(stC, true, fbC, '✅ 三條因果鏈全部正確！ +200 分　🔓 自由創作模式已解鎖'); freeBox.classList.remove('lockcard'); }
+    else{ showFb(fbC, false, '🍬 有 '+wrong+' 格放錯位置（不扣分，再試一次）。'+pick(ENCOURAGE)); }
+  };
+  box.appendChild(chkC); box.appendChild(revealBtn(rvC)); box.appendChild(fbC); box.appendChild(rvC);
+  host.appendChild(box);
+  /* 自由創作 */
+  freeBox.appendChild(el('div','sub-title','🧠 自由創作模式｜寫出你自己的第 4 條因果鏈'));
+  freeBox.appendChild(el('div','note','🔒 完成三條因果鏈後解鎖。三格自由填寫，送交 AI 判定邏輯是否成立並給星等。'));
+  var f1=el('textarea','ta'), f2=el('textarea','ta'), f3=el('textarea','ta');
+  f1.setAttribute('placeholder','Habit / Behavior 行為'); f1.style.minHeight='60px';
+  f2.setAttribute('placeholder','Twist 轉折'); f2.style.minHeight='60px';
+  f3.setAttribute('placeholder','Medium 媒介'); f3.style.minHeight='60px';
+  freeBox.appendChild(f1); freeBox.appendChild(f2); freeBox.appendChild(f3);
+  var fstar=el('div','starbox','☆☆☆'), ffb=fbBox(), fst={locked:false};
+  var fchk = el('button','btn chk','✅ 送交 AI 判定');
+  fchk.onclick = function(){
+    var a=f1.value.trim(), b=f2.value.trim(), c=f3.value.trim();
+    var n = [a,b,c].filter(function(x){ return x.split(/\s+/).length>=3; }).length;
+    var logic = /wind|water|river|drain|wave|rain|typhoon|sewer|flood|current/i.test(c);
+    var star = (n===3 && logic) ? 3 : (n===3 ? 2 : (n>=1 ? 1 : 0));
+    fstar.textContent = starsFor(star);
+    grade(fst, star>=3, ffb,
+      '✅ 三格完整且媒介合乎邏輯，三星創作！ +200 分',
+      '🍬 三格都要寫滿，且「媒介」必須是真正能把塑膠帶進海洋的自然力量（風、水流、排水系統等），不扣分喔！');
+  };
+  freeBox.appendChild(fchk); freeBox.appendChild(fstar); freeBox.appendChild(ffb);
+  host.appendChild(freeBox);
+  var end = el('div','card');
+  end.appendChild(el('div','sub-title','🎬 參考影片與課堂結論'));
+  var a = document.createElement('a');
+  a.href='https://ltn.tw/NPTQVwx'; a.target='_blank'; a.rel='noopener'; a.className='btn';
+  a.style.display='inline-block'; a.style.textDecoration='none';
+  a.textContent='🔗 '+S6_VIDEO;
+  end.appendChild(a);
+  end.appendChild(el('div','fb on ok','📌 '+S6_CONCL));
+  host.appendChild(end);
+}
+/* ---------- STAGE 7 ---------- */
+function buildStage7(host){
+  host.appendChild(secTitle('STAGE 7｜🏆 兩週減塑挑戰賽 ＆ 海廢設計展'));
+  host.appendChild(el('div','intro', S7_ZH));
+  host.appendChild(el('div','intro', S7_EN));
+  /* 子模組 A */
+  var A = el('div','card');
+  A.appendChild(el('div','sub-title','子模組 A｜Week 1 一次性塑膠紀錄表'));
+  A.appendChild(el('div','note', S7_W1SAMPLE));
+  var tbl = el('table','cmp');
+  var head = '<tr><th>Date</th>' + S7_W1COLS.map(function(c){ return '<th>'+c+'</th>'; }).join('') + '</tr>';
+  tbl.innerHTML = head;
+  var counts = [];
+  S7_W1ROWS.forEach(function(r, ri){
+    var tr = el('tr');
+    tr.appendChild(el('td','','<b>'+r+'</b>'));
+    counts[ri]=[];
+    S7_W1COLS.forEach(function(c, ci){
+      var td = el('td');
+      var wrapc = el('div','cnt');
+      var minus = el('button','cntb','−'), val = el('span','','0'), plus = el('button','cntb','＋');
+      counts[ri][ci]=0;
+      function upd(d){
+        counts[ri][ci] = Math.max(0, counts[ri][ci]+d);
+        val.textContent = counts[ri][ci];
+        redraw();
+      }
+      minus.onclick=function(){ upd(-1); }; plus.onclick=function(){ upd(1); };
+      wrapc.appendChild(minus); wrapc.appendChild(val); wrapc.appendChild(plus);
+      td.appendChild(wrapc); tr.appendChild(td);
+    });
+    tbl.appendChild(tr);
+  });
+  var totalRow = el('tr');
+  totalRow.appendChild(el('td','','<b>Total Number</b>'));
+  var totCells = S7_W1COLS.map(function(){ var td=el('td','','0'); totalRow.appendChild(td); return td; });
+  tbl.appendChild(totalRow);
+  A.appendChild(tbl);
+  var chart = el('div'); chart.style.marginTop='10px';
+  var level = el('div','fb on ok','🌱 塑膠足跡等級：低（總量 0）');
+  function redraw(){
+    var sums = S7_W1COLS.map(function(_,ci){
+      return counts.reduce(function(a,row){ return a+row[ci]; }, 0);
+    });
+    totCells.forEach(function(td,i){ td.innerHTML='<b>'+sums[i]+'</b>'; });
+    var max = Math.max(1, Math.max.apply(null, sums));
+    chart.innerHTML = '';
+    S7_W1COLS.forEach(function(c,i){
+      var row = el('div'); row.style.margin='4px 0';
+      row.innerHTML = '<span class="note">'+c+'：'+sums[i]+'</span>';
+      var b = el('div','bar'); b.style.width = Math.round(sums[i]/max*100)+'%';
+      row.appendChild(b); chart.appendChild(row);
+    });
+    var t = sums.reduce(function(a,b){ return a+b; }, 0);
+    level.innerHTML = t<=15 ? ('🌱 塑膠足跡等級：低（總量 '+t+'）') :
+                      t<=35 ? ('⚠️ 塑膠足跡等級：中（總量 '+t+'）') :
+                              ('🔥 塑膠足跡等級：高（總量 '+t+'）');
+  }
+  A.appendChild(chart); A.appendChild(level);
+  redraw();
+  host.appendChild(A);
+  /* 子模組 B */
+  var B = el('div','card');
+  B.appendChild(el('div','sub-title','子模組 B｜Week 2 七日減塑挑戰'));
+  B.appendChild(el('div','note', S7_W2NOTE));
+  var tbl2 = el('table','cmp');
+  tbl2.innerHTML = '<tr><th>Day</th>' + S7_W2COLS.map(function(c){ return '<th>'+c+'</th>'; }).join('') + '</tr>';
+  var checks = [];
+  var bar = el('div','progwrap'), fill = el('div','progbar'); bar.appendChild(fill);
+  var pct = el('div','note','挑戰進度 0 / 7 天');
+  for(var d=1; d<=7; d++){
+    (function(day){
+      var tr = el('tr');
+      tr.appendChild(el('td','','<b>Day '+day+'</b>'));
+      var dayBoxes = [];
+      S7_W2COLS.forEach(function(){
+        var td = el('td');
+        var cb = document.createElement('input'); cb.type='checkbox';
+        cb.style.width='18px'; cb.style.height='18px'; cb.style.accentColor='#34D399';
+        cb.onchange = updProg;
+        dayBoxes.push(cb); td.appendChild(cb); tr.appendChild(td);
+      });
+      checks.push(dayBoxes);
+      tbl2.appendChild(tr);
+    })(d);
+  }
+  var st7 = {locked:false};
+  function updProg(){
+    var full = checks.filter(function(row){ return row.every(function(c){ return c.checked; }); }).length;
+    fill.style.width = (full/7*100)+'%';
+    pct.textContent = '挑戰進度 '+full+' / 7 天';
+    if(full===7 && !st7.locked){
+      st7.locked=true; addScore(200); fireworks();
+      toast('🏅 七日全勾！獲得「Plastic-Free Challenger」電子徽章 +200 分', true);
+      pct.innerHTML = '挑戰進度 7 / 7 天　🏅 恭喜獲得「Plastic-Free Challenger」電子徽章！';
+    }
+  }
+  B.appendChild(tbl2); B.appendChild(bar); B.appendChild(pct);
+  var tu = el('input','blank w2'); tu.type='text'; tu.setAttribute('placeholder','Times Used 使用次數');
+  var ms = el('input','blank w2'); ms.type='text'; ms.setAttribute('placeholder','Money Saved（範例：Total: 34 NTD）');
+  B.appendChild(el('div','qen','<b>Times Used：</b>')); B.appendChild(tu);
+  B.appendChild(el('div','qen','<b>Money Saved：</b>')); B.appendChild(ms);
+  B.appendChild(el('div','sub-title','Reflection 五題'));
+  var refTAs = [];
+  S7_REFLECT.forEach(function(r, i){
+    var c = el('div','card'); c.style.margin='12px 0';
+    c.appendChild(el('div','num', String(i+1)));
+    c.appendChild(el('div','qen','<b>'+esc(r.q)+'</b>'));
+    var ta = el('textarea','ta'); ta.setAttribute('placeholder','Write your own answer in English...');
+    refTAs.push(ta);
+    c.appendChild(ta);
+    var rv = makeReveal();
+    rv.innerHTML = '<div class="ansline">📖 參考解答（範例回答，鼓勵你寫出自己的版本）</div>'+
+                   '<div class="expl">'+esc(r.ref)+'</div><div class="expl"><b>【說明】</b><br>'+r.e+'</div>';
+    c.appendChild(revealBtn(rv)); c.appendChild(rv);
+    B.appendChild(c);
+  });
+  B.appendChild(el('div','fb on ok', S7_BADGE));
+  B.appendChild(el('div','note', S7_WRAP));
+  host.appendChild(B);
+  /* 子模組 C */
+  var C = el('div','card');
+  C.appendChild(el('div','sub-title','子模組 C｜海廢創作設計展 ＋ 延伸思考辯論'));
+  C.appendChild(el('div','qen', S7_TASK3));
+  var dta = el('textarea','ta'); dta.style.minHeight='120px';
+  dta.setAttribute('placeholder','Describe your design in English: what plastics did you use, and what does it mean?');
+  C.appendChild(dta);
+  var recBtn = el('button','btn','🎙️ 口說錄音');
+  var recNote = el('div','note','');
+  var rec = null, chunksAudio = [];
+  var canRec = false;
+  try{ canRec = !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && typeof MediaRecorder !== 'undefined'); }catch(e){ canRec=false; }
+  if(canRec){
+    recBtn.onclick = function(){
+      if(rec && rec.state==='recording'){ rec.stop(); recBtn.textContent='🎙️ 口說錄音'; return; }
+      navigator.mediaDevices.getUserMedia({audio:true}).then(function(s){
+        rec = new MediaRecorder(s); chunksAudio=[];
+        rec.ondataavailable=function(e){ chunksAudio.push(e.data); };
+        rec.onstop=function(){
+          var blob = new Blob(chunksAudio, {type:'audio/webm'});
+          var au = document.createElement('audio'); au.controls=true; au.src=URL.createObjectURL(blob);
+          recNote.innerHTML=''; recNote.appendChild(au);
+          s.getTracks().forEach(function(t){ t.stop(); });
+        };
+        rec.start(); recBtn.textContent='⏹️ 停止錄音';
+      }).catch(function(){ recNote.textContent='無法取得麥克風權限。'; });
+    };
+    C.appendChild(recBtn);
+  }
+  C.appendChild(recNote);
+  C.appendChild(el('div','sub-title','🗣️ 議題辯論轉盤（延伸思考 3 題）'));
+  var wheel = el('div','fb on ok','按下轉盤，看看你要辯哪一題。');
+  var spin = el('button','btn chk','🎡 轉動轉盤');
+  var curD = '';
+  spin.onclick = function(){
+    var i = Math.floor(Math.random()*S7_DEBATE.length);
+    curD = S7_DEBATE[i];
+    wheel.innerHTML = '🗣️ '+esc(curD);
+  };
+  var wta = el('textarea','ta'); wta.style.minHeight='110px';
+  wta.setAttribute('placeholder','Your position and supporting arguments...');
+  var wstar = el('div','starbox','☆☆☆'), wfb=fbBox(), wst={locked:false};
+  var wchk = el('button','btn chk','✅ 送出立場與論據');
+  wchk.onclick = function(){
+    if(!curD){ toast('請先轉動轉盤抽題喔！', false); return; }
+    var v = wta.value.trim();
+    var n = v ? v.split(/\s+/).length : 0;
+    var hasStance = /i (think|believe|agree|disagree)|in my (view|opinion)|should|effective/i.test(v);
+    var hasReason = /because|since|therefore|so |as a result|for example/i.test(v);
+    var star = (n>=60 && hasStance && hasReason) ? 3 : ((n>=30 && (hasStance||hasReason)) ? 2 : (n>=10 ? 1 : 0));
+    wstar.textContent = starsFor(star);
+    grade(wst, star>=3, wfb,
+      '✅ 立場明確、理由充分，三星論述！ +200 分',
+      '🍬 三星需要：60 字以上＋清楚立場＋因果理由。目前還差一點，不扣分，再加油！');
+  };
+  C.appendChild(spin); C.appendChild(wheel); C.appendChild(wta); C.appendChild(wchk); C.appendChild(wstar); C.appendChild(wfb);
+  host.appendChild(C);
+  /* 總成績單 */
+  var F = el('div','card');
+  F.appendChild(el('div','sub-title','🏆 Ocean Rescue Tournament 總成績單'));
+  var sum = el('div','fb on ok','');
+  var upd = el('button','btn chk','📊 產生總成績單');
+  upd.onclick = function(){
+    sum.innerHTML = '🏆 累計總分：<b>'+TOTAL+'</b> 分<br>🎖️ 目前排名徽章：<b>'+rankName(TOTAL)+'</b><br>'+
+      '🕵️ STAGE 5 情報員徽章、🏅 STAGE 7 Plastic-Free Challenger 徽章請依關卡完成情況自行勾記。<br>'+
+      '📸 請截圖上傳 Google Classroom。';
+  };
+  F.appendChild(upd); F.appendChild(sum);
+  submitBlock(F, function(){
+    return 'Ocean Rescue Tournament 總成績單\n累計總分：'+TOTAL+' 分\n排名徽章：'+rankName(TOTAL)+
+      '\n\n【海廢創作說明】\n'+dta.value+
+      '\n\n【辯論題目】\n'+curD+'\n【我的立場與論據】\n'+wta.value+
+      '\n\n【Week 2 反思】\n'+refTAs.map(function(t,i){ return (i+1)+'. '+t.value; }).join('\n');
+  }, 'B1 L5 Ocean Rescue Tournament 總成績單');
+  host.appendChild(F);
+}
+/* ============================================================
+   AI 老師（前端啟發式批改）
+   ============================================================ */
+function aiGrade(userText, item, host, st){
+  var v = (userText||'').trim();
+  var box = host.querySelector('.aiout');
+  box.classList.add('on');
+  if(!v){ box.innerHTML='<b>🤖 AI 老師：</b>先寫下你的英文翻譯吧！寫錯沒關係，老師最喜歡陪學生一起修改了 💛'; return; }
+  var ref = item.ref;
+  var fixed = autofix(v);
+  var cov = coverage(v, ref);
+  var ratio = tokens(v).length / Math.max(1, tokens(ref).length);
+  var exact = norm(v)===norm(ref);
+  var perfect = exact || (cov>=0.999 && ratio>=0.8 && ratio<=1.25);
+  if(perfect){
+    if(!st.locked){ st.locked=true; addScore(200); }
+    celebrate();
+    box.innerHTML =
+      '<div class="ansline">🤖 AI 老師熱情點評：完美！</div>'+
+      '<div class="expl"><b>【你的回答】</b>：'+esc(v)+'<br>'+
+      '<b>【標準參考】</b>：'+esc(ref)+'<br>'+
+      '<b>【老師的分析與建議】</b>：句型、單字、時態、標點全部到位，完全達到大考中心評分標準的滿分水準！<br>'+
+      '<b>【獲得分數】</b>：4／4　🌟 明日之星！<br><br>'+
+      '哇！同學，你真的太厲害了！！這一題完全命中重點，老師看到超級開心，你就是老師最驕傲的學生之一！💪🌟</div>';
+    return;
+  }
+  var tier, advice;
+  if(cov>=0.85){
+    tier='表現尚可';
+    advice='你的內容幾乎全中了！剩下的是<b>細節打磨</b>：檢查冠詞（a/an/the）、單複數、介系詞，以及句尾標點。'+
+           '再把中文句子的每一個訊息點對照一次英文，確認沒有漏掉修飾語（例如「一陣子」「最後」「適當地」這類片語）。';
+  }else if(cov>=0.5){
+    tier='表現尚可';
+    advice='主要句型抓到了，但<b>關鍵單字或片語</b>還有缺漏。建議先把中文拆成「主詞／動詞／受詞／修飾語」四塊，'+
+           '再逐塊翻譯，最後檢查時態是否與情境相符。';
+  }else{
+    tier='需要努力';
+    advice='先別急著寫整句！建議三步驟：① 圈出中文的<b>主要動詞</b>；② 決定<b>句型結構</b>（是 end up + V-ing？是 because 接子句還是 because of 接名詞？還是使役動詞 make/let/have + O + VR？）；'+
+           '③ 再把關鍵字彙一個一個填進去。回去看看本題的「句型說明」，會很有幫助喔！';
+  }
+  var score = cov>=0.85 ? 3 : cov>=0.6 ? 2.5 : cov>=0.4 ? 1.5 : 0.5;
+  box.innerHTML =
+    '<div class="ansline">🤖 AI 老師熱情點評：'+tier+'（本題不扣分，訂正後再挑戰一次！）</div>'+
+    '<div class="expl">'+
+    '<b>【你的回答】</b>：'+esc(v)+'<br>'+
+    '<b>【修正後回答】</b>：'+esc(fixed)+'<br>'+
+    '<b>【老師的分析與建議】</b>：'+advice+'<br>'+
+    '<span class="note">（自動修復已幫你校正大小寫、常見縮寫撇號與句尾標點；關鍵字覆蓋率約 '+Math.round(cov*100)+'%）</span><br>'+
+    '<b>【獲得分數】</b>：'+score+'／4<br><br>'+
+    '同學，你已經願意動筆就非常棒了！老師看得出你在思考句型，這就是進步最快的方式。'+
+    '按下【✅ Check Answers】對照參考解答，再改一次，你一定會更接近滿分！加油，老師超相信你的！💪🌟</div>';
+}
+function transCard(root, idx, item, badge){
+  var st={locked:false};
+  var c = el('div','card');
+  c.appendChild(el('div','num', badge || String(idx+1)));
+  c.appendChild(el('div','zh','📝 ' + item.zh));
+  var ta = el('textarea','ta'); ta.setAttribute('placeholder','Write your English translation here...');
+  c.appendChild(ta);
+  var aiout = el('div','reveal aiout');
+  var rv = makeReveal();
+  rv.innerHTML = '<div class="ansline">📖 參考解答：'+esc(item.ref)+'</div>'+
+                 (item.note ? '<div class="expl"><b>【句型 / 單字片語 / 文法時態說明】</b><br>'+item.note+'</div>' : '');
+  var sb = el('button','btn say','🔊 朗讀正確答案'); sb.onclick=function(){ say(item.ref); };
+  rv.appendChild(sb);
+  var ai = el('button','btn ai','🤖 送出給 AI 老師批改');
+  ai.onclick = function(){
+    callAI().catch(function(){ aiGrade(ta.value, item, c, st); });
+  };
+  var chk = el('button','btn chk','✅ Check Answers');
+  chk.onclick = function(){ rv.classList.add('on'); };
+  c.appendChild(ai); c.appendChild(chk); c.appendChild(revealBtn(rv));
+  c.appendChild(aiout); c.appendChild(rv);
+  root.appendChild(c);
+}
+/* ============================================================
+   頁籤五：📚 Translation Practice 連貫式翻譯實戰
+   ============================================================ */
+function buildTrans(){
+  var root = document.getElementById('p-trans');
+  root.appendChild(ruleBar());
+  root.appendChild(el('div','intro',
+    '📚 <b>Translation Practice 連貫式翻譯實戰</b><br>'+
+    '全部練習與填空<b>都不給提示</b>；寫完按下【✅ Check Answers】才會顯示正確答案與說明。<br>'+
+    '自由翻譯題請按【🤖 送出給 AI 老師批改】，AI 老師會依大考中心評分標準給你溫暖又具體的回饋。'));
+
+  root.appendChild(secTitle('一、文法選擇（' + GRAMMAR.length + ' 題）'));
+  root.appendChild(el('div','intro','👉 四選一採按壓式互動：直接按壓選項內容作答，接著按<b>該題的「✅ 檢查」</b>即可立刻批改、答對放煙火並累計分數；也可以全部選完後按最下方的「✅ Check Answers」一次批改。答案與詳解都會出現在<b>各題正下方</b>。'));
+  var gStates = [];
+  GRAMMAR.forEach(function(g, i){
+    var st={locked:false, sel:-1};
+    var c = el('div','card');
+    c.appendChild(el('div','num', String(i+1)));
+    c.appendChild(el('div','qen', esc(g.q)));
+    var box = el('div','mc'), btns=[];
+    g.o.forEach(function(o, k){
+      var b = el('button','mcopt','('+'ABCD'[k]+') '+esc(o));
+      b.onclick = function(){ btns.forEach(function(x){ x.classList.remove('sel'); }); b.classList.add('sel'); st.sel = k; };
+      btns.push(b); box.appendChild(b);
+    });
+    c.appendChild(box);
+    var fb = fbBox(), rv = makeReveal();
+    rv.innerHTML = '<div class="ansline">📖 參考解答：('+'ABCD'[g.k]+') '+esc(g.o[g.k])+'</div>'+
+                   '<div class="expl"><b>【答案與詳解】</b><br>'+g.e+'</div>';
+    var one = el('button','btn chk','✅ 檢查');
+    one.onclick = function(){
+      if(st.sel < 0){ toast('請先按壓一個選項作答喔！', false); return; }
+      btns.forEach(function(b,k){
+        b.classList.remove('sel');
+        if(k===g.k) b.classList.add('ok');
+        else if(k===st.sel) b.classList.add('no');
+      });
+      grade(st, st.sel===g.k, fb, '✅ 正確！ +200 分', '🍬 這題錯了（不扣分），看一下詳解再挑戰！');
+      rv.classList.add('on');
+    };
+    c.appendChild(one);
+    c.appendChild(revealBtn(rv));
+    c.appendChild(sayBtn(g.q.replace('____________', g.o[g.k])));
+    c.appendChild(fb); c.appendChild(rv);
+    root.appendChild(c);
+    gStates.push({st:st, btns:btns, fb:fb, rv:rv, g:g});
+  });
+  var gAll = el('button','btn chk','✅ Check Answers（一次批改全部）');
+  gAll.style.fontSize='16px';
+  gAll.onclick = function(){
+    var right=0, answered=0;
+    gStates.forEach(function(x){
+      if(x.st.sel<0) return;
+      answered++;
+      var ok = x.st.sel === x.g.k;
+      x.btns.forEach(function(b,i){
+        b.classList.remove('sel');
+        if(i===x.g.k) b.classList.add('ok');
+        else if(i===x.st.sel) b.classList.add('no');
+      });
+      grade(x.st, ok, x.fb, '✅ 正確！ +200 分', '🍬 這題錯了（不扣分），看一下詳解再挑戰！');
+      x.rv.classList.add('on');
+      if(ok) right++;
+    });
+    if(!answered){ toast('請先作答再批改喔！', false); return; }
+    setTimeout(function(){
+      toast('批改完成：答對 '+right+' / '+answered+' 題　本次得分 +'+(right*200)+' 分　🏆 累計 '+TOTAL+' 分', right===answered);
+    }, 1500);
+  };
+  root.appendChild(gAll);
+
+  root.appendChild(secTitle('二、引導式翻譯（' + GUIDED.length + ' 題）'));
+  root.appendChild(el('div','intro','👉 填入正確的搭配詞，<b style="color:#4E342E">每一格限填一個字。</b>寫完按【✅ 檢查】批改，按【📖 參考解答】看說明。'));
+  GUIDED.forEach(function(item, i){
+    var st={locked:false}, inputs=[];
+    var c = el('div','card');
+    c.appendChild(el('div','num', String(i+1)));
+    c.appendChild(el('div','zh','📝 ' + item.zh));
+    var line = el('div','qen');
+    var segs = item.en.split(/\{\{\d+\}\}/g);
+    segs.forEach(function(s,k){
+      line.appendChild(document.createTextNode(s));
+      if(k<segs.length-1){
+        var ip = el('input','blank w1'); ip.type='text';
+        ip.setAttribute('autocapitalize','off'); ip.setAttribute('autocomplete','off');
+        inputs.push(ip); line.appendChild(ip);
+      }
+    });
+    c.appendChild(line);
+    var fb=fbBox(), rv=makeReveal();
+    var full = buildBlankSentence(item.en, function(n){ return item.a[n-1]; });
+    rv.innerHTML = '<div class="ansline">📖 參考解答：<b>'+item.a.join('；')+'</b></div>'+
+                   '<div class="expl">'+esc(full)+'</div>'+
+                   '<div class="expl"><b>【句型 / 單字片語 / 文法時態說明】</b><br>'+item.note+'</div>';
+    var sb = el('button','btn say','🔊 朗讀正確答案'); sb.onclick=function(){ say(full); };
+    rv.appendChild(sb);
+    var chk = el('button','btn chk','✅ 檢查');
+    chk.onclick = function(){
+      var ok=true;
+      inputs.forEach(function(ip,k){
+        var good = eqWord(ip.value, item.a[k]);
+        ip.className='blank w1 '+(good?'ok':'no'); if(!good) ok=false;
+      });
+      grade(st, ok, fb, '✅ 完全正確！ +200 分', '🍬 搭配詞還沒完全對（不扣分，再修一次）。');
+    };
+    c.appendChild(chk); c.appendChild(revealBtn(rv)); c.appendChild(fb); c.appendChild(rv);
+    root.appendChild(c);
+  });
+
+  root.appendChild(secTitle('三、課文摘要翻譯（' + SUMMARY.length + ' 題）'));
+  SUMMARY.forEach(function(it,i){ transCard(root, i, it); });
+
+  root.appendChild(secTitle('四、連貫式翻譯（' + COHERENT.length + ' 題・句型 1-1／1-2／2-1／2-2）'));
+  COHERENT.forEach(function(it,i){ transCard(root, i, it, it.tag); });
+
+
+  var subBox = el('div','card');
+  subBox.appendChild(el('div','sub-title','📤 繳交本單元練習結果'));
+  submitBlock(subBox, function(){
+    return collectPanel('p-trans', 'No. 3 龍騰 B1 L5 The Life of a Plastic Bag ｜ 📚 連貫式翻譯實戰');
+  }, 'No. 3 龍騰 B1 L5 The Life of a Plastic Bag ｜ 📚 連貫式翻譯實戰');
+  root.appendChild(subBox);
+}
+/* ============================================================
+   頁籤切換 / sticky 偏移 / 啟動
+   ============================================================ */
+var TABS = [
+ {id:'p-fill',  label:'💡 例句填空'},
+ {id:'p-hunt',  label:'🗺️ 課文尋寶闖關'},
+ {id:'p-mixed', label:'🧩 混合題 & 篇章結構'},
+ {id:'p-ocean', label:'🌊 海洋救援錦標賽'},
+ {id:'p-trans', label:'📚 連貫式翻譯實戰'}
+];
+var MENU_OPEN = false;
+function setMenu(open){
+  MENU_OPEN = open;
+  var nav = document.getElementById('tabs');
+  var mask = document.getElementById('menuMask');
+  var btn = document.getElementById('menuBtn');
+  nav.classList.toggle('open', open);
+  mask.classList.toggle('open', open);
+  btn.textContent = open ? '✕ 關閉' : '☰ 選單';
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+function setupTabs(){
+  var nav = document.getElementById('tabs');
+  var btn = document.getElementById('menuBtn');
+  var mask = document.getElementById('menuMask');
+  nav.appendChild(el('div','menuhead','📑 選擇頁籤'));
+  var btns = [];
+  TABS.forEach(function(t, i){
+    var b = el('button','tabbtn', t.label);
+    b.onclick = function(){
+      btns.forEach(function(x){ x.classList.remove('on'); });
+      b.classList.add('on');
+      TABS.forEach(function(tt){ document.getElementById(tt.id).classList.remove('on'); });
+      document.getElementById(t.id).classList.add('on');
+      setMenu(false);
+      window.scrollTo({top:0, behavior:'smooth'});
+    };
+    btns.push(b); nav.appendChild(b);
+  });
+  var sb = el('button','tabbtn','🏆 顯示／隱藏計分列');
+  sb.onclick = function(){
+    document.getElementById('scoreBadge').classList.toggle('show');
+    setMenu(false);
+  };
+  nav.appendChild(sb);
+  nav.appendChild(el('div','menurule', RULE_TEXT));
+  btn.onclick = function(ev){ ev.stopPropagation(); setMenu(!MENU_OPEN); };
+  mask.onclick = function(){ setMenu(false); };
+  nav.addEventListener('click', function(ev){ ev.stopPropagation(); });
+  document.addEventListener('click', function(){ if(MENU_OPEN) setMenu(false); });
+  var lastY = 0;
+  window.addEventListener('scroll', function(){
+    var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+    if(MENU_OPEN && Math.abs(y-lastY) > 150){ setMenu(false); lastY = y; }
+    if(!MENU_OPEN) lastY = y;
+  }, {passive:true});
+  document.addEventListener('focusin', function(ev){
+    if(MENU_OPEN && ev.target && /^(TEXTAREA|INPUT|SELECT)$/.test(ev.target.tagName)) setMenu(false);
+  });
+  btns[0].classList.add('on');
+  document.getElementById(TABS[0].id).classList.add('on');
+  setMenu(false);
+}
+function computeStickyOffset(){
+  var h = document.getElementById('topbar');
+  var t = document.getElementById('tabs');
+  var hh = h ? h.offsetHeight : 44;
+  if(t) t.style.top = (hh + 6) + 'px';
+  var off = hh + 6;
+  document.documentElement.style.setProperty('--stickyOffset', off + 'px');
+}
+window.addEventListener('load', computeStickyOffset);
+window.addEventListener('resize', computeStickyOffset);
+window.addEventListener('orientationchange', function(){ setTimeout(computeStickyOffset, 250); });
+try{
+  setupTabs();
+  buildFill();
+  buildHunt();
+  buildMixed();
+  buildOcean();
+  buildTrans();
+  computeStickyOffset();
+}catch(err){
+  var m = document.querySelector('main');
+  if(m){ m.insertAdjacentHTML('afterbegin','<div class="rulebar">⚠️ 載入時發生問題：'+String(err && err.message || err)+'</div>'); }
+}
+</script>
+</body>
+</html>
